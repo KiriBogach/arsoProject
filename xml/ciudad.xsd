@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/ciudad"
+	xmlns:tns="http://www.example.org/ciudad"
+	elementFormDefault="qualified">
+	<complexType name="meteorologia">
+		<sequence>
+			<element name="tiempoObservacion" type="dateTime" />
+			<element name="nombreEstacion" type="string" />
+			<element name="temperatura" type="decimal" />
+			<element name="nubes" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="geolocalizacion">
+		<sequence>
+			<element name="latitud" type="decimal" />
+			<element name="longitud" type="decimal" />
+		</sequence>
+	</complexType>
+	<complexType name="sitio">
+		<sequence>
+			<element name="nombre" type="string" />
+			<element name="codigo" type="int" />
+		</sequence>
+	</complexType>
+	
+</schema>
