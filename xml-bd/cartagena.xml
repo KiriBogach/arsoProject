@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudad>
+	<nombre>Cartagena</nombre>
+	<codigo>2520058</codigo> <!-- restriccion de longitud? numerico? -->
+	<pais>Spaiña</pais> <!-- enumerado? yo creo que no -->
+	<poblacion>211996</poblacion> <!-- numerico, restriccion de longitud? -->
+	<ubicacion> <!-- complex type, seguro -->
+		<latitud>37.60512</latitud> <!-- double, restriccion de longitud? -->
+		<longitud>-0.98623</longitud> <!-- '''' -->
+	</ubicacion>
+	<urldbpedia>url,no tengo ganas de copiar</urldbpedia> <!-- regex para url??? no creo no? -->
+	<urlwikipedia>otraurl</urlwikipedia>
+	<fechaActualizacion>2012-03-04</fechaActualizacion> <!-- fecha, el único campo claro -->
+	<infometeorologica> <!-- tipo complejo, hacer externo -->
+		<horaObservacion>2019-02-04 12:00:00</horaObservacion> <!-- no hay un formato para la fecha, al menos tal y como está ¿crearlo? -->
+		<estacion>la estacion española</estacion>
+		<temperatura>14</temperatura> <!-- int o double? -->
+		<nubes>clouds and visibility ok</nubes> <!-- enumerado? está raro -->
+	</infometeorologica>
+	<sitiosInteres> <!-- otro tipo complejo -->
+		<nombre>castillo los patos</nombre>
+		<codigo>123123123</codigo> <!-- mismo formato que el codigo de antes? -->
+	</sitiosInteres>
+</ciudad>
