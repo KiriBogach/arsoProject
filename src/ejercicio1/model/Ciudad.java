@@ -1,4 +1,4 @@
-package model;
+package ejercicio1.model;
 
 public class Ciudad {
 	private String nombre;

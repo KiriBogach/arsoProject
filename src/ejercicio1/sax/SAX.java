@@ -8,7 +8,7 @@ import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.SAXException;
 
-import model.Ciudad;
+import ejercicio1.model.Ciudad;
 
 public class SAX {
 

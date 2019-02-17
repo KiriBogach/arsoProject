@@ -6,7 +6,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import model.Ciudad;
+import ejercicio1.model.Ciudad;
 
 public class Manejador extends DefaultHandler {
 
