@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT ciudad (nombre, codigo, pais, poblacion, ubicacion, bdpedia, wikipedia, fechaActualizacion, infoMeteorologica?, sitiosInteres)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT ubicacion (latitud, longitud)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT bdpedia (#PCDATA)>
+<!ELEMENT wikipedia (#PCDATA)>
+<!ELEMENT fechaActualizacion (#PCDATA)>
+<!ELEMENT infoMeteorologica (tiempoObservacion, nombreEstacion, temperatura, nubes)>
+<!ELEMENT tiempoObservacion (#PCDATA)>
+<!ELEMENT nombreEstacion (#PCDATA)>
+<!ELEMENT temperatura (#PCDATA)>
+<!ELEMENT nubes (#PCDATA)>
+<!ELEMENT sitiosInteres (sitio*)>
+<!ELEMENT sitio (nombre, codigo)>

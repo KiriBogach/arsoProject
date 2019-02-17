@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE ciudad SYSTEM "../xml/ciudad.dtd">
+
 <ciudad>
 	<nombre>Orihuela</nombre>
 	<codigo>2513076</codigo>
@@ -11,16 +13,19 @@
 	</ubicacion>
 	<bdpedia>Opcional - Uso de regex? http://es.dbpedia.org</bdpedia>
 	<wikipedia>Opcional - Uso de regex?
-		https://es.wikipedia.org/wiki/Orihuela</wikipedia>
+		https://es.wikipedia.org/wiki/Orihuela
+	</wikipedia>
 	<fechaActualizacion>2005-02-02</fechaActualizacion>
-	<informacionMeteorologica>
-		<fechaObservacion>2004-02-02</fechaObservacion>
+	<infoMeteorologica>
+		<tiempoObservacion>2004-02-02</tiempoObservacion>
 		<nombreEstacion>Estación Miguel Hernández</nombreEstacion>
 		<temperatura>23.2</temperatura>
 		<nubes>No</nubes>
-	</informacionMeteorologica>
+	</infoMeteorologica>
 	<sitiosInteres>
-		<nombre>La Glorieta</nombre>
-		<codigo>2513080</codigo>
+		<sitio>
+			<nombre>La Glorieta</nombre>
+			<codigo>2513080</codigo>
+		</sitio>
 	</sitiosInteres>
 </ciudad>
