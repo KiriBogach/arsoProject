@@ -6,7 +6,7 @@
 	<nombre>Orihuela</nombre>
 	<codigo>2513076</codigo>
 	<pais>España</pais>
-	<poblacion>Orihuela</poblacion>
+	<poblacion>154023</poblacion>
 	<ubicacion>
 		<latitud>14</latitud>
 		<longitud>18</longitud>
@@ -17,7 +17,7 @@
 	</wikipedia>
 	<fechaActualizacion>2005-02-02</fechaActualizacion>
 	<infoMeteorologica>
-		<tiempoObservacion>2004-02-02</tiempoObservacion>
+		<tiempoObservacion>2004-02-02T09:00:00</tiempoObservacion>
 		<nombreEstacion>Estación Miguel Hernández</nombreEstacion>
 		<temperatura>23.2</temperatura>
 		<nubes>No</nubes>

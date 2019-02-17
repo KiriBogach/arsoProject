@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ciudad xmlns="http://www.example.org/ciudad"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/ciudad ../xml/ciudad.xsd ">
+	<nombre>Orihuela</nombre>
+	<codigo>2513076</codigo>
+	<pais>España</pais>
+	<poblacion>154023</poblacion>
+	<ubicacion>
+		<latitud>14</latitud>
+		<longitud>18</longitud>
+	</ubicacion>
+	<bdpedia>Opcional - Uso de regex? http://es.dbpedia.org</bdpedia>
+	<wikipedia>Opcional - Uso de regex?
+		https://es.wikipedia.org/wiki/Orihuela
+	</wikipedia>
+	<fechaActualizacion>2005-02-02</fechaActualizacion>
+	<infoMeteorologica>
+		<tiempoObservacion>2004-02-02T09:00:00</tiempoObservacion>
+		<nombreEstacion>Estación Miguel Hernández</nombreEstacion>
+		<temperatura>23.2</temperatura>
+		<nubes>No</nubes>
+	</infoMeteorologica>
+	<sitiosInteres>
+		<sitio>
+			<nombre>La Glorieta</nombre>
+			<codigo>2513080</codigo>
+		</sitio>
+	</sitiosInteres>
+</ciudad>

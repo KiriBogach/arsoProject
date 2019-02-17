@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ciudad SYSTEM "../xml/ciudad.dtd" >
+
+<ciudad>
+	<nombre>nombre</nombre>
+	<codigo>codigo</codigo>
+	<pais>pais</pais>
+	<poblacion>poblacion</poblacion>
+	<ubicacion>
+		<latitud>latitud</latitud>
+		<longitud>longitud</longitud>
+	</ubicacion>
+	<bdpedia>bdpedia</bdpedia>
+	<wikipedia>wikipedia</wikipedia>
+	<fechaActualizacion>fechaActualizacion</fechaActualizacion>
+	<infoMeteorologica>
+		<tiempoObservacion>tiempoObservacion</tiempoObservacion>
+		<nombreEstacion>nombreEstacion</nombreEstacion>
+		<temperatura>temperatura</temperatura>
+		<nubes>nubes</nubes>
+	</infoMeteorologica>
+	<sitiosInteres>
+		<sitio>
+			<nombre>nombre</nombre>
+			<codigo>codigo</codigo>
+		</sitio>
+	</sitiosInteres>
+</ciudad>

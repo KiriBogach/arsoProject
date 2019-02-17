@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ciudad SYSTEM "../xml/ciudad.dtd">
+
+<ciudad>
+	<nombre>Cartagena</nombre>
+	<codigo>2520058</codigo> <!-- restriccion de longitud? numerico? -->
+	<pais>Spaiña</pais> <!-- enumerado? yo creo que no -->
+	<poblacion>211996</poblacion> <!-- numerico, restriccion de longitud? -->
+	<ubicacion> <!-- complex type, seguro -->
+		<latitud>37.60512</latitud> <!-- double, restriccion de longitud? -->
+		<longitud>-0.98623</longitud> <!-- '''' -->
+	</ubicacion>
+	<bdpedia>url,no tengo ganas de copiar</bdpedia> <!-- regex para url??? no creo no? -->
+	<wikipedia>otraurl</wikipedia>
+	<fechaActualizacion>2012-03-04</fechaActualizacion> <!-- fecha, el único campo claro -->
+	<infoMeteorologica> <!-- tipo complejo, hacer externo -->
+		<tiempoObservacion>2019-02-04T09:00:00</tiempoObservacion> <!-- no hay un formato para la fecha, al menos tal y como está ¿crearlo? -->
+		<nombreEstacion>la estacion española</nombreEstacion>
+		<temperatura>14</temperatura> <!-- int o double? -->
+		<nubes>clouds and visibility ok</nubes> <!-- enumerado? está raro -->
+	</infoMeteorologica>
+	<sitiosInteres> <!-- otro tipo complejo -->
+		<sitio>
+			<nombre>castillo los patos</nombre>
+			<codigo>123123123</codigo> <!-- mismo formato que el codigo de antes? -->
+		</sitio>
+	</sitiosInteres>
+</ciudad>

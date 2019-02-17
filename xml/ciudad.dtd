@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!ELEMENT ciudad (nombre, codigo, pais, poblacion, ubicacion, bdpedia, wikipedia, fechaActualizacion, infoMeteorologica?, sitiosInteres)>
+<!ELEMENT ciudad (nombre, codigo, pais, poblacion, ubicacion, bdpedia?, wikipedia?, fechaActualizacion, infoMeteorologica?, sitiosInteres)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT codigo (#PCDATA)>
 <!ELEMENT pais (#PCDATA)>

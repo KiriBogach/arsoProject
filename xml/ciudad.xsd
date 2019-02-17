@@ -1,27 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema"
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	targetNamespace="http://www.example.org/ciudad"
 	xmlns:tns="http://www.example.org/ciudad"
 	elementFormDefault="qualified">
-	<complexType name="meteorologia">
-		<sequence>
-			<element name="tiempoObservacion" type="dateTime" />
-			<element name="nombreEstacion" type="string" />
-			<element name="temperatura" type="decimal" />
-			<element name="nubes" type="string" />
-		</sequence>
-	</complexType>
-	<complexType name="geolocalizacion">
-		<sequence>
-			<element name="latitud" type="decimal" />
-			<element name="longitud" type="decimal" />
-		</sequence>
-	</complexType>
-	<complexType name="sitio">
-		<sequence>
-			<element name="nombre" type="string" />
-			<element name="codigo" type="int" />
-		</sequence>
-	</complexType>
+
+	<!-- Tipos: -->
+	<xs:complexType name="tipoCiudad">
+		<xs:complexContent>
+			<xs:extension base="tns:tipoIdentificador">
+				<xs:sequence>
+					<xs:element name="pais" type="xs:string" />
+					<xs:element name="poblacion" type="xs:positiveInteger" />
+					<xs:element name="ubicacion" type="tns:tipoUbicacion" />
+					<xs:element name="bdpedia" type="xs:anyURI" />
+					<xs:element name="wikipedia" type="xs:anyURI" />
+					<xs:element name="fechaActualizacion" type="xs:date" />
+					<xs:element name="infoMeteorologica"
+						type="tns:tipoInformacionMeteorologica" minOccurs="0" />
+					<xs:element name="sitiosInteres"
+						type="tns:tipoSitiosInteres" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	
-</schema>
+	<xs:complexType name="tipoIdentificador">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string" />
+			<xs:element name="codigo" type="xs:unsignedLong" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tipoInformacionMeteorologica">
+		<xs:sequence>
+			<xs:element name="tiempoObservacion" type="xs:dateTime" />
+			<xs:element name="nombreEstacion" type="xs:string" />
+			<xs:element name="temperatura" type="xs:decimal" />
+			<xs:element name="nubes" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tipoUbicacion">
+		<xs:sequence>
+			<xs:element name="latitud" type="xs:decimal" />
+			<xs:element name="longitud" type="xs:decimal" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tipoSitiosInteres">
+		<xs:sequence>
+			<xs:element name="sitio" type="tns:tipoSitioInteres" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tipoSitioInteres">
+		<xs:complexContent>
+			<xs:extension base="tns:tipoIdentificador" />
+		</xs:complexContent>
+	</xs:complexType>
+
+	<!-- Elemento raíz: -->
+	<xs:element name="ciudad" type="tns:tipoCiudad" />
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ciudad xmlns="http://www.example.org/ciudad"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/ciudad ../xml/ciudad.xsd ">
+
+	<nombre>nombre</nombre>
+	<codigo>0</codigo>
+	<pais>pais</pais>
+	<poblacion>1</poblacion>
+	<ubicacion>
+		<latitud>0.0</latitud>
+		<longitud>0.0</longitud>
+	</ubicacion>
+	<bdpedia>http://tempuri.org</bdpedia>
+	<wikipedia>http://tempuri.org</wikipedia>
+	<fechaActualizacion>2001-01-01</fechaActualizacion>
+	<informacionMeteorologica>
+		<tiempoObservacion>2001-12-31T12:00:00</tiempoObservacion>
+		<nombreEstacion>nombreEstacion</nombreEstacion>
+		<temperatura>0.0</temperatura>
+		<nubes>nubes</nubes>
+	</informacionMeteorologica>
+	<sitiosInteres>
+		<sitio>
+			<nombre>nombre</nombre>
+			<codigo>0</codigo>
+		</sitio>
+	</sitiosInteres>
+</ciudad>
