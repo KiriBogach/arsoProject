@@ -12,7 +12,7 @@ public class GeoName {
 	private double latitud;
 	private double longitud;
 	private URI wikipedia;
-	private URI dbpedia;
+	private URI bdpedia;
 	private Date fechaActualizacion;
 	private Date tiempoObservacion;
 	private String nombreEstacion;
@@ -35,7 +35,7 @@ public class GeoName {
 		this.latitud = latitud;
 		this.longitud = longitud;
 		this.wikipedia = wikipedia;
-		this.dbpedia = dbpedia;
+		this.bdpedia = dbpedia;
 		this.fechaActualizacion = fechaActualizacion;
 		this.tiempoObservacion = tiempoObservacion;
 		this.nombreEstacion = nombreEstacion;
@@ -96,12 +96,12 @@ public class GeoName {
 		this.wikipedia = wikipedia;
 	}
 
-	public URI getDbpedia() {
-		return dbpedia;
+	public URI getBdpedia() {
+		return bdpedia;
 	}
 
-	public void setDbpedia(URI dbpedia) {
-		this.dbpedia = dbpedia;
+	public void setBdpedia(URI dbpedia) {
+		this.bdpedia = dbpedia;
 	}
 
 	public Date getFechaActualizacion() {
@@ -155,7 +155,7 @@ public class GeoName {
 	@Override
 	public String toString() {
 		return "GeoName [nombre=" + nombre + ", pais=" + pais + ", poblacion=" + poblacion + ", latitud=" + latitud
-				+ ", longitud=" + longitud + ", wikipedia=" + wikipedia + ", dbpedia=" + dbpedia
+				+ ", longitud=" + longitud + ", wikipedia=" + wikipedia + ", dbpedia=" + bdpedia
 				+ ", fechaActualizacion=" + fechaActualizacion + ", tiempoObservacion=" + tiempoObservacion
 				+ ", nombreEstacion=" + nombreEstacion + ", temperatura=" + temperatura + ", nubes=" + nubes
 				+ ", sitiosInteres=" + sitiosInteres + "]";
