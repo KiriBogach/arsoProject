@@ -32,67 +32,73 @@ public class DOMParser {
 		NodeList node = null;
 		String data = "";
 
-		node = documento.getElementsByTagName("gn:name");
-		data = ((Element) node.item(0)).getTextContent();
-		busqueda.setNombre(data);
+		data = this.getDataFrom(documento, "gn:name");
+		if (data != null) {
+			busqueda.setNombre(data);
+		}
 
-		node = documento.getElementsByTagName("gn:countryCode");
-		data = ((Element) node.item(0)).getTextContent();
-		busqueda.setPais(data);
+		data = this.getDataFrom(documento, "gn:countryCode");
+		if (data != null) {
+			busqueda.setPais(data);
+		}
 
-		node = documento.getElementsByTagName("gn:population");
-		data = ((Element) node.item(0)).getTextContent();
-		busqueda.setPoblacion(Integer.parseInt(data));
+		data = this.getDataFrom(documento, "gn:population");
+		if (data != null) {
+			busqueda.setPoblacion(Integer.parseInt(data));
+		}
 
-		node = documento.getElementsByTagName("wgs84_pos:lat");
-		data = ((Element) node.item(0)).getTextContent();
-		busqueda.setLatitud(Double.parseDouble(data));
+		data = this.getDataFrom(documento, "wgs84_pos:lat");
+		if (data != null) {
+			busqueda.setLatitud(Double.parseDouble(data));
+		}
 
-		node = documento.getElementsByTagName("wgs84_pos:long");
-		data = ((Element) node.item(0)).getTextContent();
-		busqueda.setLongitud(Double.parseDouble(data));
+		data = this.getDataFrom(documento, "wgs84_pos:long");
+		if (data != null) {
+			busqueda.setLongitud(Double.parseDouble(data));
+		}
 
 		// OPCIONAL
-		node = documento.getElementsByTagName("gn:wikipediaArticle");
-		data = ((Element) node.item(0)).getAttribute("rdf:resource");
-		if (!data.isEmpty()) {
+		data = this.getAttributeFrom(documento, "gn:wikipediaArticle", "rdf:resource");
+		if (data != null) {
 			busqueda.setWikipedia(new URI(data));
 		}
 
 		// OPCIONAL
-		node = documento.getElementsByTagName("rdfs:seeAlso");
-		data = ((Element) node.item(0)).getAttribute("rdf:resource");
-		if (!data.isEmpty()) {
-			busqueda.setBdpedia(new URI(data));
+		data = this.getAttributeFrom(documento, "rdfs:seeAlso", "rdf:resource");
+		if (data != null) {
+			busqueda.setWikipedia(new URI(data));
 		}
 
-		node = documento.getElementsByTagName("dcterms:modified");
-		data = ((Element) node.item(0)).getTextContent();
-		busqueda.setFechaActualizacion(Utils.fromStringToDate(data));
+		data = this.getDataFrom(documento, "dcterms:modified");
+		if (data != null) {
+			busqueda.setFechaActualizacion(Utils.fromStringToDate(data));
+		}
 
-		node = documento.getElementsByTagName("gn:nearbyFeatures");
-		data = ((Element) node.item(0)).getAttribute("rdf:resource");
+		// OPCIONAL
+		String nearbyFeatures = this.getAttributeFrom(documento, "gn:nearbyFeatures", "rdf:resource");
+		if (nearbyFeatures != null) {
+			documento = analizador.parse(nearbyFeatures);
 
-		documento = analizador.parse(data);
+			NodeList features = documento.getElementsByTagName("gn:Feature");
 
-		NodeList features = documento.getElementsByTagName("gn:Feature");
+			for (int i = 0; i < features.getLength(); i++) {
+				Element feature = (Element) features.item(i);
+				Element name = (Element) feature.getElementsByTagName("gn:name").item(0);
 
-		for (int i = 0; i < features.getLength(); i++) {
-			Element feature = (Element) features.item(i);
-			Element name = (Element) feature.getElementsByTagName("gn:name").item(0);
+				String uriClave = feature.getAttribute("rdf:about");
+				Matcher matcher = GEONAME_URI.matcher(uriClave);
 
-			String uriClave = feature.getAttribute("rdf:about");
-			Matcher matcher = GEONAME_URI.matcher(uriClave);
+				String clave = "";
+				if (matcher.find()) {
+					clave = matcher.group(1);
+				}
 
-			String clave = "";
-			if (matcher.find()) {
-				clave = matcher.group(1);
+				String nombre = name.getTextContent();
+				busqueda.addSitioInteres(Long.parseLong(clave), nombre);
 			}
-
-			String nombre = name.getTextContent();
-			busqueda.addSitioInteres(Long.parseLong(clave), nombre);
 		}
 
+		// OPCIONAL
 		documento = analizador.parse("http://api.geonames.org/findNearByWeather?lat=" + busqueda.getLatitud() + "&lng="
 				+ busqueda.getLongitud() + "&username=arso");
 
@@ -120,4 +126,35 @@ public class DOMParser {
 		return busqueda;
 	}
 
+	private String getDataFrom(Document documento, String name) {
+		NodeList node = documento.getElementsByTagName(name);
+		Element element = (Element) node.item(0);
+		if (element == null) {
+			return null;
+		}
+
+		String data = element.getTextContent();
+
+		if (data == null || data.isEmpty()) {
+			return null;
+		}
+
+		return data;
+	}
+
+	private String getAttributeFrom(Document documento, String name, String attribute) {
+		NodeList node = documento.getElementsByTagName(name);
+		Element element = (Element) node.item(0);
+		if (element == null) {
+			return null;
+		}
+
+		String data = element.getAttribute(attribute);
+
+		if (data == null || data.isEmpty()) {
+			return null;
+		}
+
+		return data;
+	}
 }
