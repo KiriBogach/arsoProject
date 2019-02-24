@@ -4,7 +4,7 @@ import java.net.URI;
 import java.util.Date;
 import java.util.HashMap;
 
-public class GeoName {
+public class Busqueda {
 
 	private String nombre;
 	private String pais;
@@ -20,13 +20,11 @@ public class GeoName {
 	private String nubes;
 	private HashMap<Long, String> sitiosInteres;
 
-	
-	
-	public GeoName() {
+	public Busqueda() {
 		sitiosInteres = new HashMap<>();
 	}
 
-	public GeoName(String nombre, String pais, int poblacion, double latitud, double longitud, URI wikipedia,
+	public Busqueda(String nombre, String pais, int poblacion, double latitud, double longitud, URI wikipedia,
 			URI dbpedia, Date fechaActualizacion, Date tiempoObservacion, String nombreEstacion, double temperatura,
 			String nubes, HashMap<Long, String> sitiosInteres) {
 		this.nombre = nombre;
@@ -43,7 +41,7 @@ public class GeoName {
 		this.nubes = nubes;
 		this.sitiosInteres = sitiosInteres;
 	}
-	
+
 	public void addSitioInteres(Long codigo, String nombre) {
 		sitiosInteres.put(codigo, nombre);
 	}
@@ -160,7 +158,5 @@ public class GeoName {
 				+ ", nombreEstacion=" + nombreEstacion + ", temperatura=" + temperatura + ", nubes=" + nubes
 				+ ", sitiosInteres=" + sitiosInteres + "]";
 	}
-	
-	
 
 }
