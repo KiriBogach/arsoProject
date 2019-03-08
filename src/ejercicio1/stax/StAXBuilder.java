@@ -12,7 +12,6 @@ import ejercicio1.utils.Utils;
 
 public class StAXBuilder {
 
-	
 	public void build(long id, Busqueda busqueda) throws Exception {
 		XMLOutputFactory xof = XMLOutputFactory.newInstance();
 		XMLStreamWriter writer = xof.createXMLStreamWriter(new FileOutputStream("xml-bd/" + id + ".xml"));
@@ -43,29 +42,36 @@ public class StAXBuilder {
 		writer.writeCharacters(Double.toString(busqueda.getLongitud()));
 		writer.writeEndElement();
 		writer.writeEndElement();
-		writer.writeStartElement("bdpedia");
-		writer.writeCharacters(busqueda.getBdpedia().toString());
-		writer.writeEndElement();
-		writer.writeStartElement("wikipedia");
-		writer.writeCharacters(busqueda.getWikipedia().toString());
-		writer.writeEndElement();
+		if (busqueda.getBdpedia() != null) {
+			writer.writeStartElement("bdpedia");
+			writer.writeCharacters(busqueda.getBdpedia().toString());
+			writer.writeEndElement();
+		}
+		if (busqueda.getWikipedia() != null) {
+			writer.writeStartElement("wikipedia");
+			writer.writeCharacters(busqueda.getWikipedia().toString());
+			writer.writeEndElement();
+		}
 		writer.writeStartElement("fechaActualizacion");
 		writer.writeCharacters(Utils.fromDateToString(busqueda.getFechaActualizacion()));
 		writer.writeEndElement();
-		writer.writeStartElement("infoMeteorologica");
-		writer.writeStartElement("tiempoObservacion");
-		writer.writeCharacters(Utils.fromDateTimeToString(busqueda.getTiempoObservacion()).replaceAll(" ", "T"));
-		writer.writeEndElement();
-		writer.writeStartElement("nombreEstacion");
-		writer.writeCharacters(busqueda.getNombreEstacion());
-		writer.writeEndElement();
-		writer.writeStartElement("temperatura");
-		writer.writeCharacters(Double.toString(busqueda.getTemperatura()));
-		writer.writeEndElement();
-		writer.writeStartElement("nubes");
-		writer.writeCharacters(busqueda.getNubes());
-		writer.writeEndElement();
-		writer.writeEndElement();
+
+		if (busqueda.getNombreEstacion() != null) {
+			writer.writeStartElement("infoMeteorologica");
+			writer.writeStartElement("tiempoObservacion");
+			writer.writeCharacters(Utils.fromDateTimeToString(busqueda.getTiempoObservacion()).replaceAll(" ", "T"));
+			writer.writeEndElement();
+			writer.writeStartElement("nombreEstacion");
+			writer.writeCharacters(busqueda.getNombreEstacion());
+			writer.writeEndElement();
+			writer.writeStartElement("temperatura");
+			writer.writeCharacters(Double.toString(busqueda.getTemperatura()));
+			writer.writeEndElement();
+			writer.writeStartElement("nubes");
+			writer.writeCharacters(busqueda.getNubes());
+			writer.writeEndElement();
+			writer.writeEndElement();
+		}
 
 		writer.writeStartElement("sitiosInteres");
 		HashMap<Long, String> mapa = busqueda.getSitiosInteres();
@@ -79,7 +85,7 @@ public class StAXBuilder {
 			writer.writeEndElement();
 			writer.writeEndElement();
 		}
-		
+
 		writer.writeEndElement();
 		writer.writeEndElement();
 

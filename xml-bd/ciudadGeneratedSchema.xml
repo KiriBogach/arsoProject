@@ -15,12 +15,12 @@
 	<bdpedia>http://tempuri.org</bdpedia>
 	<wikipedia>http://tempuri.org</wikipedia>
 	<fechaActualizacion>2001-01-01</fechaActualizacion>
-	<informacionMeteorologica>
+	<infoMeteorologica>
 		<tiempoObservacion>2001-12-31T12:00:00</tiempoObservacion>
 		<nombreEstacion>nombreEstacion</nombreEstacion>
 		<temperatura>0.0</temperatura>
 		<nubes>nubes</nubes>
-	</informacionMeteorologica>
+	</infoMeteorologica>
 	<sitiosInteres>
 		<sitio>
 			<nombre>nombre</nombre>

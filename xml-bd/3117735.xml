@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<ciudad xmlns="http://www.example.org/ciudad"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/ciudad ../xml/ciudad.xsd">
+	<nombre>Madrid</nombre>
+	<codigo>3117735</codigo>
+	<pais>ES</pais>
+	<poblacion>3255944</poblacion>
+	<ubicacion>
+		<latitud>40.4165</latitud>
+		<longitud>-3.70256</longitud>
+	</ubicacion>
+	<bdpedia>http://dbpedia.org/resource/Madrid</bdpedia>
+	<wikipedia>https://en.wikipedia.org/wiki/Madrid</wikipedia>
+	<fechaActualizacion>2018-07-30</fechaActualizacion>
+	<infoMeteorologica>
+		<tiempoObservacion>2019-02-24T05:00:00</tiempoObservacion>
+		<nombreEstacion>Madrid / Cuatro Vientos</nombreEstacion>
+		<temperatura>19.0</temperatura>
+		<nubes>clouds and visibility OK</nubes>
+	</infoMeteorologica>
+	<sitiosInteres>
+		<sitio>
+			<nombre>Hostal Alhambra Suites</nombre>
+			<codigo>9882263</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Puerta del Sol</nombre>
+			<codigo>6946861</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Sol</nombre>
+			<codigo>6545083</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Gay Hostal Puerta del Sol</nombre>
+			<codigo>6501834</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Hostal Ana Belen</nombre>
+			<codigo>10241280</codigo>
+		</sitio>
+		<sitio>
+			<nombre>SUSTITUIR Puerta del Sol</nombre>
+			<codigo>6947430</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Hostal Pretoria</nombre>
+			<codigo>10240946</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Hostal Suite Alhambra</nombre>
+			<codigo>10240963</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Paris</nombre>
+			<codigo>6476845</codigo>
+		</sitio>
+	</sitiosInteres>
+</ciudad>

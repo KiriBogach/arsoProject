@@ -13,8 +13,8 @@
 					<xs:element name="pais" type="xs:string" />
 					<xs:element name="poblacion" type="xs:positiveInteger" />
 					<xs:element name="ubicacion" type="tns:tipoUbicacion" />
-					<xs:element name="bdpedia" type="xs:anyURI" />
-					<xs:element name="wikipedia" type="xs:anyURI" />
+					<xs:element name="bdpedia" type="xs:anyURI" minOccurs="0"/>
+					<xs:element name="wikipedia" type="xs:anyURI" minOccurs="0"/>
 					<xs:element name="fechaActualizacion" type="xs:date" />
 					<xs:element name="infoMeteorologica"
 						type="tns:tipoInformacionMeteorologica" minOccurs="0" />

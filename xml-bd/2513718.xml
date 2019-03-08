@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<ciudad xmlns="http://www.example.org/ciudad"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/ciudad ../xml/ciudad.xsd">
+	<nombre>Mol�ns</nombre>
+	<codigo>2513718</codigo>
+	<pais>ES</pais>
+	<poblacion>0</poblacion>
+	<ubicacion>
+		<latitud>38.08194</latitud>
+		<longitud>-0.90865</longitud>
+	</ubicacion>
+	<fechaActualizacion>2018-06-08</fechaActualizacion>
+	<infoMeteorologica>
+		<tiempoObservacion>2019-02-24T05:30:00</tiempoObservacion>
+		<nombreEstacion>Murcia / San Javier</nombreEstacion>
+		<temperatura>15.0</temperatura>
+		<nubes>scattered clouds</nubes>
+	</infoMeteorologica>
+	<sitiosInteres>
+		<sitio>
+			<nombre>Hurchillo</nombre>
+			<codigo>2516486</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Teatro Circo</nombre>
+			<codigo>8436610</codigo>
+		</sitio>
+		<sitio>
+			<nombre>La Campaneta</nombre>
+			<codigo>2516117</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Aparthotel Palmera Beach</nombre>
+			<codigo>11000851</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Edificio Carmen Conde</nombre>
+			<codigo>8349591</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Palacio de Tudemir</nombre>
+			<codigo>6482280</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Bigastro</nombre>
+			<codigo>6355420</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Jessica Beach</nombre>
+			<codigo>7288210</codigo>
+		</sitio>
+		<sitio>
+			<nombre>Bigastro</nombre>
+			<codigo>2520955</codigo>
+		</sitio>
+	</sitiosInteres>
+</ciudad>
