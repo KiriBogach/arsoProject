@@ -9,7 +9,7 @@ public class Utils {
 	public static final String FORMATO_FECHA_HORA_MINUTOS = "yyyy-MM-dd hh:mm";
 	public static final String FORMATO_FECHA_HORA_MINUTOS_SEGUNDOS = "yyyy-MM-dd hh:mm:ss";
 
-	/* Este método permite obtener a partir de un String una fecha */
+	/* Este mï¿½todo permite obtener a partir de un String una fecha */
 	public static Date fromStringToDate(String fecha) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat(FORMATO_FECHA);
 		return fromStringToDate(fecha, dateFormat);
@@ -70,5 +70,9 @@ public class Utils {
 		}
 		
 		return fechaString;
+	}
+	
+	public static boolean compareInMillis(long t1, long t2, long maximum) {
+		return ((t1 - t2) < maximum);
 	}
 }
