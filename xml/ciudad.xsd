@@ -5,26 +5,33 @@
 	xmlns:tns="http://www.example.org/ciudad"
 	elementFormDefault="qualified">
 
+	<!-- Elemento raíz: -->
+
+	<xs:element name="ciudad">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="tns:tipoIdentificador">
+					<xs:sequence>
+						<xs:element name="pais" type="xs:string" />
+						<xs:element name="poblacion" type="xs:positiveInteger" />
+						<xs:element name="ubicacion" type="tns:tipoUbicacion" />
+						<xs:element name="bdpedia" type="xs:anyURI"
+							minOccurs="0" />
+						<xs:element name="wikipedia" type="xs:anyURI"
+							minOccurs="0" />
+						<xs:element name="fechaActualizacion" type="xs:date" />
+						<xs:element name="infoMeteorologica"
+							type="tns:tipoInformacionMeteorologica" minOccurs="0" />
+						<xs:element name="sitiosInteres"
+							type="tns:tipoSitiosInteres" />
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
 	<!-- Tipos: -->
-	<xs:complexType name="tipoCiudad">
-		<xs:complexContent>
-			<xs:extension base="tns:tipoIdentificador">
-				<xs:sequence>
-					<xs:element name="pais" type="xs:string" />
-					<xs:element name="poblacion" type="xs:positiveInteger" />
-					<xs:element name="ubicacion" type="tns:tipoUbicacion" />
-					<xs:element name="bdpedia" type="xs:anyURI" minOccurs="0"/>
-					<xs:element name="wikipedia" type="xs:anyURI" minOccurs="0"/>
-					<xs:element name="fechaActualizacion" type="xs:date" />
-					<xs:element name="infoMeteorologica"
-						type="tns:tipoInformacionMeteorologica" minOccurs="0" />
-					<xs:element name="sitiosInteres"
-						type="tns:tipoSitiosInteres" />
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	
+
 	<xs:complexType name="tipoIdentificador">
 		<xs:sequence>
 			<xs:element name="nombre" type="xs:string" />
@@ -40,26 +47,25 @@
 			<xs:element name="nubes" type="xs:string" />
 		</xs:sequence>
 	</xs:complexType>
-	
+
 	<xs:complexType name="tipoUbicacion">
 		<xs:sequence>
 			<xs:element name="latitud" type="xs:decimal" />
 			<xs:element name="longitud" type="xs:decimal" />
 		</xs:sequence>
 	</xs:complexType>
-	
+
 	<xs:complexType name="tipoSitiosInteres">
 		<xs:sequence>
-			<xs:element name="sitio" type="tns:tipoSitioInteres" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="sitio" type="tns:tipoSitioInteres"
+				minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
 	</xs:complexType>
-	
+
 	<xs:complexType name="tipoSitioInteres">
 		<xs:complexContent>
 			<xs:extension base="tns:tipoIdentificador" />
 		</xs:complexContent>
 	</xs:complexType>
 
-	<!-- Elemento raíz: -->
-	<xs:element name="ciudad" type="tns:tipoCiudad" />
 </xs:schema>

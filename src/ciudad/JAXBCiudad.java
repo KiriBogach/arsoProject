@@ -1,37 +1,38 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantaciï¿½n de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2019.03.08 a las 12:11:28 PM CET 
+// Todas las modificaciones realizadas en este archivo se perderï¿½n si se vuelve a compilar el esquema de origen. 
+// Generado el: 2019.03.13 a las 10:41:52 AM CET 
 //
 
 
-package generatedFiles;
+package ciudad;
 
 import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Clase Java para tipoCiudad complex type.
+ * <p>Clase Java para anonymous complex type.
  * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="tipoCiudad">
+ * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;extension base="{http://www.example.org/ciudad}tipoIdentificador">
  *       &lt;sequence>
  *         &lt;element name="pais" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="poblacion" type="{http://www.w3.org/2001/XMLSchema}positiveInteger"/>
  *         &lt;element name="ubicacion" type="{http://www.example.org/ciudad}tipoUbicacion"/>
- *         &lt;element name="bdpedia" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
- *         &lt;element name="wikipedia" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
+ *         &lt;element name="bdpedia" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
+ *         &lt;element name="wikipedia" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
  *         &lt;element name="fechaActualizacion" type="{http://www.w3.org/2001/XMLSchema}date"/>
  *         &lt;element name="infoMeteorologica" type="{http://www.example.org/ciudad}tipoInformacionMeteorologica" minOccurs="0"/>
  *         &lt;element name="sitiosInteres" type="{http://www.example.org/ciudad}tipoSitiosInteres"/>
@@ -44,7 +45,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "tipoCiudad", propOrder = {
+@XmlType(name = "", propOrder = {
     "pais",
     "poblacion",
     "ubicacion",
@@ -54,7 +55,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "infoMeteorologica",
     "sitiosInteres"
 })
-public class TipoCiudad
+@XmlRootElement(name = "ciudad")
+public class JAXBCiudad
     extends TipoIdentificador
 {
 
@@ -65,10 +67,8 @@ public class TipoCiudad
     protected BigInteger poblacion;
     @XmlElement(required = true)
     protected TipoUbicacion ubicacion;
-    @XmlElement(required = true)
     @XmlSchemaType(name = "anyURI")
     protected String bdpedia;
-    @XmlElement(required = true)
     @XmlSchemaType(name = "anyURI")
     protected String wikipedia;
     @XmlElement(required = true)
