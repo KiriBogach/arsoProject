@@ -1,7 +1,6 @@
 package ejercicio1.main;
 
 import java.util.List;
-
 import ciudad.JAXBCiudad;
 import ejercicio1.controller.ServicioGeoNames;
 import ejercicio1.dom.DOMParser;
@@ -34,5 +33,6 @@ public class Main {
 		JAXBCiudad sitio2 = geonames.getCiudad(Long.toString(ciudad.get(1).getIdGeonames()));
 		System.out.println(sitio1.getNombre());
 		System.out.println(sitio2.getNombre());
+		
 	}
 }

@@ -1,5 +1,12 @@
 package ejercicio1.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "ciudad")
 public class Ciudad {
 	private String nombre;
 	private String pais;
@@ -7,10 +14,10 @@ public class Ciudad {
 	private double longitud;
 	private double latitud;
 	// Calculada URI en GeoNames
-	
+
 	public Ciudad() {
 	}
-	
+
 	public Ciudad(String nombre, String pais, long idGeonames, double longitud, double latitud) {
 		this.nombre = nombre;
 		this.pais = pais;
@@ -19,10 +26,11 @@ public class Ciudad {
 		this.latitud = latitud;
 	}
 
+	@XmlElement
 	public String getURI() {
 		return "http://sws.geonames.org/" + this.idGeonames + "/about.rdf";
 	}
-	
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -68,7 +76,5 @@ public class Ciudad {
 		return "Ciudad [nombre=" + nombre + ", pais=" + pais + ", idGeonames=" + idGeonames + ", longitud=" + longitud
 				+ ", latitud=" + latitud + "]";
 	}
-	
-	
-	
+
 }
