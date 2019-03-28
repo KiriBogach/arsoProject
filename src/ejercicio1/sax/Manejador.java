@@ -24,7 +24,7 @@ public class Manejador extends DefaultHandler {
 	}
 
 	@Override
-	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+	public void startElement(String uri, String localName, String qName, Attributes attributes) {
 		pila.push(qName);
 
 		if (qName.equalsIgnoreCase("geoname")) {
@@ -34,7 +34,7 @@ public class Manejador extends DefaultHandler {
 	}
 
 	@Override
-	public void characters(char[] ch, int start, int length) throws SAXException {
+	public void characters(char[] ch, int start, int length) {
 		String texto = new String(ch, start, length).trim();
 		String elemento = pila.peek();
 		
@@ -66,7 +66,7 @@ public class Manejador extends DefaultHandler {
 	}
 
 	@Override
-	public void endElement(String uri, String localName, String qName) throws SAXException {
+	public void endElement(String uri, String localName, String qName) {
 		pila.pop();
 
 		if (qName.equalsIgnoreCase("geoname")) {

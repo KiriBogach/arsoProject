@@ -27,6 +27,7 @@ import ejercicio1.model.Ciudad;
 import ejercicio1.sax.Manejador;
 import ejercicio1.stax.StAXBuilder;
 import ejercicio1.utils.Utils;
+import exceptions.GeoNamesException;
 
 public class ServicioGeoNames {
 	private static final String BD_PATH = "xml-bd";
@@ -49,34 +50,40 @@ public class ServicioGeoNames {
 		}
 	}
 
-	public List<Ciudad> buscar(String busqueda) throws ParserConfigurationException, SAXException, URISyntaxException {
-		SAXParser analizador = getSAXParserFactory().newSAXParser();
+	public List<Ciudad> buscar(String busqueda) {
+		SAXParser analizador = null;
+		try {
+			analizador = getSAXParserFactory().newSAXParser();
+		} catch (ParserConfigurationException | SAXException e) {
+			throw new GeoNamesException("no se ha podido buscar el documento.", e);
+		}
 		try {
 			Manejador manejador = new Manejador();
-			URI url = new URI(XML_URL + busqueda + "&" + USER_URL);
+			URI url = null;
+			try {
+				url = new URI(XML_URL + busqueda + "&" + USER_URL);
+			} catch (URISyntaxException e) {
+				throw new GeoNamesException("no se ha podido buscar el documento.", e);
+			}
 			analizador.parse(url.toString(), manejador);
 			return manejador.getCiudades();
 		} catch (IOException e) {
-			System.out.println("El documento no ha podido ser leído");
-			return null;
+			throw new GeoNamesException("El documento no ha podido ser leído", e);
 		} catch (SAXException e) {
-			System.out.println("Error de pocesamiento: " + e.getMessage());
-			return null;
+			throw new GeoNamesException("no se ha podido buscar el documento.", e);
 		}
 	}
 
-	public JAXBCiudad getCiudad(String idGeoNames) throws Exception {
+	public JAXBCiudad getCiudad(String idGeoNames) {
 		try {
 			Unmarshaller unmarshaller = getJAXBContext().createUnmarshaller();
 			return (JAXBCiudad) unmarshaller.unmarshal(recuperarDocumento(idGeoNames));
 		} catch (JAXBException e) {
-			System.err.println("Unable to create unmarshaller. Is JAXB context: " + CTX_PATH + " reachable?");
-			// Debería acabar la ejecución? - Yo creo que sí.
-			throw new RuntimeException(e.getMessage());
+			throw new GeoNamesException("No se pudo obtener la ciudad.", e);
 		}
 	}
 
-	public ListadoCiudades getResultadosBusquedaXML(String busqueda) throws Exception {
+	public ListadoCiudades getResultadosBusquedaXML(String busqueda) {
 		ListadoCiudades listadoCiudades = new ListadoCiudades();
 		Collection<Ciudad> ciudadesEncontradas = this.buscar(busqueda);
 		listadoCiudades.addAll(ciudadesEncontradas);
@@ -84,7 +91,7 @@ public class ServicioGeoNames {
 		return listadoCiudades;
 	}
 
-	public String crearDocumentoFavorito() throws Exception {
+	public String crearDocumentoFavorito() {
 		CiudadesFavoritas nuevoDocumento = new CiudadesFavoritas();
 		String idGenerado = UUID.randomUUID().toString();
 		nuevoDocumento.setId(idGenerado);
@@ -93,53 +100,53 @@ public class ServicioGeoNames {
 		return idGenerado;
 	}
 
-	public void addCiudadFavorita(String idFavoritos, String idGeoNames) throws Exception {
-		JAXBContext contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
-		Unmarshaller unmarshaller = contexto.createUnmarshaller();
-
-		File favoritos = getCiudadesFavoritasFile(idFavoritos);
-		if (favoritos == null) {
-			return;
+	public void addCiudadFavorita(String idFavoritos, String idGeoNames) {
+		
+		try {
+			JAXBContext contexto;
+			contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
+			Unmarshaller unmarshaller = contexto.createUnmarshaller();
+			File favoritos = getCiudadesFavoritasFile(idFavoritos);
+			CiudadesFavoritas ciudadesFavoritas = (CiudadesFavoritas) unmarshaller.unmarshal(favoritos);
+			ciudadesFavoritas.addCiudad(idGeoNames);
+			this.createCiudadesFavoritasFile(ciudadesFavoritas);
+		} catch (JAXBException e) {
+			throw new GeoNamesException("No se pudo añadir a favoritos.", e);
 		}
-
-		CiudadesFavoritas ciudadesFavoritas = (CiudadesFavoritas) unmarshaller.unmarshal(favoritos);
-		ciudadesFavoritas.addCiudad(idGeoNames);
-
-		this.createCiudadesFavoritasFile(ciudadesFavoritas);
 	}
 
-	public boolean removeCiudadFavorita(String idFavoritos, String idGeoNames) throws Exception {
-		JAXBContext contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
-		Unmarshaller unmarshaller = contexto.createUnmarshaller();
-
-		File favoritos = getCiudadesFavoritasFile(idFavoritos);
-		if (favoritos == null) {
-			return false;
+	public boolean removeCiudadFavorita(String idFavoritos, String idGeoNames) {
+		JAXBContext contexto;
+		try {
+			contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
+			Unmarshaller unmarshaller = contexto.createUnmarshaller();
+			File favoritos = getCiudadesFavoritasFile(idFavoritos);
+			CiudadesFavoritas ciudadesFavoritas = (CiudadesFavoritas) unmarshaller.unmarshal(favoritos);
+			boolean isRemoved = ciudadesFavoritas.removeCiudad(idGeoNames);
+			this.createCiudadesFavoritasFile(ciudadesFavoritas);
+			return isRemoved;
+		} catch (JAXBException e) {
+			throw new GeoNamesException("No se pudo eliminar de favoritos.", e);
 		}
-
-		CiudadesFavoritas ciudadesFavoritas = (CiudadesFavoritas) unmarshaller.unmarshal(favoritos);
-		boolean isRemoved = ciudadesFavoritas.removeCiudad(idGeoNames);
-		this.createCiudadesFavoritasFile(ciudadesFavoritas);
-
-		return isRemoved;
 	}
 
-	public CiudadesFavoritas getFavoritos(String idFavoritos) throws Exception {
-		JAXBContext contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
-		Unmarshaller unmarshaller = contexto.createUnmarshaller();
-
-		File favoritos = getCiudadesFavoritasFile(idFavoritos);
-		if (favoritos == null) {
-			return null;
+	public CiudadesFavoritas getFavoritos(String idFavoritos) {
+		JAXBContext contexto;
+		try {
+			contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
+			Unmarshaller unmarshaller = contexto.createUnmarshaller();
+			File favoritos = getCiudadesFavoritasFile(idFavoritos);
+			CiudadesFavoritas ciudadesFavoritas = (CiudadesFavoritas) unmarshaller.unmarshal(favoritos);
+			return ciudadesFavoritas;
+		} catch (JAXBException e) {
+			throw new GeoNamesException("No se pudo obtener el fichero de favoritos.", e);
 		}
-
-		CiudadesFavoritas ciudadesFavoritas = (CiudadesFavoritas) unmarshaller.unmarshal(favoritos);
-		return ciudadesFavoritas;
+		
 	}
 
 	public void removeDocumentoFavoritos(String idFavoritos) {
 		File favoritos = getCiudadesFavoritasFile(idFavoritos);
-		if (favoritos == null) {
+		if (!favoritos.exists()) {
 			return;
 		}
 
@@ -161,9 +168,7 @@ public class ServicioGeoNames {
 				context = JAXBContext.newInstance(CTX_PATH);
 				return context;
 			} catch (JAXBException e) {
-				System.err.println("Unable to find path to JAXB context");
-				// Debería acabar la ejecución?
-				throw new RuntimeException(e.getMessage());
+				throw new GeoNamesException("Error de configuración.", e);
 			}
 	}
 
@@ -181,7 +186,7 @@ public class ServicioGeoNames {
 		return StAXBuilder;
 	}
 
-	private File recuperarDocumento(String idGeoNames) throws Exception {
+	private File recuperarDocumento(String idGeoNames) {
 		File file = new File(BD_PATH + "/" + idGeoNames + ".xml");
 
 		Calendar calendarOneHour = Calendar.getInstance();
@@ -203,17 +208,19 @@ public class ServicioGeoNames {
 
 	private File getCiudadesFavoritasFile(String idCiudadesFavoritas) {
 		File favoritos = new File("xml-bd/favoritos-" + idCiudadesFavoritas + ".xml");
-		if (!favoritos.exists()) {
-			System.err.println("No existe el documento: " + favoritos.getPath());
-			return null;
-		}
 		return favoritos;
 	}
 
-	private void createCiudadesFavoritasFile(CiudadesFavoritas ciudadesFavoritas) throws Exception {
-		JAXBContext contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
-		Marshaller marshaller = contexto.createMarshaller();
-		marshaller.setProperty("jaxb.formatted.output", true);
-		marshaller.marshal(ciudadesFavoritas, new File("xml-bd/favoritos-" + ciudadesFavoritas.getId() + ".xml"));
+	private void createCiudadesFavoritasFile(CiudadesFavoritas ciudadesFavoritas) {
+		JAXBContext contexto;
+		try {
+			contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
+			Marshaller marshaller = contexto.createMarshaller();
+			marshaller.setProperty("jaxb.formatted.output", true);
+			marshaller.marshal(ciudadesFavoritas, new File("xml-bd/favoritos-" + ciudadesFavoritas.getId() + ".xml"));
+		} catch (JAXBException e) {
+			throw new GeoNamesException("No se pudo crear el fichero de favoritos.", e);
+		}
+		
 	}
 }

@@ -1,18 +1,23 @@
 package ejercicio1.dom;
 
+import java.io.IOException;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import ejercicio1.model.Busqueda;
 import ejercicio1.utils.Utils;
+import exceptions.GeoNamesException;
 
 public class DOMParser {
 
@@ -23,9 +28,16 @@ public class DOMParser {
 		this.factoria = DocumentBuilderFactory.newInstance();
 	}
 
-	public Busqueda parse(long id) throws Exception {
-		DocumentBuilder analizador = factoria.newDocumentBuilder();
-		Document documento = analizador.parse("http://sws.geonames.org/" + id + "/about.rdf");
+	public Busqueda parse(long id) {
+		DocumentBuilder analizador;
+		Document documento;
+		try {
+			analizador = factoria.newDocumentBuilder();
+			documento = analizador.parse("http://sws.geonames.org/" + id + "/about.rdf");
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			throw new GeoNamesException("No se pudo analizar el documento.", e);
+		}
+			
 
 		Busqueda busqueda = new Busqueda();
 
@@ -60,13 +72,21 @@ public class DOMParser {
 		// OPCIONAL
 		data = this.getAttributeFrom(documento, "gn:wikipediaArticle", "rdf:resource");
 		if (data != null) {
-			busqueda.setWikipedia(new URI(data));
+			try {
+				busqueda.setWikipedia(new URI(data));
+			} catch (URISyntaxException e) {
+				throw new GeoNamesException("no se puede analizar el documento", e); 
+			}
 		}
 
 		// OPCIONAL
 		data = this.getAttributeFrom(documento, "rdfs:seeAlso", "rdf:resource");
 		if (data != null) {
-			busqueda.setWikipedia(new URI(data));
+			try {
+				busqueda.setBdpedia(new URI(data));
+			} catch (URISyntaxException e) {
+				throw new GeoNamesException("no se puede analizar el documento", e); 
+			}
 		}
 
 		data = this.getDataFrom(documento, "dcterms:modified");
@@ -77,7 +97,11 @@ public class DOMParser {
 		// OPCIONAL
 		String nearbyFeatures = this.getAttributeFrom(documento, "gn:nearbyFeatures", "rdf:resource");
 		if (nearbyFeatures != null) {
-			documento = analizador.parse(nearbyFeatures);
+			try {
+				documento = analizador.parse(nearbyFeatures);
+			} catch (SAXException | IOException e) {
+				throw new GeoNamesException("no se puede analizar el documento", e);
+			}
 
 			NodeList features = documento.getElementsByTagName("gn:Feature");
 
@@ -99,8 +123,12 @@ public class DOMParser {
 		}
 
 		// OPCIONAL
-		documento = analizador.parse("http://api.geonames.org/findNearByWeather?lat=" + busqueda.getLatitud() + "&lng="
-				+ busqueda.getLongitud() + "&username=arso");
+		try {
+			documento = analizador.parse("http://api.geonames.org/findNearByWeather?lat=" + busqueda.getLatitud() + "&lng="
+					+ busqueda.getLongitud() + "&username=arso");
+		} catch (SAXException | IOException e) {
+			throw new GeoNamesException("no se puede analizar el documento", e);
+		}
 
 		node = documento.getElementsByTagName("observation");
 

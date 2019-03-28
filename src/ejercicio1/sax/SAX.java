@@ -14,10 +14,10 @@ public class SAX {
 
 	public static void main(String[] args) throws ParserConfigurationException, SAXException {
 		
-		// 1. Obtener una factoría
+		// 1. Obtener una factorï¿½a
 		SAXParserFactory factoria = SAXParserFactory.newInstance();
 	
-		// 2. Pedir a la factoría la construcción del analizador
+		// 2. Pedir a la factorï¿½a la construcciï¿½n del analizador
 		SAXParser analizador = factoria.newSAXParser(); 
 		
 		// 3. Analizar el documento
@@ -32,7 +32,7 @@ public class SAX {
 			}
 		} 
 		catch (IOException e) {
-			System.out.println("El documento no ha podido ser leído");
+			System.out.println("El documento no ha podido ser leï¿½do");
 		}
 		catch (SAXException e) {
 			System.out.println("Error de pocesamiento: " + e.getMessage());
