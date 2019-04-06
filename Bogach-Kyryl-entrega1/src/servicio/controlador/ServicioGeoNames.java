@@ -16,26 +16,31 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+import javax.xml.xpath.XPathFactory;
 
 import org.xml.sax.SAXException;
 
+import ejercicio.xpath.XPathParser;
 import ejercicio3.sax.Manejador;
 import ejercicio4.dom.DOMParser;
 import ejercicio4.stax.StAXBuilder;
 import servicio.exceptions.GeoNamesException;
+import servicio.model.Busqueda;
 import servicio.model.Ciudad;
 import servicio.tipos.JAXBCiudad;
 import utils.Utils;
 
 public class ServicioGeoNames {
 	private static final String BD_PATH = "xml-bd";
-	private static final String CTX_PATH = "ciudad";
-	private static final String XML_URL = "http://api.geonames.org/search?";
+	private static final String CTX_PATH = "servicio.tipos";
+	private static final String XML_URL = "http://api.geonames.org/search?q=";
 	private static final String USER_URL = "username=arso";
 	private JAXBContext context = null;
 	private SAXParserFactory SAXfactoria = null;
+	private XPathFactory xPathFactory = null;
 	private DOMParser DOMParser = null;
 	private StAXBuilder StAXBuilder = null;
+	private XPathParser XPathParser = null;
 
 	public ServicioGeoNames() {
 		comprobarFichero();
@@ -177,11 +182,25 @@ public class ServicioGeoNames {
 		return SAXfactoria;
 	}
 
+	private XPathFactory getXPathFactory() {
+		if (xPathFactory == null) {
+			xPathFactory = XPathFactory.newInstance();
+		}
+		return xPathFactory;
+	}
+	
 	private StAXBuilder getStAXBuilder() {
 		if (StAXBuilder == null) {
 			StAXBuilder = new StAXBuilder();
 		}
 		return StAXBuilder;
+	}
+	
+	private XPathParser getXPathParser() {
+		if (XPathParser == null) {
+			XPathParser = new XPathParser();
+		}
+		return XPathParser;
 	}
 
 	private File recuperarDocumento(String idGeoNames) {
@@ -198,7 +217,9 @@ public class ServicioGeoNames {
 		 */
 		if (!file.exists() || !actualizado) {
 			long id = Long.parseLong(idGeoNames);
-			this.getStAXBuilder().build(id, getDOMParser().parse(id));
+			Busqueda busqueda = getDOMParser().parse(id);
+			this.getXPathParser().parse(busqueda);
+			this.getStAXBuilder().build(id, busqueda);
 		}
 
 		return file;

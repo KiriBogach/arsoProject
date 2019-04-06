@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantaci�n de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perder�n si se vuelve a compilar el esquema de origen. 
-// Generado el: 2019.03.13 a las 10:41:52 AM CET 
+// Generado el: 2019.04.06 a las 05:37:42 PM CEST 
 //
 
 
@@ -29,13 +29,14 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *     &lt;extension base="{http://www.example.org/ciudad}tipoIdentificador">
  *       &lt;sequence>
  *         &lt;element name="pais" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="poblacion" type="{http://www.w3.org/2001/XMLSchema}positiveInteger"/>
+ *         &lt;element name="poblacion" type="{http://www.w3.org/2001/XMLSchema}integer"/>
  *         &lt;element name="ubicacion" type="{http://www.example.org/ciudad}tipoUbicacion"/>
  *         &lt;element name="bdpedia" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
  *         &lt;element name="wikipedia" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
  *         &lt;element name="fechaActualizacion" type="{http://www.w3.org/2001/XMLSchema}date"/>
  *         &lt;element name="infoMeteorologica" type="{http://www.example.org/ciudad}tipoInformacionMeteorologica" minOccurs="0"/>
  *         &lt;element name="sitiosInteres" type="{http://www.example.org/ciudad}tipoSitiosInteres"/>
+ *         &lt;element name="libros" type="{http://www.example.org/ciudad}tipoLibros"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -53,7 +54,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "wikipedia",
     "fechaActualizacion",
     "infoMeteorologica",
-    "sitiosInteres"
+    "sitiosInteres",
+    "libros"
 })
 @XmlRootElement(name = "ciudad")
 public class JAXBCiudad
@@ -63,7 +65,6 @@ public class JAXBCiudad
     @XmlElement(required = true)
     protected String pais;
     @XmlElement(required = true)
-    @XmlSchemaType(name = "positiveInteger")
     protected BigInteger poblacion;
     @XmlElement(required = true)
     protected TipoUbicacion ubicacion;
@@ -77,6 +78,8 @@ public class JAXBCiudad
     protected TipoInformacionMeteorologica infoMeteorologica;
     @XmlElement(required = true)
     protected TipoSitiosInteres sitiosInteres;
+    @XmlElement(required = true)
+    protected TipoLibros libros;
 
     /**
      * Obtiene el valor de la propiedad pais.
@@ -268,6 +271,30 @@ public class JAXBCiudad
      */
     public void setSitiosInteres(TipoSitiosInteres value) {
         this.sitiosInteres = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad libros.
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoLibros }
+     *     
+     */
+    public TipoLibros getLibros() {
+        return libros;
+    }
+
+    /**
+     * Define el valor de la propiedad libros.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoLibros }
+     *     
+     */
+    public void setLibros(TipoLibros value) {
+        this.libros = value;
     }
 
 }

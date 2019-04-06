@@ -17,6 +17,7 @@ import org.xml.sax.SAXException;
 
 import servicio.exceptions.GeoNamesException;
 import servicio.model.Busqueda;
+import servicio.model.Ciudad;
 import utils.Utils;
 
 public class DOMParser {
@@ -28,18 +29,20 @@ public class DOMParser {
 		this.factoria = DocumentBuilderFactory.newInstance();
 	}
 
-	public Busqueda parse(long id) {
+	public Busqueda parse(Ciudad ciudad) {
 		DocumentBuilder analizador;
 		Document documento;
 		try {
 			analizador = factoria.newDocumentBuilder();
-			documento = analizador.parse("http://sws.geonames.org/" + id + "/about.rdf");
+			documento = analizador.parse(ciudad.getURI());
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			throw new GeoNamesException("No se pudo analizar el documento.", e);
 		}
 			
 
 		Busqueda busqueda = new Busqueda();
+		
+		busqueda.setNombrePais(ciudad.getPais());
 
 		NodeList node = null;
 		String data = "";
@@ -51,9 +54,9 @@ public class DOMParser {
 
 		data = this.getDataFrom(documento, "gn:countryCode");
 		if (data != null) {
-			busqueda.setPais(data);
+			busqueda.setCodigoPais(data);
 		}
-
+		
 		data = this.getDataFrom(documento, "gn:population");
 		if (data != null) {
 			busqueda.setPoblacion(Integer.parseInt(data));

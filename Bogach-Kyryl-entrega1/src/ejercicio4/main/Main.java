@@ -18,7 +18,7 @@ public class Main {
 		// 508635  -> Pochinki
 		
 		ServicioGeoNames geonames = new ServicioGeoNames();
-		final long id = 508635;
+		final long id = 2520058;
 		
 		DOMParser domParser = new DOMParser();
 		

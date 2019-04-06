@@ -32,8 +32,11 @@ public class StAXBuilder {
 			writer.writeStartElement("codigo");
 			writer.writeCharacters(Long.toString(id));
 			writer.writeEndElement();
-			writer.writeStartElement("pais");
-			writer.writeCharacters(busqueda.getPais());
+			writer.writeStartElement("codigoPais");
+			writer.writeCharacters(busqueda.getCodigoPais());
+			writer.writeEndElement();
+			writer.writeStartElement("nombrePais");
+			writer.writeCharacters(busqueda.getNombrePais());
 			writer.writeEndElement();
 			writer.writeStartElement("poblacion");
 			writer.writeCharacters(Integer.toString(busqueda.getPoblacion()));
@@ -103,5 +106,5 @@ public class StAXBuilder {
 			throw new GeoNamesException("no se puede generar el documento XML", e);
 		}
 
-			}
+	}
 }

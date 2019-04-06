@@ -1,803 +1,803 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <listadoCiudades>
     <ciudades>
-        <nombre>Kavuza</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423060</idGeonames>
-        <longitud>29.6923</longitud>
-        <latitud>-3.7629</latitud>
-        <URI>http://sws.geonames.org/423060/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Gahura</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423061</idGeonames>
-        <longitud>29.5982</longitud>
-        <latitud>-3.765</latitud>
-        <URI>http://sws.geonames.org/423061/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Musanga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423062</idGeonames>
-        <longitud>29.6094</longitud>
-        <latitud>-3.7643</latitud>
-        <URI>http://sws.geonames.org/423062/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Matana</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423063</idGeonames>
-        <longitud>29.69083</longitud>
-        <latitud>-3.76556</latitud>
-        <URI>http://sws.geonames.org/423063/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Collège Matana</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423064</idGeonames>
-        <longitud>29.67722</longitud>
-        <latitud>-3.76833</latitud>
-        <URI>http://sws.geonames.org/423064/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Matana</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423065</idGeonames>
-        <longitud>29.68361</longitud>
-        <latitud>-3.76833</latitud>
-        <URI>http://sws.geonames.org/423065/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Gisarenda</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423066</idGeonames>
-        <longitud>29.7166</longitud>
-        <latitud>-3.7686</latitud>
-        <URI>http://sws.geonames.org/423066/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Mutoyi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423067</idGeonames>
-        <longitud>29.7434</longitud>
-        <latitud>-3.7673</latitud>
-        <URI>http://sws.geonames.org/423067/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Gasema</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423068</idGeonames>
-        <longitud>29.5739</longitud>
-        <latitud>-3.7691</latitud>
-        <URI>http://sws.geonames.org/423068/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Rtyazo</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423069</idGeonames>
-        <longitud>29.5135</longitud>
-        <latitud>-3.7721</latitud>
-        <URI>http://sws.geonames.org/423069/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Rusura</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423070</idGeonames>
-        <longitud>29.7051</longitud>
-        <latitud>-3.7706</latitud>
-        <URI>http://sws.geonames.org/423070/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Makaba</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423071</idGeonames>
-        <longitud>29.5867</longitud>
-        <latitud>-3.7707</latitud>
-        <URI>http://sws.geonames.org/423071/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Bura</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423072</idGeonames>
-        <longitud>29.5446</longitud>
-        <latitud>-3.772</latitud>
-        <URI>http://sws.geonames.org/423072/about.rdf</URI>
+        <nombre>Beauty Spot School</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570319</idGeonames>
+        <longitud>-79.35922</longitud>
+        <latitud>34.06822</latitud>
+        <URI>http://sws.geonames.org/4570319/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Branch</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570320</idGeonames>
+        <longitud>-81.79955</longitud>
+        <latitud>33.65541</latitud>
+        <URI>http://sws.geonames.org/4570320/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaufort Township Library</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570321</idGeonames>
+        <longitud>-80.67011</longitud>
+        <latitud>32.43436</latitud>
+        <URI>http://sws.geonames.org/4570321/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570322</idGeonames>
+        <longitud>-82.58041</longitud>
+        <latitud>34.37678</latitud>
+        <URI>http://sws.geonames.org/4570322/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570323</idGeonames>
+        <longitud>-82.62458</longitud>
+        <latitud>34.59011</latitud>
+        <URI>http://sws.geonames.org/4570323/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570324</idGeonames>
+        <longitud>-82.57902</longitud>
+        <latitud>34.31344</latitud>
+        <URI>http://sws.geonames.org/4570324/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570325</idGeonames>
+        <longitud>-79.94312</longitud>
+        <latitud>34.66793</latitud>
+        <URI>http://sws.geonames.org/4570325/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570326</idGeonames>
+        <longitud>-81.40899</longitud>
+        <latitud>34.43014</latitud>
+        <URI>http://sws.geonames.org/4570326/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570327</idGeonames>
+        <longitud>-80.78369</longitud>
+        <latitud>34.41931</latitud>
+        <URI>http://sws.geonames.org/4570327/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570328</idGeonames>
+        <longitud>-80.7262</longitud>
+        <latitud>34.08348</latitud>
+        <URI>http://sws.geonames.org/4570328/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek Cemetery</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570329</idGeonames>
+        <longitud>-80.64285</longitud>
+        <latitud>34.52209</latitud>
+        <URI>http://sws.geonames.org/4570329/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek Cemetery</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570330</idGeonames>
+        <longitud>-80.73285</longitud>
+        <latitud>34.4757</latitud>
+        <URI>http://sws.geonames.org/4570330/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaver Creek Cemetery</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570331</idGeonames>
+        <longitud>-80.72535</longitud>
+        <latitud>34.5557</latitud>
+        <URI>http://sws.geonames.org/4570331/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Migerere</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423073</idGeonames>
-        <longitud>29.674</longitud>
-        <latitud>-3.7721</latitud>
-        <URI>http://sws.geonames.org/423073/about.rdf</URI>
+        <nombre>Beaver Creek Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570332</idGeonames>
+        <longitud>-81.31537</longitud>
+        <latitud>34.55931</latitud>
+        <URI>http://sws.geonames.org/4570332/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Cibwire</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423074</idGeonames>
-        <longitud>29.6499</longitud>
-        <latitud>-3.7739</latitud>
-        <URI>http://sws.geonames.org/423074/about.rdf</URI>
+        <nombre>Beaver Creek Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570333</idGeonames>
+        <longitud>-80.64369</longitud>
+        <latitud>34.52265</latitud>
+        <URI>http://sws.geonames.org/4570333/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gitara</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423075</idGeonames>
-        <longitud>29.62778</longitud>
-        <latitud>-3.75972</latitud>
-        <URI>http://sws.geonames.org/423075/about.rdf</URI>
+        <nombre>Beaver Creek Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570334</idGeonames>
+        <longitud>-80.72535</longitud>
+        <latitud>34.55626</latitud>
+        <URI>http://sws.geonames.org/4570334/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyakija</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423076</idGeonames>
-        <longitud>29.5403</longitud>
-        <latitud>-3.7817</latitud>
-        <URI>http://sws.geonames.org/423076/about.rdf</URI>
+        <nombre>Beaver Creek Baptist Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570335</idGeonames>
+        <longitud>-81.13788</longitud>
+        <latitud>33.54543</latitud>
+        <URI>http://sws.geonames.org/4570335/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Banda</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423077</idGeonames>
-        <longitud>29.6263</longitud>
-        <latitud>-3.776</latitud>
-        <URI>http://sws.geonames.org/423077/about.rdf</URI>
+        <nombre>Beaver Creek Meeting House (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570336</idGeonames>
+        <longitud>-80.73285</longitud>
+        <latitud>34.47626</latitud>
+        <URI>http://sws.geonames.org/4570336/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyamurongomya</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423078</idGeonames>
-        <longitud>29.52682</longitud>
-        <latitud>-3.77578</latitud>
-        <URI>http://sws.geonames.org/423078/about.rdf</URI>
+        <nombre>Beaver Creek School</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570337</idGeonames>
+        <longitud>-80.93731</longitud>
+        <latitud>33.72738</latitud>
+        <URI>http://sws.geonames.org/4570337/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Mugate</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423079</idGeonames>
-        <longitud>29.5734</longitud>
-        <latitud>-3.7785</latitud>
-        <URI>http://sws.geonames.org/423079/about.rdf</URI>
+        <nombre>Beaver Creek School (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570338</idGeonames>
+        <longitud>-80.11312</longitud>
+        <latitud>34.4796</latitud>
+        <URI>http://sws.geonames.org/4570338/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Magana</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423080</idGeonames>
-        <longitud>29.5175</longitud>
-        <latitud>-3.7784</latitud>
-        <URI>http://sws.geonames.org/423080/about.rdf</URI>
+        <nombre>Beaver Dam</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570339</idGeonames>
+        <longitud>-81.5451</longitud>
+        <latitud>34.53958</latitud>
+        <URI>http://sws.geonames.org/4570339/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Butwe</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423081</idGeonames>
-        <longitud>29.72417</longitud>
-        <latitud>-3.77917</latitud>
-        <URI>http://sws.geonames.org/423081/about.rdf</URI>
+        <nombre>Beaver Dam Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570340</idGeonames>
+        <longitud>-81.01177</longitud>
+        <latitud>32.64684</latitud>
+        <URI>http://sws.geonames.org/4570340/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Butwe</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423082</idGeonames>
-        <longitud>29.72583</longitud>
-        <latitud>-3.77917</latitud>
-        <URI>http://sws.geonames.org/423082/about.rdf</URI>
+        <nombre>Beaver Dam Mill (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570341</idGeonames>
+        <longitud>-80.1484</longitud>
+        <latitud>34.46321</latitud>
+        <URI>http://sws.geonames.org/4570341/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kibungo</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423083</idGeonames>
-        <longitud>29.6494</longitud>
-        <latitud>-3.7815</latitud>
-        <URI>http://sws.geonames.org/423083/about.rdf</URI>
+        <nombre>Beaver Dam School (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570342</idGeonames>
+        <longitud>-81.70399</longitud>
+        <latitud>35.03179</latitud>
+        <URI>http://sws.geonames.org/4570342/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Bihanga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423084</idGeonames>
-        <longitud>29.64778</longitud>
-        <latitud>-3.78194</latitud>
-        <URI>http://sws.geonames.org/423084/about.rdf</URI>
+        <nombre>Beaver Dam School (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570343</idGeonames>
+        <longitud>-81.98982</longitud>
+        <latitud>34.6504</latitud>
+        <URI>http://sws.geonames.org/4570343/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyarugegene</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423085</idGeonames>
-        <longitud>29.6937</longitud>
-        <latitud>-3.7829</latitud>
-        <URI>http://sws.geonames.org/423085/about.rdf</URI>
+        <nombre>Beaver Dam School (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570344</idGeonames>
+        <longitud>-79.81867</longitud>
+        <latitud>34.6896</latitud>
+        <URI>http://sws.geonames.org/4570344/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Murangara</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423086</idGeonames>
-        <longitud>29.6694</longitud>
-        <latitud>-3.7839</latitud>
-        <URI>http://sws.geonames.org/423086/about.rdf</URI>
+        <nombre>Beaver Dam School (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570345</idGeonames>
+        <longitud>-81.70872</longitud>
+        <latitud>34.32069</latitud>
+        <URI>http://sws.geonames.org/4570345/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gishiha</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423087</idGeonames>
-        <longitud>29.7102</longitud>
-        <latitud>-3.781</latitud>
-        <URI>http://sws.geonames.org/423087/about.rdf</URI>
+        <nombre>Beaver Hills Baptist Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570346</idGeonames>
+        <longitud>-81.95149</longitud>
+        <latitud>34.90262</latitud>
+        <URI>http://sws.geonames.org/4570346/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gwasanga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423088</idGeonames>
-        <longitud>29.7285</longitud>
-        <latitud>-3.781</latitud>
-        <URI>http://sws.geonames.org/423088/about.rdf</URI>
+        <nombre>Beaver Hole Swamp</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570347</idGeonames>
+        <longitud>-79.11837</longitud>
+        <latitud>33.84684</latitud>
+        <URI>http://sws.geonames.org/4570347/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Sovu</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423089</idGeonames>
-        <longitud>29.6321</longitud>
-        <latitud>-3.7822</latitud>
-        <URI>http://sws.geonames.org/423089/about.rdf</URI>
+        <nombre>Beaver Creek Cemetery</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570348</idGeonames>
+        <longitud>-81.31565</longitud>
+        <latitud>34.55903</latitud>
+        <URI>http://sws.geonames.org/4570348/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Mananga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423090</idGeonames>
-        <longitud>29.5562</longitud>
-        <latitud>-3.7842</latitud>
-        <URI>http://sws.geonames.org/423090/about.rdf</URI>
+        <nombre>Beaverdam</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570349</idGeonames>
+        <longitud>-81.70149</longitud>
+        <latitud>35.04013</latitud>
+        <URI>http://sws.geonames.org/4570349/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Bihanga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423091</idGeonames>
-        <longitud>29.6409</longitud>
-        <latitud>-3.7824</latitud>
-        <URI>http://sws.geonames.org/423091/about.rdf</URI>
+        <nombre>Beaverdam Baptist Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570350</idGeonames>
+        <longitud>-81.70093</longitud>
+        <latitud>35.04013</latitud>
+        <URI>http://sws.geonames.org/4570350/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gitsinda</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423092</idGeonames>
-        <longitud>29.5856</longitud>
-        <latitud>-3.7846</latitud>
-        <URI>http://sws.geonames.org/423092/about.rdf</URI>
+        <nombre>Beaverdam Branch</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570351</idGeonames>
+        <longitud>-81.58622</longitud>
+        <latitud>33.66514</latitud>
+        <URI>http://sws.geonames.org/4570351/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Buhana</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423093</idGeonames>
-        <longitud>29.657</longitud>
-        <latitud>-3.7842</latitud>
-        <URI>http://sws.geonames.org/423093/about.rdf</URI>
+        <nombre>Beaver Pond</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570352</idGeonames>
+        <longitud>-80.21404</longitud>
+        <latitud>34.58749</latitud>
+        <URI>http://sws.geonames.org/4570352/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Ziba</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423094</idGeonames>
-        <longitud>29.5164</longitud>
-        <latitud>-3.7988</latitud>
-        <URI>http://sws.geonames.org/423094/about.rdf</URI>
+        <nombre>Beaverdam Branch</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570353</idGeonames>
+        <longitud>-82.21235</longitud>
+        <latitud>34.05151</latitud>
+        <URI>http://sws.geonames.org/4570353/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gisisye</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423095</idGeonames>
-        <longitud>29.6731</longitud>
-        <latitud>-3.788</latitud>
-        <URI>http://sws.geonames.org/423095/about.rdf</URI>
+        <nombre>Beaverdam Branch</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570354</idGeonames>
+        <longitud>-81.77733</longitud>
+        <latitud>33.71514</latitud>
+        <URI>http://sws.geonames.org/4570354/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gisarenda</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423096</idGeonames>
-        <longitud>29.7053</longitud>
-        <latitud>-3.7907</latitud>
-        <URI>http://sws.geonames.org/423096/about.rdf</URI>
+        <nombre>Beaverdam Branch</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570355</idGeonames>
+        <longitud>-81.0715</longitud>
+        <latitud>32.59824</latitud>
+        <URI>http://sws.geonames.org/4570355/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyagatovu</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423097</idGeonames>
-        <longitud>29.7283</longitud>
-        <latitud>-3.7896</latitud>
-        <URI>http://sws.geonames.org/423097/about.rdf</URI>
+        <nombre>Beaverdam Branch</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570356</idGeonames>
+        <longitud>-80.48924</longitud>
+        <latitud>34.34599</latitud>
+        <URI>http://sws.geonames.org/4570356/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyakabugu</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423098</idGeonames>
-        <longitud>29.7566</longitud>
-        <latitud>-3.7949</latitud>
-        <URI>http://sws.geonames.org/423098/about.rdf</URI>
+        <nombre>Beaverdam Bridge</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570357</idGeonames>
+        <longitud>-81.2326</longitud>
+        <latitud>33.27932</latitud>
+        <URI>http://sws.geonames.org/4570357/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kiruri</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423099</idGeonames>
-        <longitud>29.6125</longitud>
-        <latitud>-3.7896</latitud>
-        <URI>http://sws.geonames.org/423099/about.rdf</URI>
+        <nombre>Beaverdam Cemetery</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570358</idGeonames>
+        <longitud>-79.55727</longitud>
+        <latitud>34.66183</latitud>
+        <URI>http://sws.geonames.org/4570358/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Muhanda</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423100</idGeonames>
-        <longitud>29.516</longitud>
-        <latitud>-3.7913</latitud>
-        <URI>http://sws.geonames.org/423100/about.rdf</URI>
+        <nombre>Beaverdam Baptist Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570359</idGeonames>
+        <longitud>-81.63427</longitud>
+        <latitud>33.63875</latitud>
+        <URI>http://sws.geonames.org/4570359/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kagoma</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423101</idGeonames>
-        <longitud>29.6873</longitud>
-        <latitud>-3.8078</latitud>
-        <URI>http://sws.geonames.org/423101/about.rdf</URI>
+        <nombre>Beaverdam Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570360</idGeonames>
+        <longitud>-82.55124</longitud>
+        <latitud>34.63956</latitud>
+        <URI>http://sws.geonames.org/4570360/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Rubonwe</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423102</idGeonames>
-        <longitud>29.6417</longitud>
-        <latitud>-3.7895</latitud>
-        <URI>http://sws.geonames.org/423102/about.rdf</URI>
+        <nombre>Beaverdam Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570361</idGeonames>
+        <longitud>-82.26511</longitud>
+        <latitud>35.01956</latitud>
+        <URI>http://sws.geonames.org/4570361/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Hayi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423103</idGeonames>
-        <longitud>29.5925</longitud>
-        <latitud>-3.7908</latitud>
-        <URI>http://sws.geonames.org/423103/about.rdf</URI>
+        <nombre>Beaverdam Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570362</idGeonames>
+        <longitud>-80.51508</longitud>
+        <latitud>34.35932</latitud>
+        <URI>http://sws.geonames.org/4570362/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nkingu</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423104</idGeonames>
-        <longitud>29.6679</longitud>
-        <latitud>-3.7908</latitud>
-        <URI>http://sws.geonames.org/423104/about.rdf</URI>
+        <nombre>Beaverdam Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570363</idGeonames>
+        <longitud>-81.9926</longitud>
+        <latitud>34.39013</latitud>
+        <URI>http://sws.geonames.org/4570363/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Runyinya</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423105</idGeonames>
-        <longitud>29.528</longitud>
-        <latitud>-3.7907</latitud>
-        <URI>http://sws.geonames.org/423105/about.rdf</URI>
+        <nombre>Beaverdam Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570364</idGeonames>
+        <longitud>-81.98926</longitud>
+        <latitud>34.6504</latitud>
+        <URI>http://sws.geonames.org/4570364/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Busura</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423106</idGeonames>
-        <longitud>29.5066</longitud>
-        <latitud>-3.7931</latitud>
-        <URI>http://sws.geonames.org/423106/about.rdf</URI>
+        <nombre>Beaverdam Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570365</idGeonames>
+        <longitud>-79.80645</longitud>
+        <latitud>34.68516</latitud>
+        <URI>http://sws.geonames.org/4570365/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Ruzira</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423107</idGeonames>
-        <longitud>29.7376</longitud>
-        <latitud>-3.7919</latitud>
-        <URI>http://sws.geonames.org/423107/about.rdf</URI>
+        <nombre>Beaverdam Baptist Church</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570366</idGeonames>
+        <longitud>-82.9782</longitud>
+        <latitud>34.5126</latitud>
+        <URI>http://sws.geonames.org/4570366/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gasaro</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423108</idGeonames>
-        <longitud>29.5521</longitud>
-        <latitud>-3.796</latitud>
-        <URI>http://sws.geonames.org/423108/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570367</idGeonames>
+        <longitud>-82.89764</longitud>
+        <latitud>34.48371</latitud>
+        <URI>http://sws.geonames.org/4570367/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kiriza</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423109</idGeonames>
-        <longitud>29.6842</longitud>
-        <latitud>-3.7954</latitud>
-        <URI>http://sws.geonames.org/423109/about.rdf</URI>
+        <nombre>Beaverdam Cemetery</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570368</idGeonames>
+        <longitud>-81.9926</longitud>
+        <latitud>34.39068</latitud>
+        <URI>http://sws.geonames.org/4570368/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyamurunga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423110</idGeonames>
-        <longitud>29.5692</longitud>
-        <latitud>-3.7968</latitud>
-        <URI>http://sws.geonames.org/423110/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570369</idGeonames>
+        <longitud>-82.58763</longitud>
+        <latitud>34.5465</latitud>
+        <URI>http://sws.geonames.org/4570369/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Banda</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423111</idGeonames>
-        <longitud>29.5449</longitud>
-        <latitud>-3.7953</latitud>
-        <URI>http://sws.geonames.org/423111/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570370</idGeonames>
+        <longitud>-80.94786</longitud>
+        <latitud>34.59709</latitud>
+        <URI>http://sws.geonames.org/4570370/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyakigi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423112</idGeonames>
-        <longitud>29.7013</longitud>
-        <latitud>-3.7956</latitud>
-        <URI>http://sws.geonames.org/423112/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570371</idGeonames>
+        <longitud>-80.13924</longitud>
+        <latitud>34.37432</latitud>
+        <URI>http://sws.geonames.org/4570371/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Muyange</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423113</idGeonames>
-        <longitud>29.6979</longitud>
-        <latitud>-3.7979</latitud>
-        <URI>http://sws.geonames.org/423113/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570372</idGeonames>
+        <longitud>-79.23838</longitud>
+        <latitud>34.39016</latitud>
+        <URI>http://sws.geonames.org/4570372/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nkanga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423114</idGeonames>
-        <longitud>29.5074</longitud>
-        <latitud>-3.7976</latitud>
-        <URI>http://sws.geonames.org/423114/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570373</idGeonames>
+        <longitud>-79.4131</longitud>
+        <latitud>34.51044</latitud>
+        <URI>http://sws.geonames.org/4570373/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Musasa</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423115</idGeonames>
-        <longitud>29.7332</longitud>
-        <latitud>-3.7983</latitud>
-        <URI>http://sws.geonames.org/423115/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570374</idGeonames>
+        <longitud>-82.13873</longitud>
+        <latitud>33.80152</latitud>
+        <URI>http://sws.geonames.org/4570374/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kibarazi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423116</idGeonames>
-        <longitud>29.615</longitud>
-        <latitud>-3.7776</latitud>
-        <URI>http://sws.geonames.org/423116/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570375</idGeonames>
+        <longitud>-79.82534</longitud>
+        <latitud>34.1846</latitud>
+        <URI>http://sws.geonames.org/4570375/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Muzenga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423117</idGeonames>
-        <longitud>29.5741</longitud>
-        <latitud>-3.8013</latitud>
-        <URI>http://sws.geonames.org/423117/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570376</idGeonames>
+        <longitud>-82.50235</longitud>
+        <latitud>35.00984</latitud>
+        <URI>http://sws.geonames.org/4570376/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyakuguma</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423118</idGeonames>
-        <longitud>29.5229</longitud>
-        <latitud>-3.801</latitud>
-        <URI>http://sws.geonames.org/423118/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570377</idGeonames>
+        <longitud>-82.34262</longitud>
+        <latitud>34.96484</latitud>
+        <URI>http://sws.geonames.org/4570377/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Songa</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423119</idGeonames>
-        <longitud>29.6167</longitud>
-        <latitud>-3.7999</latitud>
-        <URI>http://sws.geonames.org/423119/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570378</idGeonames>
+        <longitud>-82.28984</longitud>
+        <latitud>34.98678</latitud>
+        <URI>http://sws.geonames.org/4570378/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gasenyi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423120</idGeonames>
-        <longitud>29.5854</longitud>
-        <latitud>-3.8046</latitud>
-        <URI>http://sws.geonames.org/423120/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570379</idGeonames>
+        <longitud>-82.46068</longitud>
+        <latitud>35.12512</latitud>
+        <URI>http://sws.geonames.org/4570379/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Mahonda</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423121</idGeonames>
-        <longitud>29.6381</longitud>
-        <latitud>-3.8045</latitud>
-        <URI>http://sws.geonames.org/423121/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570380</idGeonames>
+        <longitud>-82.24428</longitud>
+        <latitud>35.07484</latitud>
+        <URI>http://sws.geonames.org/4570380/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Bubunga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423122</idGeonames>
-        <longitud>29.608</longitud>
-        <latitud>-3.806</latitud>
-        <URI>http://sws.geonames.org/423122/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570381</idGeonames>
+        <longitud>-82.23233</longitud>
+        <latitud>35.069</latitud>
+        <URI>http://sws.geonames.org/4570381/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Rucu</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423123</idGeonames>
-        <longitud>29.6795</longitud>
-        <latitud>-3.8043</latitud>
-        <URI>http://sws.geonames.org/423123/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570382</idGeonames>
+        <longitud>-82.19289</longitud>
+        <latitud>34.97067</latitud>
+        <URI>http://sws.geonames.org/4570382/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Muyama</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423124</idGeonames>
-        <longitud>29.5329</longitud>
-        <latitud>-3.8073</latitud>
-        <URI>http://sws.geonames.org/423124/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570383</idGeonames>
+        <longitud>-82.09207</longitud>
+        <latitud>34.00596</latitud>
+        <URI>http://sws.geonames.org/4570383/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kigoti</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423125</idGeonames>
-        <longitud>29.5479</longitud>
-        <latitud>-3.8072</latitud>
-        <URI>http://sws.geonames.org/423125/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570384</idGeonames>
+        <longitud>-80.73786</longitud>
+        <latitud>34.23904</latitud>
+        <URI>http://sws.geonames.org/4570384/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Matanga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423126</idGeonames>
-        <longitud>29.5081</longitud>
-        <latitud>-3.8117</latitud>
-        <URI>http://sws.geonames.org/423126/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570385</idGeonames>
+        <longitud>-80.42868</longitud>
+        <latitud>34.4121</latitud>
+        <URI>http://sws.geonames.org/4570385/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kinwa</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423127</idGeonames>
-        <longitud>29.7208</longitud>
-        <latitud>-3.8089</latitud>
-        <URI>http://sws.geonames.org/423127/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570386</idGeonames>
+        <longitud>-81.889</longitud>
+        <latitud>34.34485</latitud>
+        <URI>http://sws.geonames.org/4570386/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Gitumba</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423128</idGeonames>
-        <longitud>29.6641</longitud>
-        <latitud>-3.8093</latitud>
-        <URI>http://sws.geonames.org/423128/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570387</idGeonames>
+        <longitud>-81.96982</longitud>
+        <latitud>34.64929</latitud>
+        <URI>http://sws.geonames.org/4570387/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyacambuko</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423129</idGeonames>
-        <longitud>29.57139</longitud>
-        <latitud>-3.80861</latitud>
-        <URI>http://sws.geonames.org/423129/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570388</idGeonames>
+        <longitud>-80.30563</longitud>
+        <latitud>34.15238</latitud>
+        <URI>http://sws.geonames.org/4570388/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Cogo</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423130</idGeonames>
-        <longitud>29.5879</longitud>
-        <latitud>-3.8245</latitud>
-        <URI>http://sws.geonames.org/423130/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570389</idGeonames>
+        <longitud>-81.35621</longitud>
+        <latitud>34.01681</latitud>
+        <URI>http://sws.geonames.org/4570389/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Burambi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423131</idGeonames>
-        <longitud>29.54528</longitud>
-        <latitud>-3.81028</latitud>
-        <URI>http://sws.geonames.org/423131/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570390</idGeonames>
+        <longitud>-79.81645</longitud>
+        <latitud>34.65932</latitud>
+        <URI>http://sws.geonames.org/4570390/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Cewe</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423132</idGeonames>
-        <longitud>29.5183</longitud>
-        <latitud>-3.812</latitud>
-        <URI>http://sws.geonames.org/423132/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570391</idGeonames>
+        <longitud>-79.50949</longitud>
+        <latitud>34.61683</latitud>
+        <URI>http://sws.geonames.org/4570391/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyacambuko</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423133</idGeonames>
-        <longitud>29.56861</longitud>
-        <latitud>-3.81222</latitud>
-        <URI>http://sws.geonames.org/423133/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570392</idGeonames>
+        <longitud>-81.63316</longitud>
+        <latitud>34.14736</latitud>
+        <URI>http://sws.geonames.org/4570392/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Rusama</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423134</idGeonames>
-        <longitud>29.6513</longitud>
-        <latitud>-3.8121</latitud>
-        <URI>http://sws.geonames.org/423134/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570393</idGeonames>
+        <longitud>-81.59122</longitud>
+        <latitud>34.04403</latitud>
+        <URI>http://sws.geonames.org/4570393/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Muwingomo</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423135</idGeonames>
-        <longitud>29.6717</longitud>
-        <latitud>-3.8044</latitud>
-        <URI>http://sws.geonames.org/423135/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570394</idGeonames>
+        <longitud>-81.90844</longitud>
+        <latitud>34.88374</latitud>
+        <URI>http://sws.geonames.org/4570394/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Banza</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423136</idGeonames>
-        <longitud>29.6999</longitud>
-        <latitud>-3.8152</latitud>
-        <URI>http://sws.geonames.org/423136/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570395</idGeonames>
+        <longitud>-81.71816</longitud>
+        <latitud>34.79402</latitud>
+        <URI>http://sws.geonames.org/4570395/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Burambi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423137</idGeonames>
-        <longitud>29.54167</longitud>
-        <latitud>-3.81583</latitud>
-        <URI>http://sws.geonames.org/423137/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570396</idGeonames>
+        <longitud>-81.11146</longitud>
+        <latitud>35.11514</latitud>
+        <URI>http://sws.geonames.org/4570396/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyacambuko</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423138</idGeonames>
-        <longitud>29.5668</longitud>
-        <latitud>-3.8179</latitud>
-        <URI>http://sws.geonames.org/423138/about.rdf</URI>
+        <nombre>Beaverdam Creek</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570397</idGeonames>
+        <longitud>-81.4737</longitud>
+        <latitud>34.89319</latitud>
+        <URI>http://sws.geonames.org/4570397/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Nyakarambo</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423139</idGeonames>
-        <longitud>29.595</longitud>
-        <latitud>-3.8152</latitud>
-        <URI>http://sws.geonames.org/423139/about.rdf</URI>
+        <nombre>Beaverdam Creek WCD Dam Number Five D-1665</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570398</idGeonames>
+        <longitud>-82.92487</longitud>
+        <latitud>34.56844</latitud>
+        <URI>http://sws.geonames.org/4570398/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kinwa</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423140</idGeonames>
-        <longitud>29.7154</longitud>
-        <latitud>-3.8174</latitud>
-        <URI>http://sws.geonames.org/423140/about.rdf</URI>
+        <nombre>Beaverdam Creek WCD Dam Number Two D-1666</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570399</idGeonames>
+        <longitud>-82.9682</longitud>
+        <latitud>34.5701</latitud>
+        <URI>http://sws.geonames.org/4570399/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Musebeyi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423141</idGeonames>
-        <longitud>29.6912</longitud>
-        <latitud>-3.8099</latitud>
-        <URI>http://sws.geonames.org/423141/about.rdf</URI>
+        <nombre>Beaverdam Millpond</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570400</idGeonames>
+        <longitud>-80.18655</longitud>
+        <latitud>34.3889</latitud>
+        <URI>http://sws.geonames.org/4570400/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kijugu</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423142</idGeonames>
-        <longitud>29.6244</longitud>
-        <latitud>-3.8184</latitud>
-        <URI>http://sws.geonames.org/423142/about.rdf</URI>
+        <nombre>Beaverdam Pond</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570401</idGeonames>
+        <longitud>-81.28737</longitud>
+        <latitud>33.86065</latitud>
+        <URI>http://sws.geonames.org/4570401/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Ruhora</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423143</idGeonames>
-        <longitud>29.5074</longitud>
-        <latitud>-3.8195</latitud>
-        <URI>http://sws.geonames.org/423143/about.rdf</URI>
+        <nombre>Beaverdam Swamp</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570402</idGeonames>
+        <longitud>-78.91003</longitud>
+        <latitud>33.86545</latitud>
+        <URI>http://sws.geonames.org/4570402/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Mushihi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423144</idGeonames>
-        <longitud>29.53889</longitud>
-        <latitud>-3.80139</latitud>
-        <URI>http://sws.geonames.org/423144/about.rdf</URI>
+        <nombre>Beaverdam Creek WCD Dam Number Four D-1667</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570403</idGeonames>
+        <longitud>-82.97487</longitud>
+        <latitud>34.55343</latitud>
+        <URI>http://sws.geonames.org/4570403/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Burambi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423145</idGeonames>
-        <longitud>29.54262</longitud>
-        <latitud>-3.81985</latitud>
-        <URI>http://sws.geonames.org/423145/about.rdf</URI>
+        <nombre>Beaverdam Warrior WCD Dam Four D-3008</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570404</idGeonames>
+        <longitud>-82.00815</longitud>
+        <latitud>34.59179</latitud>
+        <URI>http://sws.geonames.org/4570404/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Kigabiro</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423146</idGeonames>
-        <longitud>29.6019</longitud>
-        <latitud>-3.8197</latitud>
-        <URI>http://sws.geonames.org/423146/about.rdf</URI>
+        <nombre>Beaverdam Warrior WCD Im Dam D-3022</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570405</idGeonames>
+        <longitud>-82.07149</longitud>
+        <latitud>34.63512</latitud>
+        <URI>http://sws.geonames.org/4570405/about.rdf</URI>
     </ciudades>
     <ciudades>
-        <nombre>Muzamba</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423148</idGeonames>
-        <longitud>29.63322</longitud>
-        <latitud>-3.82281</latitud>
-        <URI>http://sws.geonames.org/423148/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Yengero</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423149</idGeonames>
-        <longitud>29.6943</longitud>
-        <latitud>-3.8215</latitud>
-        <URI>http://sws.geonames.org/423149/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Muzamba</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423150</idGeonames>
-        <longitud>29.63778</longitud>
-        <latitud>-3.82278</latitud>
-        <URI>http://sws.geonames.org/423150/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Muhisirizi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423151</idGeonames>
-        <longitud>29.5674</longitud>
-        <latitud>-3.8529</latitud>
-        <URI>http://sws.geonames.org/423151/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Gitanganika</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423152</idGeonames>
-        <longitud>29.7432</longitud>
-        <latitud>-3.8212</latitud>
-        <URI>http://sws.geonames.org/423152/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Higiro</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423153</idGeonames>
-        <longitud>29.5523</longitud>
-        <latitud>-3.824</latitud>
-        <URI>http://sws.geonames.org/423153/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Ngoma</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423154</idGeonames>
-        <longitud>29.5324</longitud>
-        <latitud>-3.8256</latitud>
-        <URI>http://sws.geonames.org/423154/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Nyeshombe</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423155</idGeonames>
-        <longitud>29.5043</longitud>
-        <latitud>-3.8416</latitud>
-        <URI>http://sws.geonames.org/423155/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Muntita</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423156</idGeonames>
-        <longitud>29.6566</longitud>
-        <latitud>-3.8253</latitud>
-        <URI>http://sws.geonames.org/423156/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Tara</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423157</idGeonames>
-        <longitud>29.667</longitud>
-        <latitud>-3.8244</latitud>
-        <URI>http://sws.geonames.org/423157/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Rubirizi</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423158</idGeonames>
-        <longitud>29.5801</longitud>
-        <latitud>-3.8282</latitud>
-        <URI>http://sws.geonames.org/423158/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Ntawantunze</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423159</idGeonames>
-        <longitud>29.7296</longitud>
-        <latitud>-3.8289</latitud>
-        <URI>http://sws.geonames.org/423159/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Nyamuhanga</nombre>
-        <pais>Burundi</pais>
-        <idGeonames>423160</idGeonames>
-        <longitud>29.5933</longitud>
-        <latitud>-3.8281</latitud>
-        <URI>http://sws.geonames.org/423160/about.rdf</URI>
+        <nombre>Beaverdam Watershed Five Lake</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570406</idGeonames>
+        <longitud>-82.92654</longitud>
+        <latitud>34.56845</latitud>
+        <URI>http://sws.geonames.org/4570406/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaverdam Watershed Four Lake</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570407</idGeonames>
+        <longitud>-82.97754</longitud>
+        <latitud>34.55494</latitud>
+        <URI>http://sws.geonames.org/4570407/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beck Landing</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570408</idGeonames>
+        <longitud>-80.41871</longitud>
+        <latitud>32.80462</latitud>
+        <URI>http://sws.geonames.org/4570408/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beck Middle School</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570409</idGeonames>
+        <longitud>-82.36984</longitud>
+        <latitud>34.83567</latitud>
+        <URI>http://sws.geonames.org/4570409/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Becker Pond</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570410</idGeonames>
+        <longitud>-79.76433</longitud>
+        <latitud>34.62479</latitud>
+        <URI>http://sws.geonames.org/4570410/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Becker Pond Dam D-3449</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570411</idGeonames>
+        <longitud>-79.76645</longitud>
+        <latitud>34.62349</latitud>
+        <URI>http://sws.geonames.org/4570411/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beckham Branch</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570412</idGeonames>
+        <longitud>-80.64285</longitud>
+        <latitud>34.60237</latitud>
+        <URI>http://sws.geonames.org/4570412/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beaverdam Warrior WCD Dam 33 D-2982</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570413</idGeonames>
+        <longitud>-81.96315</longitud>
+        <latitud>34.58513</latitud>
+        <URI>http://sws.geonames.org/4570413/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beckhamville</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570414</idGeonames>
+        <longitud>-80.9198</longitud>
+        <latitud>34.59042</latitud>
+        <URI>http://sws.geonames.org/4570414/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beckridge Park</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570415</idGeonames>
+        <longitud>-80.38869</longitud>
+        <latitud>33.89182</latitud>
+        <URI>http://sws.geonames.org/4570415/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Becks Ferry (historical)</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570416</idGeonames>
+        <longitud>-81.13011</longitud>
+        <latitud>32.34992</latitud>
+        <URI>http://sws.geonames.org/4570416/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beckwood</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570417</idGeonames>
+        <longitud>-80.39119</longitud>
+        <latitud>33.9721</latitud>
+        <URI>http://sws.geonames.org/4570417/about.rdf</URI>
+    </ciudades>
+    <ciudades>
+        <nombre>Beckydon Lake</nombre>
+        <pais>United States</pais>
+        <idGeonames>4570418</idGeonames>
+        <longitud>-82.37651</longitud>
+        <latitud>35.10345</latitud>
+        <URI>http://sws.geonames.org/4570418/about.rdf</URI>
     </ciudades>
 </listadoCiudades>
