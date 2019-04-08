@@ -17,7 +17,6 @@ import org.xml.sax.SAXException;
 
 import servicio.exceptions.GeoNamesException;
 import servicio.model.Busqueda;
-import servicio.model.Ciudad;
 import utils.Utils;
 
 public class DOMParser {
@@ -29,34 +28,47 @@ public class DOMParser {
 		this.factoria = DocumentBuilderFactory.newInstance();
 	}
 
-	public Busqueda parse(Ciudad ciudad) {
+	public Busqueda parse(long id) {
 		DocumentBuilder analizador;
 		Document documento;
+
+		Busqueda busqueda = new Busqueda();
+
+		// Buscamos el pais del identificador
+		
 		try {
 			analizador = factoria.newDocumentBuilder();
-			documento = analizador.parse(ciudad.getURI());
+			documento = analizador.parse("http://api.geonames.org/get?geonameId=" + id + "&username=arso");
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			throw new GeoNamesException("No se pudo analizar el documento.", e);
 		}
-			
-
-		Busqueda busqueda = new Busqueda();
-		
-		busqueda.setNombrePais(ciudad.getPais());
 
 		NodeList node = null;
 		String data = "";
+
+		data = this.getDataFrom(documento, "countryName");
+		if (data != null) {
+			busqueda.setPais(data);
+		}
+		
+
+		// Buscamos información del rdf
+
+		try {
+			analizador = factoria.newDocumentBuilder();
+			documento = analizador.parse("http://sws.geonames.org/" + id + "/about.rdf");
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			throw new GeoNamesException("No se pudo analizar el documento.", e);
+		}
+
+		node = null;
+		data = "";
 
 		data = this.getDataFrom(documento, "gn:name");
 		if (data != null) {
 			busqueda.setNombre(data);
 		}
 
-		data = this.getDataFrom(documento, "gn:countryCode");
-		if (data != null) {
-			busqueda.setCodigoPais(data);
-		}
-		
 		data = this.getDataFrom(documento, "gn:population");
 		if (data != null) {
 			busqueda.setPoblacion(Integer.parseInt(data));
@@ -78,7 +90,7 @@ public class DOMParser {
 			try {
 				busqueda.setWikipedia(new URI(data));
 			} catch (URISyntaxException e) {
-				throw new GeoNamesException("no se puede analizar el documento", e); 
+				throw new GeoNamesException("no se puede analizar el documento", e);
 			}
 		}
 
@@ -88,7 +100,7 @@ public class DOMParser {
 			try {
 				busqueda.setBdpedia(new URI(data));
 			} catch (URISyntaxException e) {
-				throw new GeoNamesException("no se puede analizar el documento", e); 
+				throw new GeoNamesException("no se puede analizar el documento", e);
 			}
 		}
 
@@ -103,7 +115,7 @@ public class DOMParser {
 			try {
 				documento = analizador.parse(nearbyFeatures);
 			} catch (SAXException | IOException e) {
-				throw new GeoNamesException("no se puede analizar el documento", e);
+				throw new GeoNamesException("No se puede analizar el documento", e);
 			}
 
 			NodeList features = documento.getElementsByTagName("gn:Feature");
@@ -126,11 +138,12 @@ public class DOMParser {
 		}
 
 		// OPCIONAL
+		// Buscamos información meteorologica
 		try {
-			documento = analizador.parse("http://api.geonames.org/findNearByWeather?lat=" + busqueda.getLatitud() + "&lng="
-					+ busqueda.getLongitud() + "&username=arso");
+			documento = analizador.parse("http://api.geonames.org/findNearByWeather?lat=" + busqueda.getLatitud()
+					+ "&lng=" + busqueda.getLongitud() + "&username=arso");
 		} catch (SAXException | IOException e) {
-			throw new GeoNamesException("no se puede analizar el documento", e);
+			throw new GeoNamesException("No se puede analizar el documento", e);
 		}
 
 		node = documento.getElementsByTagName("observation");

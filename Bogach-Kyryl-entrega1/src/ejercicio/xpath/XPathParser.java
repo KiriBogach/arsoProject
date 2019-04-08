@@ -1,16 +1,21 @@
 package ejercicio.xpath;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import servicio.exceptions.GeoNamesException;
 import servicio.model.Busqueda;
+import servicio.model.Libro;
 
 public class XPathParser {
 
@@ -19,32 +24,66 @@ public class XPathParser {
 
 	public void parse(Busqueda busqueda) {
 		try {
-			System.out.println(busqueda);
 			String urlConsultada = this.getURL(busqueda.getNombre());
 			XPathFactory factoria = XPathFactory.newInstance();
 			XPath xpath = factoria.newXPath();
+			xpath.setNamespaceContext(new EspaciosNombres());
 
-			String subjectBuscado = busqueda.getNombre() + " (" + busqueda.getNombrePais() + ")";
-			XPathExpression consulta;
-			consulta = xpath.compile("//dc:subject[contains(text(), '" + subjectBuscado + "')]");
-
-			System.out.println(urlConsultada);
-			System.out.println("//dc:subject[contains(text(), '" + subjectBuscado + "')]");
+			String subjectBuscado = busqueda.getNombre() + " (" + busqueda.getPais() + ")";
+			XPathExpression consulta = xpath.compile("//ns:entry[dc:subject = '" + subjectBuscado + "']");
 
 			NodeList resultado = (NodeList) consulta.evaluate(new org.xml.sax.InputSource(urlConsultada),
 					XPathConstants.NODESET);
-			System.out.println(resultado.getLength());
-			for (int i = 0; i < resultado.getLength(); i++) {
-
+			/*
+			 * Título del libro. 
+			 * Identificador del libro en Google Books. 
+			 * ISBN (opcional)
+			 * URL de la imagen. 
+			 * URL a la web de Google Books.
+			 * 
+			 */
+			for (int i = 0; i < Math.min(3, resultado.getLength()); i++) {
 				Node nodo = resultado.item(i);
+				
+				NodeList hijos = nodo.getChildNodes();
+				Libro libro = new Libro();
+				
+				for (int j = 0; j < hijos.getLength(); j++) {
+					Node hijo = hijos.item(j);
+					
+					String contenidoHijo = hijo.getTextContent();
+					NamedNodeMap atributosHijo = hijo.getAttributes();
+					switch (hijo.getNodeName()) {
+						case "title":
+							libro.setTitulo(contenidoHijo);
+							break;
+						case "id":
+							libro.setIdentificador(contenidoHijo);
+							break;
+						case "dc:identifier":
+							if (contenidoHijo.contains("ISBN")) {
+								libro.setISBN(contenidoHijo);
+							}
+							break;
+						case "link":
+							
+							// mal
+							if (atributosHijo.getNamedItem("type") != null) {
+								System.out.println(contenidoHijo);
+								try {
+									libro.setUrlImagen(new URI(contenidoHijo));
+								} catch (URISyntaxException e) {
+									e.printStackTrace();
+								}
+							}
+							break;
+						default:
+							break;
+					}
+				}
 
-				// Se muestra información general sobre el resultado
-
-				System.out.println("Nombre: " + nodo.getNodeName());
-
-				// getTextContent muestra todos los nodos textuales descendientes
-
-				System.out.println("Contenido: " + nodo.getTextContent());
+				
+				System.out.println(libro);
 
 			}
 		} catch (XPathExpressionException ex) {

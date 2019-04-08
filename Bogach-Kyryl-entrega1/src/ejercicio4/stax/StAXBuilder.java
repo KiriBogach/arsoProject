@@ -32,11 +32,8 @@ public class StAXBuilder {
 			writer.writeStartElement("codigo");
 			writer.writeCharacters(Long.toString(id));
 			writer.writeEndElement();
-			writer.writeStartElement("codigoPais");
-			writer.writeCharacters(busqueda.getCodigoPais());
-			writer.writeEndElement();
-			writer.writeStartElement("nombrePais");
-			writer.writeCharacters(busqueda.getNombrePais());
+			writer.writeStartElement("pais");
+			writer.writeCharacters(busqueda.getPais());
 			writer.writeEndElement();
 			writer.writeStartElement("poblacion");
 			writer.writeCharacters(Integer.toString(busqueda.getPoblacion()));

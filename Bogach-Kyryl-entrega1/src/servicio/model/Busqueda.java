@@ -3,12 +3,12 @@ package servicio.model;
 import java.net.URI;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Busqueda {
-
 	private String nombre;
-	private String codigoPais;
-	private String nombrePais;
+	private String pais;
 	private int poblacion;
 	private double latitud;
 	private double longitud;
@@ -21,39 +21,23 @@ public class Busqueda {
 	private String nubes;
 	private HashMap<Long, String> sitiosInteres;
 
+	private List<Libro> libros;
+
 	public Busqueda() {
-		sitiosInteres = new HashMap<>();
+		this.sitiosInteres = new HashMap<>();
+		this.libros = new LinkedList<>();
 	}
 
-	public Busqueda(String nombre, String codigoPais, String nombrePais, int poblacion, double latitud, double longitud,
-			URI wikipedia, URI dbpedia, Date fechaActualizacion, Date tiempoObservacion, String nombreEstacion,
-			double temperatura, String nubes, HashMap<Long, String> sitiosInteres) {
-		this.nombre = nombre;
-		this.codigoPais = codigoPais;
-		this.nombrePais = nombrePais;
-		this.poblacion = poblacion;
-		this.latitud = latitud;
-		this.longitud = longitud;
-		this.wikipedia = wikipedia;
-		this.bdpedia = dbpedia;
-		this.fechaActualizacion = fechaActualizacion;
-		this.tiempoObservacion = tiempoObservacion;
-		this.nombreEstacion = nombreEstacion;
-		this.temperatura = temperatura;
-		this.nubes = nubes;
-		this.sitiosInteres = sitiosInteres;
+	public void addLibro(Libro libro) {
+		this.libros.add(libro);
 	}
 
 	public void addSitioInteres(Long codigo, String nombre) {
-		sitiosInteres.put(codigo, nombre);
+		this.sitiosInteres.put(codigo, nombre);
 	}
 
 	public URI getBdpedia() {
 		return bdpedia;
-	}
-
-	public String getCodigoPais() {
-		return codigoPais;
 	}
 
 	public Date getFechaActualizacion() {
@@ -62,6 +46,10 @@ public class Busqueda {
 
 	public double getLatitud() {
 		return latitud;
+	}
+
+	public List<Libro> getLibros() {
+		return libros;
 	}
 
 	public double getLongitud() {
@@ -76,12 +64,12 @@ public class Busqueda {
 		return nombreEstacion;
 	}
 
-	public String getNombrePais() {
-		return nombrePais;
-	}
-
 	public String getNubes() {
 		return nubes;
+	}
+
+	public String getPais() {
+		return pais;
 	}
 
 	public int getPoblacion() {
@@ -108,16 +96,16 @@ public class Busqueda {
 		this.bdpedia = dbpedia;
 	}
 
-	public void setCodigoPais(String codigoPais) {
-		this.codigoPais = codigoPais;
-	}
-
 	public void setFechaActualizacion(Date fechaActualizacion) {
 		this.fechaActualizacion = fechaActualizacion;
 	}
 
 	public void setLatitud(double latitud) {
 		this.latitud = latitud;
+	}
+
+	public void setLibros(List<Libro> libros) {
+		this.libros = libros;
 	}
 
 	public void setLongitud(double longitud) {
@@ -132,12 +120,12 @@ public class Busqueda {
 		this.nombreEstacion = nombreEstacion;
 	}
 
-	public void setNombrePais(String nombrePais) {
-		this.nombrePais = nombrePais;
-	}
-
 	public void setNubes(String nubes) {
 		this.nubes = nubes;
+	}
+
+	public void setPais(String pais) {
+		this.pais = pais;
 	}
 
 	public void setPoblacion(int poblacion) {
@@ -162,11 +150,11 @@ public class Busqueda {
 
 	@Override
 	public String toString() {
-		return "Busqueda [nombre=" + nombre + ", codigoPais=" + codigoPais + ", nombrePais=" + nombrePais
-				+ ", poblacion=" + poblacion + ", latitud=" + latitud + ", longitud=" + longitud + ", wikipedia="
-				+ wikipedia + ", bdpedia=" + bdpedia + ", fechaActualizacion=" + fechaActualizacion
-				+ ", tiempoObservacion=" + tiempoObservacion + ", nombreEstacion=" + nombreEstacion + ", temperatura="
-				+ temperatura + ", nubes=" + nubes + ", sitiosInteres=" + sitiosInteres + "]";
+		return "Busqueda [nombre=" + nombre + ", pais=" + pais + ", poblacion=" + poblacion + ", latitud=" + latitud
+				+ ", longitud=" + longitud + ", wikipedia=" + wikipedia + ", bdpedia=" + bdpedia
+				+ ", fechaActualizacion=" + fechaActualizacion + ", tiempoObservacion=" + tiempoObservacion
+				+ ", nombreEstacion=" + nombreEstacion + ", temperatura=" + temperatura + ", nubes=" + nubes
+				+ ", sitiosInteres=" + sitiosInteres + ", libros=" + libros + "]";
 	}
 
 }

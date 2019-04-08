@@ -12,8 +12,7 @@
 			<xs:complexContent>
 				<xs:extension base="tns:tipoIdentificador">
 					<xs:sequence>
-						<xs:element name="codigoPais" type="xs:string" />
-						<xs:element name="nombrePais" type="xs:string" />
+						<xs:element name="pais" type="xs:string" />
 						<xs:element name="poblacion" type="xs:integer" />
 						<xs:element name="ubicacion" type="tns:tipoUbicacion" />
 						<xs:element name="bdpedia" type="xs:anyURI"
