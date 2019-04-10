@@ -8,7 +8,7 @@ import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.SAXException;
 
-import servicio.model.Ciudad;
+import servicio.model.CiudadGeoNames;
 
 public class SAX {
 
@@ -27,7 +27,7 @@ public class SAX {
 			analizador.parse("xml-bd/searchCartagena.xml", manejador);
 			
 			System.out.println("Ciudades encontradas: ");
-			for (Ciudad c : manejador.getCiudades()) {
+			for (CiudadGeoNames c : manejador.getCiudades()) {
 				System.out.println("\t" + c.toString());
 			}
 		} 

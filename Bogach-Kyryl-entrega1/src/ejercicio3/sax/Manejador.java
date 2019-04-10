@@ -6,13 +6,13 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import servicio.model.Ciudad;
+import servicio.model.CiudadGeoNames;
 
 public class Manejador extends DefaultHandler {
 
 	private LinkedList<String> pila;
-	private LinkedList<Ciudad> ciudades;
-	private Ciudad ciudad;
+	private LinkedList<CiudadGeoNames> ciudades;
+	private CiudadGeoNames ciudad;
 	private boolean inGeoname;
 
 	@Override
@@ -29,7 +29,7 @@ public class Manejador extends DefaultHandler {
 
 		if (qName.equalsIgnoreCase("geoname")) {
 			this.inGeoname = true;
-			this.ciudad = new Ciudad();
+			this.ciudad = new CiudadGeoNames();
 		}
 	}
 
@@ -76,7 +76,7 @@ public class Manejador extends DefaultHandler {
 		}
 	}
 	
-	public LinkedList<Ciudad> getCiudades() {
+	public LinkedList<CiudadGeoNames> getCiudades() {
 		return ciudades;
 	}
 

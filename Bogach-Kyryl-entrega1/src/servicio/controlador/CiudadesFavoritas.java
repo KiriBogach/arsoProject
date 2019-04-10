@@ -5,19 +5,20 @@ import java.util.HashSet;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement
-@XmlType(name = "ciudades_favoritas")
+@XmlRootElement(name = "ciudades_favoritas")
 public class CiudadesFavoritas {
 
 	private String id;
-	private Collection<String> ciudad;
+
+	@XmlElement(name = "ciudad")
+	private Collection<String> ciudades;
 
 	public CiudadesFavoritas() {
-		this.ciudad = new HashSet<>();
+		this.ciudades = new HashSet<>();
 	}
 
 	public String getId() {
@@ -28,23 +29,21 @@ public class CiudadesFavoritas {
 		this.id = id;
 	}
 
-	public Collection<String> getCiudad() {
-		return this.ciudad;
+	public Collection<String> getCiudades() {
+		return ciudades;
 	}
 
 	public void addCiudad(String ciudad) {
-		this.ciudad.add(ciudad);
+		this.ciudades.add(ciudad);
 	}
 
 	public boolean removeCiudad(String ciudad) {
-		return this.ciudad.remove(ciudad);
+		return this.ciudades.remove(ciudad);
 	}
 
 	@Override
 	public String toString() {
-		return this.getClass().getName() + " [id=" + id + ", ciudad=" + ciudad + "]";
+		return this.getClass().getName() + " [id=" + id + ", ciudad=" + ciudades + "]";
 	}
-	
-	
 
 }

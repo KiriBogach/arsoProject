@@ -8,6 +8,7 @@ import java.util.List;
 
 public class Busqueda {
 	private String nombre;
+	private String codigoPais;
 	private String pais;
 	private int poblacion;
 	private double latitud;
@@ -38,6 +39,10 @@ public class Busqueda {
 
 	public URI getBdpedia() {
 		return bdpedia;
+	}
+
+	public String getCodigoPais() {
+		return codigoPais;
 	}
 
 	public Date getFechaActualizacion() {
@@ -96,6 +101,10 @@ public class Busqueda {
 		this.bdpedia = dbpedia;
 	}
 
+	public void setCodigoPais(String codigoPais) {
+		this.codigoPais = codigoPais;
+	}
+
 	public void setFechaActualizacion(Date fechaActualizacion) {
 		this.fechaActualizacion = fechaActualizacion;
 	}
@@ -150,11 +159,11 @@ public class Busqueda {
 
 	@Override
 	public String toString() {
-		return "Busqueda [nombre=" + nombre + ", pais=" + pais + ", poblacion=" + poblacion + ", latitud=" + latitud
-				+ ", longitud=" + longitud + ", wikipedia=" + wikipedia + ", bdpedia=" + bdpedia
-				+ ", fechaActualizacion=" + fechaActualizacion + ", tiempoObservacion=" + tiempoObservacion
-				+ ", nombreEstacion=" + nombreEstacion + ", temperatura=" + temperatura + ", nubes=" + nubes
-				+ ", sitiosInteres=" + sitiosInteres + ", libros=" + libros + "]";
+		return "Busqueda [nombre=" + nombre + ", codigoPais=" + codigoPais + ", pais=" + pais + ", poblacion="
+				+ poblacion + ", latitud=" + latitud + ", longitud=" + longitud + ", wikipedia=" + wikipedia
+				+ ", bdpedia=" + bdpedia + ", fechaActualizacion=" + fechaActualizacion + ", tiempoObservacion="
+				+ tiempoObservacion + ", nombreEstacion=" + nombreEstacion + ", temperatura=" + temperatura + ", nubes="
+				+ nubes + ", sitiosInteres=" + sitiosInteres + ", libros=" + libros + "]";
 	}
 
 }

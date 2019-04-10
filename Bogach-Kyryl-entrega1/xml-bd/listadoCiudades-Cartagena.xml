@@ -1,803 +1,803 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<listadoCiudades>
-    <ciudades>
-        <nombre>Beauty Spot School</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570319</idGeonames>
-        <longitud>-79.35922</longitud>
-        <latitud>34.06822</latitud>
-        <URI>http://sws.geonames.org/4570319/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Branch</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570320</idGeonames>
-        <longitud>-81.79955</longitud>
-        <latitud>33.65541</latitud>
-        <URI>http://sws.geonames.org/4570320/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaufort Township Library</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570321</idGeonames>
-        <longitud>-80.67011</longitud>
-        <latitud>32.43436</latitud>
-        <URI>http://sws.geonames.org/4570321/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570322</idGeonames>
-        <longitud>-82.58041</longitud>
-        <latitud>34.37678</latitud>
-        <URI>http://sws.geonames.org/4570322/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570323</idGeonames>
-        <longitud>-82.62458</longitud>
-        <latitud>34.59011</latitud>
-        <URI>http://sws.geonames.org/4570323/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570324</idGeonames>
-        <longitud>-82.57902</longitud>
-        <latitud>34.31344</latitud>
-        <URI>http://sws.geonames.org/4570324/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570325</idGeonames>
-        <longitud>-79.94312</longitud>
-        <latitud>34.66793</latitud>
-        <URI>http://sws.geonames.org/4570325/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570326</idGeonames>
-        <longitud>-81.40899</longitud>
-        <latitud>34.43014</latitud>
-        <URI>http://sws.geonames.org/4570326/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570327</idGeonames>
-        <longitud>-80.78369</longitud>
-        <latitud>34.41931</latitud>
-        <URI>http://sws.geonames.org/4570327/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570328</idGeonames>
-        <longitud>-80.7262</longitud>
-        <latitud>34.08348</latitud>
-        <URI>http://sws.geonames.org/4570328/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Cemetery</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570329</idGeonames>
-        <longitud>-80.64285</longitud>
-        <latitud>34.52209</latitud>
-        <URI>http://sws.geonames.org/4570329/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Cemetery</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570330</idGeonames>
-        <longitud>-80.73285</longitud>
-        <latitud>34.4757</latitud>
-        <URI>http://sws.geonames.org/4570330/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Cemetery</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570331</idGeonames>
-        <longitud>-80.72535</longitud>
-        <latitud>34.5557</latitud>
-        <URI>http://sws.geonames.org/4570331/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570332</idGeonames>
-        <longitud>-81.31537</longitud>
-        <latitud>34.55931</latitud>
-        <URI>http://sws.geonames.org/4570332/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570333</idGeonames>
-        <longitud>-80.64369</longitud>
-        <latitud>34.52265</latitud>
-        <URI>http://sws.geonames.org/4570333/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570334</idGeonames>
-        <longitud>-80.72535</longitud>
-        <latitud>34.55626</latitud>
-        <URI>http://sws.geonames.org/4570334/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Baptist Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570335</idGeonames>
-        <longitud>-81.13788</longitud>
-        <latitud>33.54543</latitud>
-        <URI>http://sws.geonames.org/4570335/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Meeting House (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570336</idGeonames>
-        <longitud>-80.73285</longitud>
-        <latitud>34.47626</latitud>
-        <URI>http://sws.geonames.org/4570336/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek School</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570337</idGeonames>
-        <longitud>-80.93731</longitud>
-        <latitud>33.72738</latitud>
-        <URI>http://sws.geonames.org/4570337/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek School (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570338</idGeonames>
-        <longitud>-80.11312</longitud>
-        <latitud>34.4796</latitud>
-        <URI>http://sws.geonames.org/4570338/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Dam</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570339</idGeonames>
-        <longitud>-81.5451</longitud>
-        <latitud>34.53958</latitud>
-        <URI>http://sws.geonames.org/4570339/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Dam Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570340</idGeonames>
-        <longitud>-81.01177</longitud>
-        <latitud>32.64684</latitud>
-        <URI>http://sws.geonames.org/4570340/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Dam Mill (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570341</idGeonames>
-        <longitud>-80.1484</longitud>
-        <latitud>34.46321</latitud>
-        <URI>http://sws.geonames.org/4570341/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Dam School (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570342</idGeonames>
-        <longitud>-81.70399</longitud>
-        <latitud>35.03179</latitud>
-        <URI>http://sws.geonames.org/4570342/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Dam School (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570343</idGeonames>
-        <longitud>-81.98982</longitud>
-        <latitud>34.6504</latitud>
-        <URI>http://sws.geonames.org/4570343/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Dam School (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570344</idGeonames>
-        <longitud>-79.81867</longitud>
-        <latitud>34.6896</latitud>
-        <URI>http://sws.geonames.org/4570344/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Dam School (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570345</idGeonames>
-        <longitud>-81.70872</longitud>
-        <latitud>34.32069</latitud>
-        <URI>http://sws.geonames.org/4570345/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Hills Baptist Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570346</idGeonames>
-        <longitud>-81.95149</longitud>
-        <latitud>34.90262</latitud>
-        <URI>http://sws.geonames.org/4570346/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Hole Swamp</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570347</idGeonames>
-        <longitud>-79.11837</longitud>
-        <latitud>33.84684</latitud>
-        <URI>http://sws.geonames.org/4570347/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Creek Cemetery</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570348</idGeonames>
-        <longitud>-81.31565</longitud>
-        <latitud>34.55903</latitud>
-        <URI>http://sws.geonames.org/4570348/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570349</idGeonames>
-        <longitud>-81.70149</longitud>
-        <latitud>35.04013</latitud>
-        <URI>http://sws.geonames.org/4570349/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Baptist Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570350</idGeonames>
-        <longitud>-81.70093</longitud>
-        <latitud>35.04013</latitud>
-        <URI>http://sws.geonames.org/4570350/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Branch</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570351</idGeonames>
-        <longitud>-81.58622</longitud>
-        <latitud>33.66514</latitud>
-        <URI>http://sws.geonames.org/4570351/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaver Pond</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570352</idGeonames>
-        <longitud>-80.21404</longitud>
-        <latitud>34.58749</latitud>
-        <URI>http://sws.geonames.org/4570352/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Branch</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570353</idGeonames>
-        <longitud>-82.21235</longitud>
-        <latitud>34.05151</latitud>
-        <URI>http://sws.geonames.org/4570353/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Branch</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570354</idGeonames>
-        <longitud>-81.77733</longitud>
-        <latitud>33.71514</latitud>
-        <URI>http://sws.geonames.org/4570354/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Branch</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570355</idGeonames>
-        <longitud>-81.0715</longitud>
-        <latitud>32.59824</latitud>
-        <URI>http://sws.geonames.org/4570355/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Branch</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570356</idGeonames>
-        <longitud>-80.48924</longitud>
-        <latitud>34.34599</latitud>
-        <URI>http://sws.geonames.org/4570356/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Bridge</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570357</idGeonames>
-        <longitud>-81.2326</longitud>
-        <latitud>33.27932</latitud>
-        <URI>http://sws.geonames.org/4570357/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Cemetery</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570358</idGeonames>
-        <longitud>-79.55727</longitud>
-        <latitud>34.66183</latitud>
-        <URI>http://sws.geonames.org/4570358/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Baptist Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570359</idGeonames>
-        <longitud>-81.63427</longitud>
-        <latitud>33.63875</latitud>
-        <URI>http://sws.geonames.org/4570359/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570360</idGeonames>
-        <longitud>-82.55124</longitud>
-        <latitud>34.63956</latitud>
-        <URI>http://sws.geonames.org/4570360/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570361</idGeonames>
-        <longitud>-82.26511</longitud>
-        <latitud>35.01956</latitud>
-        <URI>http://sws.geonames.org/4570361/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570362</idGeonames>
-        <longitud>-80.51508</longitud>
-        <latitud>34.35932</latitud>
-        <URI>http://sws.geonames.org/4570362/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570363</idGeonames>
-        <longitud>-81.9926</longitud>
-        <latitud>34.39013</latitud>
-        <URI>http://sws.geonames.org/4570363/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570364</idGeonames>
-        <longitud>-81.98926</longitud>
-        <latitud>34.6504</latitud>
-        <URI>http://sws.geonames.org/4570364/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570365</idGeonames>
-        <longitud>-79.80645</longitud>
-        <latitud>34.68516</latitud>
-        <URI>http://sws.geonames.org/4570365/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Baptist Church</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570366</idGeonames>
-        <longitud>-82.9782</longitud>
-        <latitud>34.5126</latitud>
-        <URI>http://sws.geonames.org/4570366/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570367</idGeonames>
-        <longitud>-82.89764</longitud>
-        <latitud>34.48371</latitud>
-        <URI>http://sws.geonames.org/4570367/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Cemetery</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570368</idGeonames>
-        <longitud>-81.9926</longitud>
-        <latitud>34.39068</latitud>
-        <URI>http://sws.geonames.org/4570368/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570369</idGeonames>
-        <longitud>-82.58763</longitud>
-        <latitud>34.5465</latitud>
-        <URI>http://sws.geonames.org/4570369/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570370</idGeonames>
-        <longitud>-80.94786</longitud>
-        <latitud>34.59709</latitud>
-        <URI>http://sws.geonames.org/4570370/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570371</idGeonames>
-        <longitud>-80.13924</longitud>
-        <latitud>34.37432</latitud>
-        <URI>http://sws.geonames.org/4570371/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570372</idGeonames>
-        <longitud>-79.23838</longitud>
-        <latitud>34.39016</latitud>
-        <URI>http://sws.geonames.org/4570372/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570373</idGeonames>
-        <longitud>-79.4131</longitud>
-        <latitud>34.51044</latitud>
-        <URI>http://sws.geonames.org/4570373/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570374</idGeonames>
-        <longitud>-82.13873</longitud>
-        <latitud>33.80152</latitud>
-        <URI>http://sws.geonames.org/4570374/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570375</idGeonames>
-        <longitud>-79.82534</longitud>
-        <latitud>34.1846</latitud>
-        <URI>http://sws.geonames.org/4570375/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570376</idGeonames>
-        <longitud>-82.50235</longitud>
-        <latitud>35.00984</latitud>
-        <URI>http://sws.geonames.org/4570376/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570377</idGeonames>
-        <longitud>-82.34262</longitud>
-        <latitud>34.96484</latitud>
-        <URI>http://sws.geonames.org/4570377/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570378</idGeonames>
-        <longitud>-82.28984</longitud>
-        <latitud>34.98678</latitud>
-        <URI>http://sws.geonames.org/4570378/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570379</idGeonames>
-        <longitud>-82.46068</longitud>
-        <latitud>35.12512</latitud>
-        <URI>http://sws.geonames.org/4570379/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570380</idGeonames>
-        <longitud>-82.24428</longitud>
-        <latitud>35.07484</latitud>
-        <URI>http://sws.geonames.org/4570380/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570381</idGeonames>
-        <longitud>-82.23233</longitud>
-        <latitud>35.069</latitud>
-        <URI>http://sws.geonames.org/4570381/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570382</idGeonames>
-        <longitud>-82.19289</longitud>
-        <latitud>34.97067</latitud>
-        <URI>http://sws.geonames.org/4570382/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570383</idGeonames>
-        <longitud>-82.09207</longitud>
-        <latitud>34.00596</latitud>
-        <URI>http://sws.geonames.org/4570383/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570384</idGeonames>
-        <longitud>-80.73786</longitud>
-        <latitud>34.23904</latitud>
-        <URI>http://sws.geonames.org/4570384/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570385</idGeonames>
-        <longitud>-80.42868</longitud>
-        <latitud>34.4121</latitud>
-        <URI>http://sws.geonames.org/4570385/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570386</idGeonames>
-        <longitud>-81.889</longitud>
-        <latitud>34.34485</latitud>
-        <URI>http://sws.geonames.org/4570386/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570387</idGeonames>
-        <longitud>-81.96982</longitud>
-        <latitud>34.64929</latitud>
-        <URI>http://sws.geonames.org/4570387/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570388</idGeonames>
-        <longitud>-80.30563</longitud>
-        <latitud>34.15238</latitud>
-        <URI>http://sws.geonames.org/4570388/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570389</idGeonames>
-        <longitud>-81.35621</longitud>
-        <latitud>34.01681</latitud>
-        <URI>http://sws.geonames.org/4570389/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570390</idGeonames>
-        <longitud>-79.81645</longitud>
-        <latitud>34.65932</latitud>
-        <URI>http://sws.geonames.org/4570390/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570391</idGeonames>
-        <longitud>-79.50949</longitud>
-        <latitud>34.61683</latitud>
-        <URI>http://sws.geonames.org/4570391/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570392</idGeonames>
-        <longitud>-81.63316</longitud>
-        <latitud>34.14736</latitud>
-        <URI>http://sws.geonames.org/4570392/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570393</idGeonames>
-        <longitud>-81.59122</longitud>
-        <latitud>34.04403</latitud>
-        <URI>http://sws.geonames.org/4570393/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570394</idGeonames>
-        <longitud>-81.90844</longitud>
-        <latitud>34.88374</latitud>
-        <URI>http://sws.geonames.org/4570394/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570395</idGeonames>
-        <longitud>-81.71816</longitud>
-        <latitud>34.79402</latitud>
-        <URI>http://sws.geonames.org/4570395/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570396</idGeonames>
-        <longitud>-81.11146</longitud>
-        <latitud>35.11514</latitud>
-        <URI>http://sws.geonames.org/4570396/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570397</idGeonames>
-        <longitud>-81.4737</longitud>
-        <latitud>34.89319</latitud>
-        <URI>http://sws.geonames.org/4570397/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek WCD Dam Number Five D-1665</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570398</idGeonames>
-        <longitud>-82.92487</longitud>
-        <latitud>34.56844</latitud>
-        <URI>http://sws.geonames.org/4570398/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek WCD Dam Number Two D-1666</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570399</idGeonames>
-        <longitud>-82.9682</longitud>
-        <latitud>34.5701</latitud>
-        <URI>http://sws.geonames.org/4570399/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Millpond</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570400</idGeonames>
-        <longitud>-80.18655</longitud>
-        <latitud>34.3889</latitud>
-        <URI>http://sws.geonames.org/4570400/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Pond</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570401</idGeonames>
-        <longitud>-81.28737</longitud>
-        <latitud>33.86065</latitud>
-        <URI>http://sws.geonames.org/4570401/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Swamp</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570402</idGeonames>
-        <longitud>-78.91003</longitud>
-        <latitud>33.86545</latitud>
-        <URI>http://sws.geonames.org/4570402/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Creek WCD Dam Number Four D-1667</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570403</idGeonames>
-        <longitud>-82.97487</longitud>
-        <latitud>34.55343</latitud>
-        <URI>http://sws.geonames.org/4570403/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Warrior WCD Dam Four D-3008</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570404</idGeonames>
-        <longitud>-82.00815</longitud>
-        <latitud>34.59179</latitud>
-        <URI>http://sws.geonames.org/4570404/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Warrior WCD Im Dam D-3022</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570405</idGeonames>
-        <longitud>-82.07149</longitud>
-        <latitud>34.63512</latitud>
-        <URI>http://sws.geonames.org/4570405/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Watershed Five Lake</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570406</idGeonames>
-        <longitud>-82.92654</longitud>
-        <latitud>34.56845</latitud>
-        <URI>http://sws.geonames.org/4570406/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Watershed Four Lake</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570407</idGeonames>
-        <longitud>-82.97754</longitud>
-        <latitud>34.55494</latitud>
-        <URI>http://sws.geonames.org/4570407/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beck Landing</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570408</idGeonames>
-        <longitud>-80.41871</longitud>
-        <latitud>32.80462</latitud>
-        <URI>http://sws.geonames.org/4570408/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beck Middle School</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570409</idGeonames>
-        <longitud>-82.36984</longitud>
-        <latitud>34.83567</latitud>
-        <URI>http://sws.geonames.org/4570409/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Becker Pond</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570410</idGeonames>
-        <longitud>-79.76433</longitud>
-        <latitud>34.62479</latitud>
-        <URI>http://sws.geonames.org/4570410/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Becker Pond Dam D-3449</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570411</idGeonames>
-        <longitud>-79.76645</longitud>
-        <latitud>34.62349</latitud>
-        <URI>http://sws.geonames.org/4570411/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beckham Branch</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570412</idGeonames>
-        <longitud>-80.64285</longitud>
-        <latitud>34.60237</latitud>
-        <URI>http://sws.geonames.org/4570412/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beaverdam Warrior WCD Dam 33 D-2982</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570413</idGeonames>
-        <longitud>-81.96315</longitud>
-        <latitud>34.58513</latitud>
-        <URI>http://sws.geonames.org/4570413/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beckhamville</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570414</idGeonames>
-        <longitud>-80.9198</longitud>
-        <latitud>34.59042</latitud>
-        <URI>http://sws.geonames.org/4570414/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beckridge Park</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570415</idGeonames>
-        <longitud>-80.38869</longitud>
-        <latitud>33.89182</latitud>
-        <URI>http://sws.geonames.org/4570415/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Becks Ferry (historical)</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570416</idGeonames>
-        <longitud>-81.13011</longitud>
-        <latitud>32.34992</latitud>
-        <URI>http://sws.geonames.org/4570416/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beckwood</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570417</idGeonames>
-        <longitud>-80.39119</longitud>
-        <latitud>33.9721</latitud>
-        <URI>http://sws.geonames.org/4570417/about.rdf</URI>
-    </ciudades>
-    <ciudades>
-        <nombre>Beckydon Lake</nombre>
-        <pais>United States</pais>
-        <idGeonames>4570418</idGeonames>
-        <longitud>-82.37651</longitud>
-        <latitud>35.10345</latitud>
-        <URI>http://sws.geonames.org/4570418/about.rdf</URI>
-    </ciudades>
-</listadoCiudades>
+<listado_ciudades>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687238</idGeonames>
+        <longitud>-75.51444</longitud>
+        <latitud>10.39972</latitud>
+        <URI>http://sws.geonames.org/3687238/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2520058</idGeonames>
+        <longitud>-0.98623</longitud>
+        <latitud>37.60512</latitud>
+        <URI>http://sws.geonames.org/2520058/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Chile</pais>
+        <idGeonames>3896433</idGeonames>
+        <longitud>-71.60761</longitud>
+        <latitud>-33.55384</latitud>
+        <URI>http://sws.geonames.org/3896433/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Cuba</pais>
+        <idGeonames>3565165</idGeonames>
+        <longitud>-80.45861</longitud>
+        <latitud>22.42569</latitud>
+        <URI>http://sws.geonames.org/3565165/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena del Chairá</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3792382</idGeonames>
+        <longitud>-74.84289</longitud>
+        <latitud>1.33488</latitud>
+        <URI>http://sws.geonames.org/3792382/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Atamaría</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2521486</idGeonames>
+        <longitud>-0.80682</longitud>
+        <latitud>37.59989</latitud>
+        <URI>http://sws.geonames.org/2521486/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>3977225</idGeonames>
+        <longitud>-103.34838</longitud>
+        <latitud>21.97449</latitud>
+        <URI>http://sws.geonames.org/3977225/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Batallón Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3689077</idGeonames>
+        <longitud>-75.91667</longitud>
+        <latitud>8.73333</latitud>
+        <URI>http://sws.geonames.org/3689077/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687239</idGeonames>
+        <longitud>-74.13337</longitud>
+        <latitud>10.33482</latitud>
+        <URI>http://sws.geonames.org/3687239/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Santiago de Cartagena</nombre>
+        <pais>Cuba</pais>
+        <idGeonames>3536730</idGeonames>
+        <longitud>-80.52079</longitud>
+        <latitud>22.50742</latitud>
+        <URI>http://sws.geonames.org/3536730/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Chile</pais>
+        <idGeonames>3896431</idGeonames>
+        <longitud>-70.86932</longitud>
+        <latitud>-34.38188</latitud>
+        <URI>http://sws.geonames.org/3896431/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Hacienda Cartagena</nombre>
+        <pais>Ecuador</pais>
+        <idGeonames>3657282</idGeonames>
+        <longitud>-79.16823</longitud>
+        <latitud>-3.40959</latitud>
+        <URI>http://sws.geonames.org/3657282/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Punta de Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3671253</idGeonames>
+        <longitud>-74.4752</longitud>
+        <latitud>8.8859</latitud>
+        <URI>http://sws.geonames.org/3671253/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>4015177</idGeonames>
+        <longitud>-100.14913</longitud>
+        <latitud>25.13377</latitud>
+        <URI>http://sws.geonames.org/4015177/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>El Cobado</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3684527</idGeonames>
+        <longitud>-75.5</longitud>
+        <latitud>10.15</latitud>
+        <URI>http://sws.geonames.org/3684527/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Siriaca</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3677436</idGeonames>
+        <longitud>-75.4778</longitud>
+        <latitud>10.50788</latitud>
+        <URI>http://sws.geonames.org/3677436/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Veracruz</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3666141</idGeonames>
+        <longitud>-75.36667</longitud>
+        <latitud>10.61667</latitud>
+        <URI>http://sws.geonames.org/3666141/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>San Sebastián</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3668983</idGeonames>
+        <longitud>-75.46667</longitud>
+        <latitud>10.38333</latitud>
+        <URI>http://sws.geonames.org/3668983/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Punta Canoas</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3671255</idGeonames>
+        <longitud>-75.50161</longitud>
+        <latitud>10.55443</latitud>
+        <URI>http://sws.geonames.org/3671255/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Pontezuela</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3671930</idGeonames>
+        <longitud>-75.45</longitud>
+        <latitud>10.55</latitud>
+        <URI>http://sws.geonames.org/3671930/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Punta Arenas</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3672016</idGeonames>
+        <longitud>-75.54783</longitud>
+        <latitud>10.36395</latitud>
+        <URI>http://sws.geonames.org/3672016/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Pasacaballos</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3672824</idGeonames>
+        <longitud>-75.51773</longitud>
+        <latitud>10.2855</latitud>
+        <URI>http://sws.geonames.org/3672824/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Peru</pais>
+        <idGeonames>3698746</idGeonames>
+        <longitud>-80.02493</longitud>
+        <latitud>-6.59324</latitud>
+        <URI>http://sws.geonames.org/3698746/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Barrio Bocagrande</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3688732</idGeonames>
+        <longitud>-75.56099</longitud>
+        <latitud>10.39915</latitud>
+        <URI>http://sws.geonames.org/3688732/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Costa Rica</pais>
+        <idGeonames>3624371</idGeonames>
+        <longitud>-85.67489</longitud>
+        <latitud>10.38256</latitud>
+        <URI>http://sws.geonames.org/3624371/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Caño de Loro</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687575</idGeonames>
+        <longitud>-75.54361</longitud>
+        <latitud>10.34389</latitud>
+        <URI>http://sws.geonames.org/3687575/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Dolores</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514733</idGeonames>
+        <longitud>-1.00462</longitud>
+        <latitud>37.63977</latitud>
+        <URI>http://sws.geonames.org/2514733/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Manga del Mar Menor</nombre>
+        <pais>Spain</pais>
+        <idGeonames>6355177</idGeonames>
+        <longitud>-0.71651</longitud>
+        <latitud>37.64129</latitud>
+        <URI>http://sws.geonames.org/6355177/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Hierbabuena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3680876</idGeonames>
+        <longitud>-75.41667</longitud>
+        <latitud>10.56667</latitud>
+        <URI>http://sws.geonames.org/3680876/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Guayepo</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3681253</idGeonames>
+        <longitud>-75.45</longitud>
+        <latitud>10.56667</latitud>
+        <URI>http://sws.geonames.org/3681253/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Canalete</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687698</idGeonames>
+        <longitud>-75.43768</longitud>
+        <latitud>10.5029</latitud>
+        <URI>http://sws.geonames.org/3687698/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Bocachica</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3688764</idGeonames>
+        <longitud>-75.57802</longitud>
+        <latitud>10.32564</latitud>
+        <URI>http://sws.geonames.org/3688764/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Bermúdez</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3688879</idGeonames>
+        <longitud>-75.41667</longitud>
+        <latitud>10.45</latitud>
+        <URI>http://sws.geonames.org/3688879/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Bayunca</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3689039</idGeonames>
+        <longitud>-75.39728</longitud>
+        <latitud>10.53569</latitud>
+        <URI>http://sws.geonames.org/3689039/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Barú</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3689089</idGeonames>
+        <longitud>-75.68472</longitud>
+        <latitud>10.14168</latitud>
+        <URI>http://sws.geonames.org/3689089/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Ararca</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3689727</idGeonames>
+        <longitud>-75.55506</longitud>
+        <latitud>10.26102</latitud>
+        <URI>http://sws.geonames.org/3689727/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Albornoz</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3690243</idGeonames>
+        <longitud>-75.50667</longitud>
+        <latitud>10.37222</latitud>
+        <URI>http://sws.geonames.org/3690243/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Mamonal</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3675555</idGeonames>
+        <longitud>-75.50719</longitud>
+        <latitud>10.32649</latitud>
+        <URI>http://sws.geonames.org/3675555/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Leticia</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3676612</idGeonames>
+        <longitud>-75.51055</longitud>
+        <latitud>10.18253</latitud>
+        <URI>http://sws.geonames.org/3676612/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Tarapacá</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3667406</idGeonames>
+        <longitud>-75.43333</longitud>
+        <latitud>10.43333</latitud>
+        <URI>http://sws.geonames.org/3667406/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Corona</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2516051</idGeonames>
+        <longitud>-1.1</longitud>
+        <latitud>37.63333</latitud>
+        <URI>http://sws.geonames.org/2516051/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Pozo-Estrecho</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2512321</idGeonames>
+        <longitud>-0.99341</longitud>
+        <latitud>37.71157</latitud>
+        <URI>http://sws.geonames.org/2512321/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>El Carmolí</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2518609</idGeonames>
+        <longitud>-0.84629</longitud>
+        <latitud>37.69177</latitud>
+        <URI>http://sws.geonames.org/2518609/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Bolivia</pais>
+        <idGeonames>3921882</idGeonames>
+        <longitud>-66.31667</longitud>
+        <latitud>-17.38333</latitud>
+        <URI>http://sws.geonames.org/3921882/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Venezuela</pais>
+        <idGeonames>3797100</idGeonames>
+        <longitud>-63.10993</longitud>
+        <latitud>10.49401</latitud>
+        <URI>http://sws.geonames.org/3797100/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Venezuela</pais>
+        <idGeonames>3798986</idGeonames>
+        <longitud>-70.90725</longitud>
+        <latitud>9.1712</latitud>
+        <URI>http://sws.geonames.org/3798986/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3759859</idGeonames>
+        <longitud>-73.26162</longitud>
+        <latitud>9.68611</latitud>
+        <URI>http://sws.geonames.org/3759859/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>7526919</idGeonames>
+        <longitud>-73.522</longitud>
+        <latitud>4.18513</latitud>
+        <URI>http://sws.geonames.org/7526919/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Philippines</pais>
+        <idGeonames>1718247</idGeonames>
+        <longitud>122.4004</longitud>
+        <latitud>9.8203</latitud>
+        <URI>http://sws.geonames.org/1718247/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687241</idGeonames>
+        <longitud>-72.30153</longitud>
+        <latitud>5.23533</latitud>
+        <URI>http://sws.geonames.org/3687241/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687243</idGeonames>
+        <longitud>-78.06667</longitud>
+        <latitud>1.46667</latitud>
+        <URI>http://sws.geonames.org/3687243/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687244</idGeonames>
+        <longitud>-77.61502</longitud>
+        <latitud>1.31725</latitud>
+        <URI>http://sws.geonames.org/3687244/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3687245</idGeonames>
+        <longitud>-77.98333</longitud>
+        <latitud>1.21667</latitud>
+        <URI>http://sws.geonames.org/3687245/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Punta de Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3671252</idGeonames>
+        <longitud>-74.64009</longitud>
+        <latitud>9.27684</latitud>
+        <URI>http://sws.geonames.org/3671252/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Portón de Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3671879</idGeonames>
+        <longitud>-73.75</longitud>
+        <latitud>9.7</latitud>
+        <URI>http://sws.geonames.org/3671879/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3776181</idGeonames>
+        <longitud>-73.57778</longitud>
+        <latitud>5.82417</latitud>
+        <URI>http://sws.geonames.org/3776181/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3828512</idGeonames>
+        <longitud>-74.59</longitud>
+        <latitud>3.21944</latitud>
+        <URI>http://sws.geonames.org/3828512/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3828554</idGeonames>
+        <longitud>-77.54404</longitud>
+        <latitud>0.96163</latitud>
+        <URI>http://sws.geonames.org/3828554/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Ecuador</pais>
+        <idGeonames>8470633</idGeonames>
+        <longitud>-78.70254</longitud>
+        <latitud>0.12047</latitud>
+        <URI>http://sws.geonames.org/8470633/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Villa de Cartagena</nombre>
+        <pais>Chile</pais>
+        <idGeonames>3868189</idGeonames>
+        <longitud>-71.79995</longitud>
+        <latitud>-34.19317</latitud>
+        <URI>http://sws.geonames.org/3868189/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena [Fraccionamiento]</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>8858553</idGeonames>
+        <longitud>-102.27639</longitud>
+        <latitud>21.95639</latitud>
+        <URI>http://sws.geonames.org/8858553/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>El Cocón</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3684514</idGeonames>
+        <longitud>-75.58333</longitud>
+        <latitud>10.26667</latitud>
+        <URI>http://sws.geonames.org/3684514/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Arroyo Grande</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3689510</idGeonames>
+        <longitud>-75.34726</longitud>
+        <latitud>10.65628</latitud>
+        <URI>http://sws.geonames.org/3689510/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Arroyo de Piedra</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3689514</idGeonames>
+        <longitud>-75.4463</longitud>
+        <latitud>10.60749</latitud>
+        <URI>http://sws.geonames.org/3689514/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Arenales</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3676321</idGeonames>
+        <longitud>-75.45</longitud>
+        <latitud>10.4</latitud>
+        <URI>http://sws.geonames.org/3676321/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Jagua</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3678675</idGeonames>
+        <longitud>-75.35</longitud>
+        <latitud>10.61667</latitud>
+        <URI>http://sws.geonames.org/3678675/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Esperanza</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3679106</idGeonames>
+        <longitud>-75.45</longitud>
+        <latitud>10.4</latitud>
+        <URI>http://sws.geonames.org/3679106/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Tierra Bomba</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3667183</idGeonames>
+        <longitud>-75.57524</longitud>
+        <latitud>10.37957</latitud>
+        <URI>http://sws.geonames.org/3667183/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>San Antonio</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3670104</idGeonames>
+        <longitud>-75.33333</longitud>
+        <latitud>10.66667</latitud>
+        <URI>http://sws.geonames.org/3670104/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Puerto Cospique</nombre>
+        <pais>Colombia</pais>
+        <idGeonames>3671492</idGeonames>
+        <longitud>-75.48333</longitud>
+        <latitud>10.33333</latitud>
+        <URI>http://sws.geonames.org/3671492/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>San Ginés de la Jara</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2511377</idGeonames>
+        <longitud>-0.82278</longitud>
+        <latitud>37.64106</latitud>
+        <URI>http://sws.geonames.org/2511377/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>3978524</idGeonames>
+        <longitud>-105.0153</longitud>
+        <latitud>24.84121</latitud>
+        <URI>http://sws.geonames.org/3978524/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>4015176</idGeonames>
+        <longitud>-103.75302</longitud>
+        <latitud>26.17604</latitud>
+        <URI>http://sws.geonames.org/4015176/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Planta Cartagena</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>8888793</idGeonames>
+        <longitud>-101.07722</longitud>
+        <latitud>21.61806</latitud>
+        <URI>http://sws.geonames.org/8888793/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>8708750</idGeonames>
+        <longitud>-98.64083</longitud>
+        <latitud>22.39722</latitud>
+        <URI>http://sws.geonames.org/8708750/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Cartagena</nombre>
+        <pais>Mexico</pais>
+        <idGeonames>9983142</idGeonames>
+        <longitud>-107.96896</longitud>
+        <latitud>27.54596</latitud>
+        <URI>http://sws.geonames.org/9983142/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Urrutias</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514429</idGeonames>
+        <longitud>-0.83122</longitud>
+        <latitud>37.68334</latitud>
+        <URI>http://sws.geonames.org/2514429/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Simonetes</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514450</idGeonames>
+        <longitud>-1.1</longitud>
+        <latitud>37.66667</latitud>
+        <URI>http://sws.geonames.org/2514450/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Rosiques</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514471</idGeonames>
+        <longitud>-0.93612</longitud>
+        <latitud>37.66133</latitud>
+        <URI>http://sws.geonames.org/2514471/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Rizos</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514488</idGeonames>
+        <longitud>-0.88333</longitud>
+        <latitud>37.65</latitud>
+        <URI>http://sws.geonames.org/2514488/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Rangos</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514495</idGeonames>
+        <longitud>-0.86667</longitud>
+        <latitud>37.65</latitud>
+        <URI>http://sws.geonames.org/2514495/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Piñuelas</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514520</idGeonames>
+        <longitud>-1.03333</longitud>
+        <latitud>37.66667</latitud>
+        <URI>http://sws.geonames.org/2514520/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Pérez de Arriba</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514529</idGeonames>
+        <longitud>-0.95</longitud>
+        <latitud>37.7</latitud>
+        <URI>http://sws.geonames.org/2514529/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Pérez de Abajo</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514530</idGeonames>
+        <longitud>-0.95</longitud>
+        <latitud>37.68333</latitud>
+        <URI>http://sws.geonames.org/2514530/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Nietos</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514570</idGeonames>
+        <longitud>-0.78484</longitud>
+        <latitud>37.64876</latitud>
+        <URI>http://sws.geonames.org/2514570/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Estrases</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514721</idGeonames>
+        <longitud>-1.05377</longitud>
+        <latitud>37.69116</latitud>
+        <URI>http://sws.geonames.org/2514721/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Castillejos</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514776</idGeonames>
+        <longitud>-1.08333</longitud>
+        <latitud>37.66667</latitud>
+        <URI>http://sws.geonames.org/2514776/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Blancos</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514816</idGeonames>
+        <longitud>-0.81136</longitud>
+        <latitud>37.63082</latitud>
+        <URI>http://sws.geonames.org/2514816/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Belones</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514817</idGeonames>
+        <longitud>-0.77866</longitud>
+        <latitud>37.62157</latitud>
+        <URI>http://sws.geonames.org/2514817/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Beatos</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514819</idGeonames>
+        <longitud>-0.90233</longitud>
+        <latitud>37.66356</latitud>
+        <URI>http://sws.geonames.org/2514819/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Barreros</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514825</idGeonames>
+        <longitud>-0.99774</longitud>
+        <latitud>37.62829</latitud>
+        <URI>http://sws.geonames.org/2514825/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Balanzas</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514843</idGeonames>
+        <longitud>-0.96756</longitud>
+        <latitud>37.68248</latitud>
+        <URI>http://sws.geonames.org/2514843/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Los Arroyos</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2514845</idGeonames>
+        <longitud>-1.16667</longitud>
+        <latitud>37.63333</latitud>
+        <URI>http://sws.geonames.org/2514845/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Las Barracas</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2515508</idGeonames>
+        <longitud>-0.77672</longitud>
+        <latitud>37.61468</latitud>
+        <URI>http://sws.geonames.org/2515508/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Palma</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2515681</idGeonames>
+        <longitud>-0.96322</longitud>
+        <latitud>37.68982</latitud>
+        <URI>http://sws.geonames.org/2515681/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Azohía</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2516182</idGeonames>
+        <longitud>-1.1697</longitud>
+        <latitud>37.55431</latitud>
+        <URI>http://sws.geonames.org/2516182/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Asomada</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2516192</idGeonames>
+        <longitud>-0.97309</longitud>
+        <latitud>37.62454</latitud>
+        <URI>http://sws.geonames.org/2516192/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Aparecida</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2516200</idGeonames>
+        <longitud>-0.95212</longitud>
+        <latitud>37.66981</latitud>
+        <URI>http://sws.geonames.org/2516200/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>La Aljorra</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2516212</idGeonames>
+        <longitud>-1.06867</longitud>
+        <latitud>37.69071</latitud>
+        <URI>http://sws.geonames.org/2516212/about.rdf</URI>
+    </ciudad>
+    <ciudad>
+        <nombre>Isla Plana</nombre>
+        <pais>Spain</pais>
+        <idGeonames>2516427</idGeonames>
+        <longitud>-1.20858</longitud>
+        <latitud>37.57465</latitud>
+        <URI>http://sws.geonames.org/2516427/about.rdf</URI>
+    </ciudad>
+</listado_ciudades>

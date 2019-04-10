@@ -58,15 +58,9 @@
 
 	<xs:complexType name="tipoSitiosInteres">
 		<xs:sequence>
-			<xs:element name="sitio" type="tns:tipoSitioInteres"
+			<xs:element name="sitio" type="tns:tipoIdentificador"
 				minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
-	</xs:complexType>
-
-	<xs:complexType name="tipoSitioInteres">
-		<xs:complexContent>
-			<xs:extension base="tns:tipoIdentificador" />
-		</xs:complexContent>
 	</xs:complexType>
 	
 	<xs:complexType name="tipoLibros">

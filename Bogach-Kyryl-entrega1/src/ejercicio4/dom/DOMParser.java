@@ -26,34 +26,22 @@ public class DOMParser {
 
 	public DOMParser() {
 		this.factoria = DocumentBuilderFactory.newInstance();
+		this.factoria.setNamespaceAware(true);
+		this.factoria.setAttribute("http://java.sun.com/xml/jaxp/properties/schemaLanguage",
+				"http://www.w3.org/2001/XMLSchema");
 	}
 
 	public Busqueda parse(long id) {
+		// Variables reutilizadas en distintos análisis
 		DocumentBuilder analizador;
 		Document documento;
-
-		Busqueda busqueda = new Busqueda();
-
-		// Buscamos el pais del identificador
-		
-		try {
-			analizador = factoria.newDocumentBuilder();
-			documento = analizador.parse("http://api.geonames.org/get?geonameId=" + id + "&username=arso");
-		} catch (ParserConfigurationException | SAXException | IOException e) {
-			throw new GeoNamesException("No se pudo analizar el documento.", e);
-		}
-
 		NodeList node = null;
 		String data = "";
 
-		data = this.getDataFrom(documento, "countryName");
-		if (data != null) {
-			busqueda.setPais(data);
-		}
-		
+		// Busqueda construida
+		Busqueda busqueda = new Busqueda();
 
 		// Buscamos información del rdf
-
 		try {
 			analizador = factoria.newDocumentBuilder();
 			documento = analizador.parse("http://sws.geonames.org/" + id + "/about.rdf");
@@ -64,28 +52,34 @@ public class DOMParser {
 		node = null;
 		data = "";
 
-		data = this.getDataFrom(documento, "gn:name");
+		data = this.getDataFrom(documento, "name", "http://www.geonames.org/ontology#");
 		if (data != null) {
 			busqueda.setNombre(data);
 		}
 
-		data = this.getDataFrom(documento, "gn:population");
+		data = this.getDataFrom(documento, "countryCode", "http://www.geonames.org/ontology#");
+		if (data != null) {
+			busqueda.setCodigoPais(data);
+		}
+
+		data = this.getDataFrom(documento, "population", "http://www.geonames.org/ontology#");
 		if (data != null) {
 			busqueda.setPoblacion(Integer.parseInt(data));
 		}
 
-		data = this.getDataFrom(documento, "wgs84_pos:lat");
+		data = this.getDataFrom(documento, "lat", "http://www.w3.org/2003/01/geo/wgs84_pos#");
 		if (data != null) {
 			busqueda.setLatitud(Double.parseDouble(data));
 		}
 
-		data = this.getDataFrom(documento, "wgs84_pos:long");
+		data = this.getDataFrom(documento, "long", "http://www.w3.org/2003/01/geo/wgs84_pos#");
 		if (data != null) {
 			busqueda.setLongitud(Double.parseDouble(data));
 		}
 
 		// OPCIONAL
-		data = this.getAttributeFrom(documento, "gn:wikipediaArticle", "rdf:resource");
+		data = this.getAttributeFrom(documento, "wikipediaArticle", "http://www.geonames.org/ontology#", "resource",
+				"http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 		if (data != null) {
 			try {
 				busqueda.setWikipedia(new URI(data));
@@ -95,7 +89,8 @@ public class DOMParser {
 		}
 
 		// OPCIONAL
-		data = this.getAttributeFrom(documento, "rdfs:seeAlso", "rdf:resource");
+		data = this.getAttributeFrom(documento, "seeAlso", "http://www.w3.org/2000/01/rdf-schema#", "resource",
+				"http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 		if (data != null) {
 			try {
 				busqueda.setBdpedia(new URI(data));
@@ -104,13 +99,14 @@ public class DOMParser {
 			}
 		}
 
-		data = this.getDataFrom(documento, "dcterms:modified");
+		data = this.getDataFrom(documento, "modified", "http://purl.org/dc/terms/");
 		if (data != null) {
 			busqueda.setFechaActualizacion(Utils.fromStringToDate(data));
 		}
 
 		// OPCIONAL
-		String nearbyFeatures = this.getAttributeFrom(documento, "gn:nearbyFeatures", "rdf:resource");
+		String nearbyFeatures = this.getAttributeFrom(documento, "nearbyFeatures", "http://www.geonames.org/ontology#",
+				"resource", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 		if (nearbyFeatures != null) {
 			try {
 				documento = analizador.parse(nearbyFeatures);
@@ -118,13 +114,14 @@ public class DOMParser {
 				throw new GeoNamesException("No se puede analizar el documento", e);
 			}
 
-			NodeList features = documento.getElementsByTagName("gn:Feature");
+			NodeList features = documento.getElementsByTagNameNS("Feature", "http://www.geonames.org/ontology#");
 
 			for (int i = 0; i < features.getLength(); i++) {
 				Element feature = (Element) features.item(i);
-				Element name = (Element) feature.getElementsByTagName("gn:name").item(0);
+				Element name = (Element) feature.getElementsByTagNameNS("name", "http://www.geonames.org/ontology#")
+						.item(0);
 
-				String uriClave = feature.getAttribute("rdf:about");
+				String uriClave = feature.getAttributeNS("about", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 				Matcher matcher = GEONAME_URI.matcher(uriClave);
 
 				String clave = "";
@@ -167,6 +164,20 @@ public class DOMParser {
 			busqueda.setNubes(data);
 		}
 
+		// Cogemos el país en función del código de país: ES -> Spain
+		try {
+			analizador = factoria.newDocumentBuilder();
+			documento = analizador.parse(
+					"http://api.geonames.org/countryInfo?country=" + busqueda.getCodigoPais() + "&username=arso");
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			throw new GeoNamesException("No se pudo analizar el documento.", e);
+		}
+
+		data = this.getDataFrom(documento, "countryName");
+		if (data != null) {
+			busqueda.setPais(data);
+		}
+
 		return busqueda;
 	}
 
@@ -186,14 +197,30 @@ public class DOMParser {
 		return data;
 	}
 
-	private String getAttributeFrom(Document documento, String name, String attribute) {
-		NodeList node = documento.getElementsByTagName(name);
+	private String getDataFrom(Document documento, String name, String ns) {
+		NodeList node = documento.getElementsByTagNameNS(ns, name);
 		Element element = (Element) node.item(0);
 		if (element == null) {
 			return null;
 		}
 
-		String data = element.getAttribute(attribute);
+		String data = element.getTextContent();
+
+		if (data == null || data.isEmpty()) {
+			return null;
+		}
+
+		return data;
+	}
+
+	private String getAttributeFrom(Document documento, String name, String ns, String attribute, String nsAttr) {
+		NodeList node = documento.getElementsByTagNameNS(ns, name);
+		Element element = (Element) node.item(0);
+		if (element == null) {
+			return null;
+		}
+
+		String data = element.getAttributeNS(nsAttr, attribute);
 
 		if (data == null || data.isEmpty()) {
 			return null;

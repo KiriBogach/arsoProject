@@ -6,27 +6,27 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
-import servicio.model.Ciudad;
+import servicio.model.CiudadGeoNames;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement
-@XmlType(name="listado_ciudades")
+@XmlRootElement(name="listado_ciudades")
 public class ListadoCiudades {
 
-	private List<Ciudad> ciudades;
+	@XmlElement(name="ciudad")
+	private List<CiudadGeoNames> ciudades;
 	
 	public ListadoCiudades() {
 		this.ciudades = new ArrayList<>();
 	}
 	
-	public List<Ciudad> getCiudades() {
+	public List<CiudadGeoNames> getCiudades() {
 		return ciudades;
 	}
 	
-	public void addAll(Collection<Ciudad> ciudades) {
+	public void addAll(Collection<CiudadGeoNames> ciudades) {
 		this.ciudades.addAll(ciudades);
 	}
 }

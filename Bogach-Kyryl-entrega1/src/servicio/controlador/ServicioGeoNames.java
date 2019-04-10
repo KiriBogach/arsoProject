@@ -2,8 +2,10 @@ package servicio.controlador;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.List;
@@ -16,7 +18,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import javax.xml.xpath.XPathFactory;
 
 import org.xml.sax.SAXException;
 
@@ -26,18 +27,17 @@ import ejercicio4.dom.DOMParser;
 import ejercicio4.stax.StAXBuilder;
 import servicio.exceptions.GeoNamesException;
 import servicio.model.Busqueda;
-import servicio.model.Ciudad;
-import servicio.tipos.JAXBCiudad;
+import servicio.model.CiudadGeoNames;
+import servicio.tipos.Ciudad;
 import utils.Utils;
 
 public class ServicioGeoNames {
 	private static final String BD_PATH = "xml-bd";
 	private static final String CTX_PATH = "servicio.tipos";
-	private static final String XML_URL = "http://api.geonames.org/search?q=";
+	private static final String XML_URL = "http://api.geonames.org/search?featureClass=P&q=";
 	private static final String USER_URL = "username=arso";
 	private JAXBContext context = null;
 	private SAXParserFactory SAXfactoria = null;
-	private XPathFactory xPathFactory = null;
 	private DOMParser DOMParser = null;
 	private StAXBuilder StAXBuilder = null;
 	private XPathParser XPathParser = null;
@@ -53,34 +53,36 @@ public class ServicioGeoNames {
 		}
 	}
 
-	public List<Ciudad> buscar(String busqueda) {
+	public List<CiudadGeoNames> buscar(String busqueda) {
 		SAXParser analizador = null;
 		try {
 			analizador = getSAXParserFactory().newSAXParser();
 		} catch (ParserConfigurationException | SAXException e) {
-			throw new GeoNamesException("no se ha podido buscar el documento.", e);
+			throw new GeoNamesException("No se ha podido buscar el documento.", e);
 		}
+
 		try {
 			Manejador manejador = new Manejador();
 			URI url = null;
 			try {
-				url = new URI(XML_URL + busqueda + "&" + USER_URL);
-			} catch (URISyntaxException e) {
-				throw new GeoNamesException("no se ha podido buscar el documento.", e);
+				String busquedaEncoded = URLEncoder.encode(busqueda, java.nio.charset.StandardCharsets.UTF_8.toString());
+				url = new URI(XML_URL + busquedaEncoded + "&" + USER_URL);
+			} catch (URISyntaxException | UnsupportedEncodingException ex) {
+				throw new GeoNamesException("Error codificando el parametro de busqueda.", ex);
 			}
 			analizador.parse(url.toString(), manejador);
 			return manejador.getCiudades();
 		} catch (IOException e) {
 			throw new GeoNamesException("El documento no ha podido ser leído", e);
 		} catch (SAXException e) {
-			throw new GeoNamesException("no se ha podido buscar el documento.", e);
+			throw new GeoNamesException("No se ha podido buscar el documento.", e);
 		}
 	}
 
-	public JAXBCiudad getCiudad(String idGeoNames) {
+	public Ciudad getCiudad(String idGeoNames) {
 		try {
 			Unmarshaller unmarshaller = getJAXBContext().createUnmarshaller();
-			return (JAXBCiudad) unmarshaller.unmarshal(recuperarDocumento(idGeoNames));
+			return (Ciudad) unmarshaller.unmarshal(recuperarDocumento(idGeoNames));
 		} catch (JAXBException e) {
 			throw new GeoNamesException("No se pudo obtener la ciudad.", e);
 		}
@@ -88,7 +90,7 @@ public class ServicioGeoNames {
 
 	public ListadoCiudades getResultadosBusquedaXML(String busqueda) {
 		ListadoCiudades listadoCiudades = new ListadoCiudades();
-		Collection<Ciudad> ciudadesEncontradas = this.buscar(busqueda);
+		Collection<CiudadGeoNames> ciudadesEncontradas = this.buscar(busqueda);
 		listadoCiudades.addAll(ciudadesEncontradas);
 
 		return listadoCiudades;
@@ -104,7 +106,7 @@ public class ServicioGeoNames {
 	}
 
 	public void addCiudadFavorita(String idFavoritos, String idGeoNames) {
-		
+
 		try {
 			JAXBContext contexto;
 			contexto = JAXBContext.newInstance(CiudadesFavoritas.class);
@@ -144,7 +146,7 @@ public class ServicioGeoNames {
 		} catch (JAXBException e) {
 			throw new GeoNamesException("No se pudo obtener el fichero de favoritos.", e);
 		}
-		
+
 	}
 
 	public void removeDocumentoFavoritos(String idFavoritos) {
@@ -182,20 +184,13 @@ public class ServicioGeoNames {
 		return SAXfactoria;
 	}
 
-	private XPathFactory getXPathFactory() {
-		if (xPathFactory == null) {
-			xPathFactory = XPathFactory.newInstance();
-		}
-		return xPathFactory;
-	}
-	
 	private StAXBuilder getStAXBuilder() {
 		if (StAXBuilder == null) {
 			StAXBuilder = new StAXBuilder();
 		}
 		return StAXBuilder;
 	}
-	
+
 	private XPathParser getXPathParser() {
 		if (XPathParser == null) {
 			XPathParser = new XPathParser();
@@ -240,6 +235,6 @@ public class ServicioGeoNames {
 		} catch (JAXBException e) {
 			throw new GeoNamesException("No se pudo crear el fichero de favoritos.", e);
 		}
-		
+
 	}
 }

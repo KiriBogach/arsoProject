@@ -1,8 +1,8 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantaciï¿½n de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.8-b130911.1802 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas las modificaciones realizadas en este archivo se perderï¿½n si se vuelve a compilar el esquema de origen. 
-// Generado el: 2019.04.06 a las 05:37:42 PM CEST 
+// Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+// Generado el: 2019.04.10 a las 03:33:45 PM CEST 
 //
 
 
@@ -37,11 +37,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBCiudad }
+     * Create an instance of {@link Ciudad }
      * 
      */
-    public JAXBCiudad createCiudad() {
-        return new JAXBCiudad();
+    public Ciudad createCiudad() {
+        return new Ciudad();
     }
 
     /**
@@ -82,14 +82,6 @@ public class ObjectFactory {
      */
     public TipoLibros createTipoLibros() {
         return new TipoLibros();
-    }
-
-    /**
-     * Create an instance of {@link TipoSitioInteres }
-     * 
-     */
-    public TipoSitioInteres createTipoSitioInteres() {
-        return new TipoSitioInteres();
     }
 
     /**

@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ciudad")
-public class Ciudad {
+public class CiudadGeoNames {
 	private String nombre;
 	private String pais;
 	private long idGeonames;
@@ -15,10 +15,10 @@ public class Ciudad {
 	private double latitud;
 	// Calculada URI en GeoNames
 
-	public Ciudad() {
+	public CiudadGeoNames() {
 	}
 
-	public Ciudad(String nombre, String pais, long idGeonames, double longitud, double latitud) {
+	public CiudadGeoNames(String nombre, String pais, long idGeonames, double longitud, double latitud) {
 		this.nombre = nombre;
 		this.pais = pais;
 		this.idGeonames = idGeonames;

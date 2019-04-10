@@ -32,6 +32,8 @@ public class XPathParser {
 			String subjectBuscado = busqueda.getNombre() + " (" + busqueda.getPais() + ")";
 			XPathExpression consulta = xpath.compile("//ns:entry[dc:subject = '" + subjectBuscado + "']");
 
+			System.out.println(urlConsultada);
+
 			NodeList resultado = (NodeList) consulta.evaluate(new org.xml.sax.InputSource(urlConsultada),
 					XPathConstants.NODESET);
 			/*
@@ -44,45 +46,44 @@ public class XPathParser {
 			 */
 			for (int i = 0; i < Math.min(3, resultado.getLength()); i++) {
 				Node nodo = resultado.item(i);
-				
+
 				NodeList hijos = nodo.getChildNodes();
 				Libro libro = new Libro();
-				
+
 				for (int j = 0; j < hijos.getLength(); j++) {
 					Node hijo = hijos.item(j);
-					
+
 					String contenidoHijo = hijo.getTextContent();
 					NamedNodeMap atributosHijo = hijo.getAttributes();
 					switch (hijo.getNodeName()) {
-						case "title":
-							libro.setTitulo(contenidoHijo);
-							break;
-						case "id":
-							libro.setIdentificador(contenidoHijo);
-							break;
-						case "dc:identifier":
-							if (contenidoHijo.contains("ISBN")) {
-								libro.setISBN(contenidoHijo);
+					case "title":
+						libro.setTitulo(contenidoHijo);
+						break;
+					case "id":
+						libro.setIdentificador(contenidoHijo);
+						break;
+					case "dc:identifier":
+						if (contenidoHijo.contains("ISBN")) {
+							libro.setISBN(contenidoHijo);
+						}
+						break;
+					case "link":
+						String tipo = atributosHijo.getNamedItem("type").getTextContent();
+
+						if (tipo != null && tipo.startsWith("image/")) {
+							String href = atributosHijo.getNamedItem("href").getTextContent();
+							try {
+								libro.setUrlImagen(new URI(href));
+							} catch (URISyntaxException e) {
+								e.printStackTrace();
 							}
-							break;
-						case "link":
-							
-							// mal
-							if (atributosHijo.getNamedItem("type") != null) {
-								System.out.println(contenidoHijo);
-								try {
-									libro.setUrlImagen(new URI(contenidoHijo));
-								} catch (URISyntaxException e) {
-									e.printStackTrace();
-								}
-							}
-							break;
-						default:
-							break;
+						}
+						break;
+					default:
+						break;
 					}
 				}
 
-				
 				System.out.println(libro);
 
 			}
