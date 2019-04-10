@@ -3,6 +3,7 @@ package ejercicio4.stax;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.xml.stream.XMLOutputFactory;
@@ -11,6 +12,7 @@ import javax.xml.stream.XMLStreamWriter;
 
 import servicio.exceptions.GeoNamesException;
 import servicio.model.Busqueda;
+import servicio.model.Libro;
 import utils.Utils;
 
 public class StAXBuilder {
@@ -86,6 +88,29 @@ public class StAXBuilder {
 				writer.writeEndElement();
 				writer.writeStartElement("codigo");
 				writer.writeCharacters(Long.toString(entry.getKey()));
+				writer.writeEndElement();
+				writer.writeEndElement();
+			}
+
+			writer.writeEndElement();
+			writer.writeStartElement("libros");
+			List<Libro> libros = busqueda.getLibros();
+			for (Libro libro : libros) {
+				writer.writeStartElement("libro");
+				writer.writeStartElement("titulo");
+				writer.writeCharacters(libro.getTitulo());
+				writer.writeEndElement();
+				writer.writeStartElement("identificador");
+				writer.writeCharacters(libro.getIdentificador());
+				writer.writeEndElement();
+				writer.writeStartElement("ISBN");
+				writer.writeCharacters(libro.getISBN());
+				writer.writeEndElement();
+				writer.writeStartElement("urlImagen");
+				writer.writeCharacters(libro.getUrlImagen().toString());
+				writer.writeEndElement();
+				writer.writeStartElement("urlGoogleBooks");
+				writer.writeCharacters(libro.getUrlGoogleBooks().toString());
 				writer.writeEndElement();
 				writer.writeEndElement();
 			}

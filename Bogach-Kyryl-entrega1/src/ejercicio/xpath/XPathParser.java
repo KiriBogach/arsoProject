@@ -2,6 +2,9 @@ package ejercicio.xpath;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
@@ -22,8 +25,9 @@ public class XPathParser {
 	public static final String URL_GOOGLE_BOOKS_START = "http://books.google.com/books/feeds/volumes?q=";
 	public static final String URL_GOOGLE_BOOKS_END = "&start-index=1&max-results=100";
 
-	public void parse(Busqueda busqueda) {
+	public List<Libro> parse(Busqueda busqueda) {
 		try {
+			List<Libro> libros = new LinkedList<Libro>();
 			String urlConsultada = this.getURL(busqueda.getNombre());
 			XPathFactory factoria = XPathFactory.newInstance();
 			XPath xpath = factoria.newXPath();
@@ -32,16 +36,11 @@ public class XPathParser {
 			String subjectBuscado = busqueda.getNombre() + " (" + busqueda.getPais() + ")";
 			XPathExpression consulta = xpath.compile("//ns:entry[dc:subject = '" + subjectBuscado + "']");
 
-			System.out.println(urlConsultada);
-
 			NodeList resultado = (NodeList) consulta.evaluate(new org.xml.sax.InputSource(urlConsultada),
 					XPathConstants.NODESET);
 			/*
-			 * Título del libro. 
-			 * Identificador del libro en Google Books. 
-			 * ISBN (opcional)
-			 * URL de la imagen. 
-			 * URL a la web de Google Books.
+			 * Título del libro. Identificador del libro en Google Books. ISBN (opcional)
+			 * URL de la imagen. URL a la web de Google Books.
 			 * 
 			 */
 			for (int i = 0; i < Math.min(3, resultado.getLength()); i++) {
@@ -70,13 +69,28 @@ public class XPathParser {
 					case "link":
 						String tipo = atributosHijo.getNamedItem("type").getTextContent();
 
-						if (tipo != null && tipo.startsWith("image/")) {
-							String href = atributosHijo.getNamedItem("href").getTextContent();
-							try {
-								libro.setUrlImagen(new URI(href));
-							} catch (URISyntaxException e) {
-								e.printStackTrace();
+						if (tipo != null) {
+							if (tipo.startsWith("image/")) {
+								String href = atributosHijo.getNamedItem("href").getTextContent();
+								try {
+									libro.setUrlImagen(new URI(href));
+								} catch (URISyntaxException e) {
+									e.printStackTrace();
+								}
 							}
+							if (tipo.startsWith("text/html")) {
+								String rel = atributosHijo.getNamedItem("rel").getTextContent();
+								if (rel.equals("http://schemas.google.com/books/2008/info")) {
+									String href = atributosHijo.getNamedItem("href").getTextContent();
+									try {
+										libro.setUrlGoogleBooks(new URI(href));
+									} catch (URISyntaxException e) {
+										e.printStackTrace();
+									}
+								}
+								
+							}
+
 						}
 						break;
 					default:
@@ -84,9 +98,10 @@ public class XPathParser {
 					}
 				}
 
-				System.out.println(libro);
+				libros.add(libro);
 
 			}
+			return libros;
 		} catch (XPathExpressionException ex) {
 			throw new GeoNamesException("Error obteniendo datos con XPath", ex);
 		}
