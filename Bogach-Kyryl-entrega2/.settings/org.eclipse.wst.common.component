@@ -2,6 +2,9 @@
     <wb-module deploy-name="Bogach-Kyryl-entrega2">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="Bogach-Kyryl-entrega1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Bogach-Kyryl-entrega1/Bogach-Kyryl-entrega1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="Bogach-Kyryl-entrega2"/>
         <property name="java-output-path" value="/Bogach-Kyryl-entrega2/build/classes"/>
     </wb-module>

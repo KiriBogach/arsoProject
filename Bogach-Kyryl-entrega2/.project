@@ -3,6 +3,7 @@
 	<name>Bogach-Kyryl-entrega2</name>
 	<comment></comment>
 	<projects>
+		<project>Bogach-Kyryl-entrega1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
