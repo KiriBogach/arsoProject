@@ -2,9 +2,6 @@ package ejercicio.xpath;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
@@ -25,16 +22,15 @@ public class XPathParser {
 	public static final String URL_GOOGLE_BOOKS_START = "http://books.google.com/books/feeds/volumes?q=";
 	public static final String URL_GOOGLE_BOOKS_END = "&start-index=1&max-results=100";
 
-	public List<Libro> parse(Busqueda busqueda) {
+	public void parse(Busqueda busqueda) {
 		try {
-			List<Libro> libros = new LinkedList<Libro>();
 			String urlConsultada = this.getURL(busqueda.getNombre());
 			XPathFactory factoria = XPathFactory.newInstance();
 			XPath xpath = factoria.newXPath();
 			xpath.setNamespaceContext(new EspaciosNombres());
 
 			String subjectBuscado = busqueda.getNombre() + " (" + busqueda.getPais() + ")";
-			XPathExpression consulta = xpath.compile("//ns:entry[dc:subject = '" + subjectBuscado + "']");
+			XPathExpression consulta = xpath.compile("//ns:entry[dc:subject = '" + subjectBuscado + "'][position() < 4]");
 
 			NodeList resultado = (NodeList) consulta.evaluate(new org.xml.sax.InputSource(urlConsultada),
 					XPathConstants.NODESET);
@@ -43,7 +39,7 @@ public class XPathParser {
 			 * URL de la imagen. URL a la web de Google Books.
 			 * 
 			 */
-			for (int i = 0; i < Math.min(3, resultado.getLength()); i++) {
+			for (int i = 0; i < resultado.getLength(); i++) {
 				Node nodo = resultado.item(i);
 
 				NodeList hijos = nodo.getChildNodes();
@@ -98,10 +94,9 @@ public class XPathParser {
 					}
 				}
 
-				libros.add(libro);
+				busqueda.addLibro(libro);
 
 			}
-			return libros;
 		} catch (XPathExpressionException ex) {
 			throw new GeoNamesException("Error obteniendo datos con XPath", ex);
 		}
