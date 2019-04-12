@@ -45,7 +45,7 @@ public class ClienteServicioGeonames {
 
 		System.out.println("ciudad: " + ciudad.getNombre());
 		System.out.println("pais: " + ciudad.getPais());
-		System.out.println("wikipedia: " + ciudad.getWikipedia());
+		System.out.println("wikipedi: " + ciudad.getWikipedia());
 		System.out.println("bdpedia: " + ciudad.getBdpedia());
 		
 		recurso = cliente.resource(URL_SERVICIO + path + "/favoritas");
