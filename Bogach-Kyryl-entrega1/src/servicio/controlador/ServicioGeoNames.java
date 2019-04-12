@@ -213,7 +213,7 @@ public class ServicioGeoNames {
 		if (!file.exists() || !actualizado) {
 			long id = Long.parseLong(idGeoNames);
 			Busqueda busqueda = getDOMParser().parse(id);
-			this.getXPathParser().parse(busqueda).forEach(l -> busqueda.addLibro(l));
+			this.getXPathParser().parse(busqueda);
 			this.getStAXBuilder().build(id, busqueda);
 		}
 
