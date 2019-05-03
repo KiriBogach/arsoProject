@@ -69,7 +69,7 @@ public class Manejador extends DefaultHandler {
 	public void endElement(String uri, String localName, String qName) {
 		pila.pop();
 
-		if (qName.equalsIgnoreCase("geoname")) {
+		if (qName.equals("geoname")) {
 			this.inGeoname = false;
 			this.ciudades.add(ciudad);
 			this.ciudad = null;

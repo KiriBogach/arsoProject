@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
+import fr.vidal.oss.jaxb.atom.core.Feed;
 import servicio.controlador.ListadoCiudades;
 import servicio.controlador.ServicioGeoNames;
 import servicio.exceptions.GeoNamesException;
@@ -26,7 +27,7 @@ public class Controller {
 	@Context private UriInfo uriInfo;
 	
 	@GET
-	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
 	public Response getResultadosBusqueda(@QueryParam(value = "busqueda") String busqueda) {
 		try {
 			ListadoCiudades actividad = controlador.getResultadosBusquedaXML(busqueda);
@@ -34,7 +35,29 @@ public class Controller {
 					.entity(actividad)
 					.build();
 		} catch (GeoNamesException ex) {
-			return Response.status(Status.INTERNAL_SERVER_ERROR)
+			return Response.status(Status.BAD_REQUEST)
+					.entity(ex.getMessage())
+					.build();
+		}
+	}
+	
+	@GET
+	@Produces({ MediaType.APPLICATION_ATOM_XML})
+	public Response getResultadosBusquedaATOM(@QueryParam(value = "busqueda") String busqueda, @QueryParam(value = "pagina") String pagina) {
+		try {
+			int numeroPagina;
+			try {
+				numeroPagina = Integer.parseInt(pagina);
+			} catch (NumberFormatException ex) {
+				numeroPagina = 1;
+			}
+			
+			Feed actividad = controlador.getResultadosBusquedaATOM(busqueda, numeroPagina, uriInfo);
+			return Response.status(Status.OK)
+					.entity(actividad)
+					.build();
+		} catch (GeoNamesException ex) {
+			return Response.status(Status.BAD_REQUEST)
 					.entity(ex.getMessage())
 					.build();
 		}

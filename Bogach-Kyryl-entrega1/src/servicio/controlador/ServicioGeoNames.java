@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
+import javax.ws.rs.core.UriInfo;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -21,10 +22,12 @@ import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.SAXException;
 
+import atom.builder.AtomBuilder;
 import ejercicio.xpath.XPathParser;
 import ejercicio3.sax.Manejador;
 import ejercicio4.dom.DOMParser;
 import ejercicio4.stax.StAXBuilder;
+import fr.vidal.oss.jaxb.atom.core.Feed;
 import servicio.exceptions.GeoNamesException;
 import servicio.model.Busqueda;
 import servicio.model.CiudadGeoNames;
@@ -94,6 +97,11 @@ public class ServicioGeoNames {
 		listadoCiudades.addAll(ciudadesEncontradas);
 
 		return listadoCiudades;
+	}
+	
+	public Feed getResultadosBusquedaATOM(String busqueda, int numeroPagina, UriInfo uriInfo) {
+		ListadoCiudades listadoCiudades = this.getResultadosBusquedaXML(busqueda);
+		return AtomBuilder.build(listadoCiudades, numeroPagina, uriInfo);
 	}
 
 	public String crearDocumentoFavorito() {

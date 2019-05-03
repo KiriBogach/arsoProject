@@ -37,7 +37,7 @@ public class ClienteServicioGeonames {
 			System.out.println(ciudad.getNombre());
 		}
 		System.out.println("--------------------------------------------");
-		recurso = cliente.resource(URL_SERVICIO + path + "/2520058");
+		recurso = cliente.resource(URL_SERVICIO + path + "/3687238");
 		builder = recurso.accept(MediaType.APPLICATION_XML);
 		respuesta = builder.method("GET", ClientResponse.class);
 		Ciudad ciudad = respuesta.getEntity(Ciudad.class);

@@ -21,7 +21,7 @@ public class StAXBuilder {
 		XMLOutputFactory xof = XMLOutputFactory.newInstance();
 		XMLStreamWriter writer;
 		try {
-			writer = xof.createXMLStreamWriter(new FileOutputStream("xml-bd/" + id + ".xml"));
+			writer = xof.createXMLStreamWriter(new FileOutputStream("xml-bd/" + id + ".xml"), "UTF-8");
 			writer.writeStartDocument();
 			writer.writeStartElement("ciudad");
 			writer.writeNamespace("", "http://www.example.org/ciudad"); // Por omisi�n
