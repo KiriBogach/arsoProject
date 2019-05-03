@@ -14,6 +14,7 @@ public class Manejador extends DefaultHandler {
 	private LinkedList<CiudadGeoNames> ciudades;
 	private CiudadGeoNames ciudad;
 	private boolean inGeoname;
+	private int totalResultCount;
 
 	@Override
 	public void startDocument() throws SAXException {
@@ -27,7 +28,7 @@ public class Manejador extends DefaultHandler {
 	public void startElement(String uri, String localName, String qName, Attributes attributes) {
 		pila.push(qName);
 
-		if (qName.equalsIgnoreCase("geoname")) {
+		if (qName.equals("geoname")) {
 			this.inGeoname = true;
 			this.ciudad = new CiudadGeoNames();
 		}
@@ -37,6 +38,10 @@ public class Manejador extends DefaultHandler {
 	public void characters(char[] ch, int start, int length) {
 		String texto = new String(ch, start, length).trim();
 		String elemento = pila.peek();
+		
+		if (elemento.equals("totalResultsCount")) {
+			this.totalResultCount = Integer.parseInt(texto);
+		}
 		
 		if (!inGeoname) return;
 		
@@ -78,6 +83,10 @@ public class Manejador extends DefaultHandler {
 	
 	public LinkedList<CiudadGeoNames> getCiudades() {
 		return ciudades;
+	}
+	
+	public int getTotalResultCount() {
+		return totalResultCount;
 	}
 
 }

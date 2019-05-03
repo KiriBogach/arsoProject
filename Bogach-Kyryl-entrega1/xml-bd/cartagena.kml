@@ -1,704 +1,705 @@
-<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2">
-<Document>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-75.51444,10.39972,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-0.98623,37.60512,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Municipio de Cartagena de Indias</name>
-<description>Municipio de Cartagena de Indias</description>
-<Point>
-<coordinates>-75.4543,10.50743,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-71.60761,-33.55384,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena del Chairá</name>
-<description>Cartagena del Chairá</description>
-<Point>
-<coordinates>-74.6059,0.85246,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Laguna Cartagena National Wildlife Refuge</name>
-<description>Laguna Cartagena National Wildlife Refuge</description>
-<Point>
-<coordinates>-67.1002,18.01148,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Aeropuerto Internacional de Crespo</name>
-<description>Aeropuerto Internacional de Crespo</description>
-<Point>
-<coordinates>-75.51296,10.44238,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Isla Cartagena</name>
-<description>Isla Cartagena</description>
-<Point>
-<coordinates>-78.14144,8.43659,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-80.45861,22.42569,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-77.5,21.2,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena Canyon</name>
-<description>Cartagena Canyon</description>
-<Point>
-<coordinates>0.08333,37.68333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Laguna Cartagena</name>
-<description>Laguna Cartagena</description>
-<Point>
-<coordinates>-67.10101,18.01385,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Sociedad Portuaria de Cartagena</name>
-<description>Sociedad Portuaria de Cartagena</description>
-<Point>
-<coordinates>-75.53332,10.40551,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-85.67612,10.36279,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena del Chairá</name>
-<description>Cartagena del Chairá</description>
-<Point>
-<coordinates>-74.84289,1.33488,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Batallón Cartagena</name>
-<description>Batallón Cartagena</description>
-<Point>
-<coordinates>-75.91667,8.73333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-74.13337,10.33482,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-103.34838,21.97449,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Santiago de Cartagena</name>
-<description>Santiago de Cartagena</description>
-<Point>
-<coordinates>-80.52079,22.50742,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Puerto de Cartagena</name>
-<description>Puerto de Cartagena</description>
-<Point>
-<coordinates>-0.98333,37.58333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-71.44241,-33.53378,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Atamaría</name>
-<description>Atamaría</description>
-<Point>
-<coordinates>-0.80682,37.59989,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Hacienda Cartagena</name>
-<description>Hacienda Cartagena</description>
-<Point>
-<coordinates>-79.16823,-3.40959,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta de Cartagena</name>
-<description>Punta de Cartagena</description>
-<Point>
-<coordinates>-74.4752,8.8859,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-70.86932,-34.38188,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-100.14913,25.13377,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>El Cobado</name>
-<description>El Cobado</description>
-<Point>
-<coordinates>-75.5,10.15,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Loma de Mohán</name>
-<description>Loma de Mohán</description>
-<Point>
-<coordinates>-75.57332,10.23405,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Balneario de Marbella</name>
-<description>Balneario de Marbella</description>
-<Point>
-<coordinates>-75.52835,10.44014,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>La Siriaca</name>
-<description>La Siriaca</description>
-<Point>
-<coordinates>-75.4778,10.50788,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Veracruz</name>
-<description>Veracruz</description>
-<Point>
-<coordinates>-75.36667,10.61667,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>San Sebastián</name>
-<description>San Sebastián</description>
-<Point>
-<coordinates>-75.46667,10.38333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta Canoas</name>
-<description>Punta Canoas</description>
-<Point>
-<coordinates>-75.50161,10.55443,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Pontezuela</name>
-<description>Pontezuela</description>
-<Point>
-<coordinates>-75.45,10.55,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta Arenas</name>
-<description>Punta Arenas</description>
-<Point>
-<coordinates>-75.54783,10.36395,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Pasacaballos</name>
-<description>Pasacaballos</description>
-<Point>
-<coordinates>-75.51773,10.2855,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-0.93397,37.604,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Refinería de Cartagena</name>
-<description>Refinería de Cartagena</description>
-<Point>
-<coordinates>-75.49698,10.31474,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cerro Cartagena</name>
-<description>Cerro Cartagena</description>
-<Point>
-<coordinates>-71.60783,-33.55661,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-71.76667,-34.15,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-80.02493,-6.59324,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-85.67489,10.38256,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>La Cartagena</name>
-<description>La Cartagena</description>
-<Point>
-<coordinates>-102.89115,18.42948,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Barrio Bocagrande</name>
-<description>Barrio Bocagrande</description>
-<Point>
-<coordinates>-75.56099,10.39915,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Río Cartagena</name>
-<description>Río Cartagena</description>
-<Point>
-<coordinates>-103.49562,22.11063,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-66.31667,-17.38333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-63.10993,10.49401,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-70.90725,9.1712,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-73.26162,9.68611,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Hierbabuena</name>
-<description>Hierbabuena</description>
-<Point>
-<coordinates>-75.41667,10.56667,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Guayepo</name>
-<description>Guayepo</description>
-<Point>
-<coordinates>-75.45,10.56667,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Caño de Loro</name>
-<description>Caño de Loro</description>
-<Point>
-<coordinates>-75.54361,10.34389,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Canalete</name>
-<description>Canalete</description>
-<Point>
-<coordinates>-75.43768,10.5029,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Bocachica</name>
-<description>Bocachica</description>
-<Point>
-<coordinates>-75.57802,10.32564,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Bermúdez</name>
-<description>Bermúdez</description>
-<Point>
-<coordinates>-75.41667,10.45,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Bayunca</name>
-<description>Bayunca</description>
-<Point>
-<coordinates>-75.39728,10.53569,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Barú</name>
-<description>Barú</description>
-<Point>
-<coordinates>-75.68472,10.14168,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Ararca</name>
-<description>Ararca</description>
-<Point>
-<coordinates>-75.55506,10.26102,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Albornoz</name>
-<description>Albornoz</description>
-<Point>
-<coordinates>-75.50667,10.37222,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Mamonal</name>
-<description>Mamonal</description>
-<Point>
-<coordinates>-75.50719,10.32649,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Leticia</name>
-<description>Leticia</description>
-<Point>
-<coordinates>-75.51055,10.18253,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Tarapacá</name>
-<description>Tarapacá</description>
-<Point>
-<coordinates>-75.43333,10.43333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-80.07765,-6.60938,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-73.522,4.18513,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Los Dolores</name>
-<description>Los Dolores</description>
-<Point>
-<coordinates>-1.00462,37.63977,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>La Corona</name>
-<description>La Corona</description>
-<Point>
-<coordinates>-1.1,37.63333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Pozo-Estrecho</name>
-<description>Pozo-Estrecho</description>
-<Point>
-<coordinates>-0.99341,37.71157,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>El Carmolí</name>
-<description>El Carmolí</description>
-<Point>
-<coordinates>-0.84629,37.69177,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>La Manga del Mar Menor</name>
-<description>La Manga del Mar Menor</description>
-<Point>
-<coordinates>-0.71651,37.64129,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Parque Regional de Calblanque</name>
-<description>Parque Regional de Calblanque</description>
-<Point>
-<coordinates>-0.74373,37.61553,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-72.30153,5.23533,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-78.06667,1.46667,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-77.61502,1.31725,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-77.98333,1.21667,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta de Cartagena</name>
-<description>Punta de Cartagena</description>
-<Point>
-<coordinates>-74.64009,9.27684,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Portón de Cartagena</name>
-<description>Portón de Cartagena</description>
-<Point>
-<coordinates>-73.75,9.7,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Alto Cartagena</name>
-<description>Alto Cartagena</description>
-<Point>
-<coordinates>-74.11028,5.80472,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-73.57778,5.82417,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-74.59,3.21944,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-77.54404,0.96163,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-78.70254,0.12047,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Puerto Yacht Cartagena</name>
-<description>Puerto Yacht Cartagena</description>
-<Point>
-<coordinates>-0.97955,37.59659,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-105.0153,24.84121,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-71.79132,-34.18505,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Villa de Cartagena</name>
-<description>Villa de Cartagena</description>
-<Point>
-<coordinates>-71.79995,-34.19317,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-103.75302,26.17604,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-92.01915,14.98525,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>122.4004,9.8203,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Planta Cartagena</name>
-<description>Planta Cartagena</description>
-<Point>
-<coordinates>-101.07722,21.61806,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena [Fraccionamiento]</name>
-<description>Cartagena [Fraccionamiento]</description>
-<Point>
-<coordinates>-102.27639,21.95639,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-98.64083,22.39722,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Cartagena</name>
-<description>Cartagena</description>
-<Point>
-<coordinates>-107.96896,27.54596,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Loma El Cocón</name>
-<description>Loma El Cocón</description>
-<Point>
-<coordinates>-75.58333,10.26667,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>El Cocón</name>
-<description>El Cocón</description>
-<Point>
-<coordinates>-75.58333,10.26667,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta Corralagrande</name>
-<description>Punta Corralagrande</description>
-<Point>
-<coordinates>-75.43333,10.63333,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta de Buenavista</name>
-<description>Punta de Buenavista</description>
-<Point>
-<coordinates>-75.51667,10.3,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta Barbacoas</name>
-<description>Punta Barbacoas</description>
-<Point>
-<coordinates>-75.57875,10.12658,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Arroyo Grande</name>
-<description>Arroyo Grande</description>
-<Point>
-<coordinates>-75.34726,10.65628,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Arroyo de Piedra</name>
-<description>Arroyo de Piedra</description>
-<Point>
-<coordinates>-75.4463,10.60749,0</coordinates>
-</Point>
-</Placemark>
-<Placemark>
-<name>Punta de Ahorcazorra</name>
-<description>Punta de Ahorcazorra</description>
-<Point>
-<coordinates>-75.51667,10.28333,0</coordinates>
-</Point>
-</Placemark>
-</Document>
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-75.51444,10.39972,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-0.98623,37.60512,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Municipio de Cartagena de Indias</name>
+			<description>Municipio de Cartagena de Indias</description>
+			<Point>
+				<coordinates>-75.4543,10.50743,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-71.60761,-33.55384,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena del Chairá</name>
+			<description>Cartagena del Chairá</description>
+			<Point>
+				<coordinates>-74.6059,0.85246,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laguna Cartagena National Wildlife Refuge</name>
+			<description>Laguna Cartagena National Wildlife Refuge</description>
+			<Point>
+				<coordinates>-67.1002,18.01148,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aeropuerto Internacional de Crespo</name>
+			<description>Aeropuerto Internacional de Crespo</description>
+			<Point>
+				<coordinates>-75.51296,10.44238,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Isla Cartagena</name>
+			<description>Isla Cartagena</description>
+			<Point>
+				<coordinates>-78.14144,8.43659,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-80.45861,22.42569,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-77.5,21.2,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena Canyon</name>
+			<description>Cartagena Canyon</description>
+			<Point>
+				<coordinates>0.08333,37.68333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Laguna Cartagena</name>
+			<description>Laguna Cartagena</description>
+			<Point>
+				<coordinates>-67.10101,18.01385,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sociedad Portuaria de Cartagena</name>
+			<description>Sociedad Portuaria de Cartagena</description>
+			<Point>
+				<coordinates>-75.53332,10.40551,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-85.67612,10.36279,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena del Chairá</name>
+			<description>Cartagena del Chairá</description>
+			<Point>
+				<coordinates>-74.84289,1.33488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Batallón Cartagena</name>
+			<description>Batallón Cartagena</description>
+			<Point>
+				<coordinates>-75.91667,8.73333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-74.13337,10.33482,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-103.34838,21.97449,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Santiago de Cartagena</name>
+			<description>Santiago de Cartagena</description>
+			<Point>
+				<coordinates>-80.52079,22.50742,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Puerto de Cartagena</name>
+			<description>Puerto de Cartagena</description>
+			<Point>
+				<coordinates>-0.98333,37.58333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-71.44241,-33.53378,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Atamaría</name>
+			<description>Atamaría</description>
+			<Point>
+				<coordinates>-0.80682,37.59989,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hacienda Cartagena</name>
+			<description>Hacienda Cartagena</description>
+			<Point>
+				<coordinates>-79.16823,-3.40959,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta de Cartagena</name>
+			<description>Punta de Cartagena</description>
+			<Point>
+				<coordinates>-74.4752,8.8859,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-70.86932,-34.38188,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-100.14913,25.13377,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>El Cobado</name>
+			<description>El Cobado</description>
+			<Point>
+				<coordinates>-75.5,10.15,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Loma de Mohán</name>
+			<description>Loma de Mohán</description>
+			<Point>
+				<coordinates>-75.57332,10.23405,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Balneario de Marbella</name>
+			<description>Balneario de Marbella</description>
+			<Point>
+				<coordinates>-75.52835,10.44014,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Siriaca</name>
+			<description>La Siriaca</description>
+			<Point>
+				<coordinates>-75.4778,10.50788,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Veracruz</name>
+			<description>Veracruz</description>
+			<Point>
+				<coordinates>-75.36667,10.61667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>San Sebastián</name>
+			<description>San Sebastián</description>
+			<Point>
+				<coordinates>-75.46667,10.38333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta Canoas</name>
+			<description>Punta Canoas</description>
+			<Point>
+				<coordinates>-75.50161,10.55443,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pontezuela</name>
+			<description>Pontezuela</description>
+			<Point>
+				<coordinates>-75.45,10.55,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta Arenas</name>
+			<description>Punta Arenas</description>
+			<Point>
+				<coordinates>-75.54783,10.36395,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pasacaballos</name>
+			<description>Pasacaballos</description>
+			<Point>
+				<coordinates>-75.51773,10.2855,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-0.93397,37.604,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Refinería de Cartagena</name>
+			<description>Refinería de Cartagena</description>
+			<Point>
+				<coordinates>-75.49698,10.31474,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cerro Cartagena</name>
+			<description>Cerro Cartagena</description>
+			<Point>
+				<coordinates>-71.60783,-33.55661,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-71.76667,-34.15,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-80.02493,-6.59324,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-85.67489,10.38256,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Cartagena</name>
+			<description>La Cartagena</description>
+			<Point>
+				<coordinates>-102.89115,18.42948,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrio Bocagrande</name>
+			<description>Barrio Bocagrande</description>
+			<Point>
+				<coordinates>-75.56099,10.39915,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Río Cartagena</name>
+			<description>Río Cartagena</description>
+			<Point>
+				<coordinates>-103.49562,22.11063,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-66.31667,-17.38333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-63.10993,10.49401,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-70.90725,9.1712,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-73.26162,9.68611,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hierbabuena</name>
+			<description>Hierbabuena</description>
+			<Point>
+				<coordinates>-75.41667,10.56667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Guayepo</name>
+			<description>Guayepo</description>
+			<Point>
+				<coordinates>-75.45,10.56667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Caño de Loro</name>
+			<description>Caño de Loro</description>
+			<Point>
+				<coordinates>-75.54361,10.34389,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Canalete</name>
+			<description>Canalete</description>
+			<Point>
+				<coordinates>-75.43768,10.5029,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bocachica</name>
+			<description>Bocachica</description>
+			<Point>
+				<coordinates>-75.57802,10.32564,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bermúdez</name>
+			<description>Bermúdez</description>
+			<Point>
+				<coordinates>-75.41667,10.45,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bayunca</name>
+			<description>Bayunca</description>
+			<Point>
+				<coordinates>-75.39728,10.53569,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barú</name>
+			<description>Barú</description>
+			<Point>
+				<coordinates>-75.68472,10.14168,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ararca</name>
+			<description>Ararca</description>
+			<Point>
+				<coordinates>-75.55506,10.26102,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Albornoz</name>
+			<description>Albornoz</description>
+			<Point>
+				<coordinates>-75.50667,10.37222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mamonal</name>
+			<description>Mamonal</description>
+			<Point>
+				<coordinates>-75.50719,10.32649,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Leticia</name>
+			<description>Leticia</description>
+			<Point>
+				<coordinates>-75.51055,10.18253,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tarapacá</name>
+			<description>Tarapacá</description>
+			<Point>
+				<coordinates>-75.43333,10.43333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-80.07765,-6.60938,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-73.522,4.18513,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Los Dolores</name>
+			<description>Los Dolores</description>
+			<Point>
+				<coordinates>-1.00462,37.63977,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Corona</name>
+			<description>La Corona</description>
+			<Point>
+				<coordinates>-1.1,37.63333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pozo-Estrecho</name>
+			<description>Pozo-Estrecho</description>
+			<Point>
+				<coordinates>-0.99341,37.71157,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>El Carmolí</name>
+			<description>El Carmolí</description>
+			<Point>
+				<coordinates>-0.84629,37.69177,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Manga del Mar Menor</name>
+			<description>La Manga del Mar Menor</description>
+			<Point>
+				<coordinates>-0.71651,37.64129,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Parque Regional de Calblanque</name>
+			<description>Parque Regional de Calblanque</description>
+			<Point>
+				<coordinates>-0.74373,37.61553,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-72.30153,5.23533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-78.06667,1.46667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-77.61502,1.31725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-77.98333,1.21667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta de Cartagena</name>
+			<description>Punta de Cartagena</description>
+			<Point>
+				<coordinates>-74.64009,9.27684,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Portón de Cartagena</name>
+			<description>Portón de Cartagena</description>
+			<Point>
+				<coordinates>-73.75,9.7,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alto Cartagena</name>
+			<description>Alto Cartagena</description>
+			<Point>
+				<coordinates>-74.11028,5.80472,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-73.57778,5.82417,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-74.59,3.21944,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-77.54404,0.96163,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-78.70254,0.12047,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Puerto Yacht Cartagena</name>
+			<description>Puerto Yacht Cartagena</description>
+			<Point>
+				<coordinates>-0.97955,37.59659,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-105.0153,24.84121,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-71.79132,-34.18505,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Villa de Cartagena</name>
+			<description>Villa de Cartagena</description>
+			<Point>
+				<coordinates>-71.79995,-34.19317,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-103.75302,26.17604,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-92.01915,14.98525,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>122.4004,9.8203,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Planta Cartagena</name>
+			<description>Planta Cartagena</description>
+			<Point>
+				<coordinates>-101.07722,21.61806,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena [Fraccionamiento]</name>
+			<description>Cartagena [Fraccionamiento]</description>
+			<Point>
+				<coordinates>-102.27639,21.95639,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-98.64083,22.39722,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cartagena</name>
+			<description>Cartagena</description>
+			<Point>
+				<coordinates>-107.96896,27.54596,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Loma El Cocón</name>
+			<description>Loma El Cocón</description>
+			<Point>
+				<coordinates>-75.58333,10.26667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>El Cocón</name>
+			<description>El Cocón</description>
+			<Point>
+				<coordinates>-75.58333,10.26667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta Corralagrande</name>
+			<description>Punta Corralagrande</description>
+			<Point>
+				<coordinates>-75.43333,10.63333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta de Buenavista</name>
+			<description>Punta de Buenavista</description>
+			<Point>
+				<coordinates>-75.51667,10.3,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta Barbacoas</name>
+			<description>Punta Barbacoas</description>
+			<Point>
+				<coordinates>-75.57875,10.12658,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Arroyo Grande</name>
+			<description>Arroyo Grande</description>
+			<Point>
+				<coordinates>-75.34726,10.65628,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Arroyo de Piedra</name>
+			<description>Arroyo de Piedra</description>
+			<Point>
+				<coordinates>-75.4463,10.60749,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Punta de Ahorcazorra</name>
+			<description>Punta de Ahorcazorra</description>
+			<Point>
+				<coordinates>-75.51667,10.28333,0</coordinates>
+			</Point>
+		</Placemark>
+	</Document>
 </kml>

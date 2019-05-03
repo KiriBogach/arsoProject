@@ -5,79 +5,75 @@ import java.util.Date;
 import javax.ws.rs.core.UriInfo;
 
 import fr.vidal.oss.jaxb.atom.core.Author;
+import fr.vidal.oss.jaxb.atom.core.Contents;
 import fr.vidal.oss.jaxb.atom.core.Entry;
 import fr.vidal.oss.jaxb.atom.core.ExtensionElements;
 import fr.vidal.oss.jaxb.atom.core.Feed;
 import fr.vidal.oss.jaxb.atom.core.Link;
+import fr.vidal.oss.jaxb.atom.core.LinkRel;
 import fr.vidal.oss.jaxb.atom.core.Namespace;
-import fr.vidal.oss.jaxb.atom.core.Summary;
 import servicio.controlador.ListadoCiudades;
 import servicio.model.CiudadGeoNames;
 
 public class AtomBuilder {
 
 	public static final int PAGE_SIZE = 10;
+	public static final Namespace OPEN_SEARCH = Namespace.builder("http://a9.com/-/spec/opensearchrss/1.0/")
+			.withPrefix("openSearch").build();
+	public static final Namespace ARSO = Namespace.builder("http://www.example.org/ciudad").withPrefix("arso").build();
+
+	public static int TOTAL_RESULT_COUNT; // Modificamos con cada búsqueda
 
 	public static Feed build(ListadoCiudades listadoCiudades, int numeroPagina, UriInfo uriInfo) {
+		// Creamos el constructor del elemento principal de ATOM
 		Feed.Builder feedBuilder = Feed.builder();
-		
 
-		Namespace openSearch = Namespace.builder("http://a9.com/-/spec/opensearchrss/1.0/").withPrefix("openSearch")
-				.build();		
-		
+		// Obtenemos los datos del uriInfo y páginas
+		String busqueda = uriInfo.getQueryParameters().getFirst("busqueda");
+		String askedURL = uriInfo.getRequestUri().toString();
+		String nextURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda)
+				.replaceQueryParam("pagina", numeroPagina + 1).build().toString();
+		int startIndex = Math.min(Math.max((numeroPagina - 1) * 10 + 1, 0), TOTAL_RESULT_COUNT);
 
-
-		uriInfo.getBaseUri().toString();
-		System.out.println(uriInfo.getBaseUri().toString());
-		System.out.println(uriInfo.getPath());
-		System.out.println(uriInfo.getAbsolutePath().toString());
-
-		int totalResults = listadoCiudades.getCiudades().size();
-		int startIndex = numeroPagina * PAGE_SIZE;
-
-		System.out.println(uriInfo.getAbsolutePathBuilder().replaceQueryParam("pagina", 14).build().toString());
-
+		// Rellenamos la cabecera
 		feedBuilder.withTitle("Ciudades");
-		// feedBuilder.addExtensionElement(ExtensionElements.simpleElement("totalResults",
-		// Integer.toString(totalResults)).build());
-		// feedBuilder.addSimpleElement(SimpleElement.builder("openSearch:totalResults",
-		// Integer.toString(totalResults)));
-
-		feedBuilder.addExtensionElement(ExtensionElements.simpleElement("totalResults", String.valueOf(totalResults))
-				.withNamespace(openSearch).build());
-
-		feedBuilder.addLink(Link.builder("locahost:8080").build());
+		feedBuilder.addExtensionElement(ExtensionElements
+				.simpleElement("totalResults", String.valueOf(TOTAL_RESULT_COUNT)).withNamespace(OPEN_SEARCH).build());
+		feedBuilder.addExtensionElement(ExtensionElements.simpleElement("startIndex", String.valueOf(startIndex))
+				.withNamespace(OPEN_SEARCH).build());
+		feedBuilder.addExtensionElement(ExtensionElements.simpleElement("itemsPerPage", String.valueOf(PAGE_SIZE))
+				.withNamespace(OPEN_SEARCH).build());
+		feedBuilder.withId(uriInfo.getAbsolutePath().toString());
 		feedBuilder.withAuthor(Author.builder("Servicio Geonames").build());
-		feedBuilder.withId("numeroPagina:" + numeroPagina);
+		feedBuilder.addLink(Link.builder(askedURL).withRel(LinkRel.self).build());
+		feedBuilder.addLink(Link.builder(nextURL).withRel(LinkRel.next).build());
 		feedBuilder.withUpdateDate(new Date());
 
+		// Rellenamos cada entrada (entry)
 		for (CiudadGeoNames ciudad : listadoCiudades.getCiudades()) {
 			Entry.Builder entryBuilder = Entry.builder();
 			entryBuilder.withTitle(ciudad.getNombre());
-			entryBuilder.addLink(Link.builder("locahost:8080").build());
+			entryBuilder.addLink(Link.builder(ciudad.getURI()).withRel(LinkRel.related).build());
+			entryBuilder.addLink(Link.builder(
+					uriInfo.getAbsolutePathBuilder().path(String.valueOf(ciudad.getIdGeonames())).build().toString())
+					.withRel(LinkRel.source).build());
 			entryBuilder.withId(Long.toString(ciudad.getIdGeonames()));
 			entryBuilder.withUpdateDate(new Date());
-			entryBuilder.withSummary(Summary.builder().withValue("test").build());
+
+			entryBuilder.addExtensionElement(
+					ExtensionElements.simpleElement("pais", ciudad.getPais()).withNamespace(ARSO).build());
+
+			entryBuilder.addExtensionElement(ExtensionElements
+					.simpleElement("longitud", String.valueOf(ciudad.getLongitud())).withNamespace(ARSO).build());
+			entryBuilder.addExtensionElement(ExtensionElements
+					.simpleElement("latitud", String.valueOf(ciudad.getLatitud())).withNamespace(ARSO).build());
+			entryBuilder.withContents(Contents.builder().withContents(ciudad.getURI()).build());
 
 			feedBuilder.addEntry(entryBuilder.build());
 		}
-		/*
-		 * 
-		 * <title>Example Feed</title> <link href="http://example.org/"/>
-		 * <updated>2003-12-13T18:30:02Z</updated> <author> <name>John Doe</name>
-		 * </author> <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
-		 * 
-		 * <entry> <title>Atom-Powered Robots Run Amok</title> <link
-		 * href="http://example.org/2003/12/13/atom03"/>
-		 * <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
-		 * <updated>2003-12-13T18:30:02Z</updated> <summary>Some text.</summary>
-		 * </entry>
-		 * 
-		 */
+
+		// Devolvemos un objeto Feed
 		return feedBuilder.build();
-		// Feed feed = Feed.builder().withTitle("PENE").withId("1").withUpdateDate(new
-		// Date()).withAuthor(Author.builder("autor").build()).addLink(Link.builder("link").build()).build();
-		// return feed;
 	}
 
 }

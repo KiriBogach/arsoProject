@@ -42,36 +42,36 @@ public class Utils {
 	public static String fromDateToString(Date fecha) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat(FORMATO_FECHA);
 		String fechaString = "";
-		
+
 		if (fecha != null) {
 			fechaString = dateFormat.format(fecha);
 		}
-		
+
 		return fechaString;
 	}
-	
+
 	public static String fromDateTimeToString(Date fecha) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat(FORMATO_FECHA_HORA_MINUTOS_SEGUNDOS);
 		String fechaString = "";
-		
+
 		if (fecha != null) {
 			fechaString = dateFormat.format(fecha);
 		}
-		
+
 		return fechaString;
 	}
-	
+
 	public static String fromDateToString(Date fecha, String formato) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
 		String fechaString = "";
-		
+
 		if (fecha != null) {
 			fechaString = dateFormat.format(fecha);
 		}
-		
+
 		return fechaString;
 	}
-	
+
 	public static boolean compareInMillis(long t1, long t2, long maximum) {
 		return ((t1 - t2) < maximum);
 	}

@@ -1,5 +1,6 @@
 package rest;
 
+import javax.servlet.ServletContext;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -16,7 +17,6 @@ import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
 import fr.vidal.oss.jaxb.atom.core.Feed;
-import servicio.controlador.ListadoCiudades;
 import servicio.controlador.ServicioGeoNames;
 import servicio.exceptions.GeoNamesException;
 
@@ -25,14 +25,22 @@ public class Controller {
 
 	private ServicioGeoNames controlador = new ServicioGeoNames();
 	@Context private UriInfo uriInfo;
+	@Context ServletContext context;
 	
 	@GET
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-	public Response getResultadosBusqueda(@QueryParam(value = "busqueda") String busqueda) {
+	public Response getResultadosBusqueda(@QueryParam(value = "busqueda") String busqueda, @QueryParam(value = "kml") String kml) {
 		try {
-			ListadoCiudades actividad = controlador.getResultadosBusquedaXML(busqueda);
+			Object resultado;
+			
+			if (kml != null && kml.isEmpty()) {
+				resultado = controlador.getResultadosBusquedaKML(busqueda, context);
+			} else {
+				resultado = controlador.getResultadosBusquedaXML(busqueda);
+			}
+			
 			return Response.status(Status.OK)
-					.entity(actividad)
+					.entity(resultado)
 					.build();
 		} catch (GeoNamesException ex) {
 			return Response.status(Status.BAD_REQUEST)
@@ -62,6 +70,7 @@ public class Controller {
 					.build();
 		}
 	}
+	
 	
 	@GET
 	@Path("/{idGeonames}")

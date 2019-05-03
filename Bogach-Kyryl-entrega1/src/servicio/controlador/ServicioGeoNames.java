@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
+import javax.servlet.ServletContext;
 import javax.ws.rs.core.UriInfo;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -19,6 +20,14 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 
 import org.xml.sax.SAXException;
 
@@ -57,6 +66,10 @@ public class ServicioGeoNames {
 	}
 
 	public List<CiudadGeoNames> buscar(String busqueda) {
+		return this.buscar(busqueda, null);
+	}
+
+	public List<CiudadGeoNames> buscar(String busqueda, Integer paginas) {
 		SAXParser analizador = null;
 		try {
 			analizador = getSAXParserFactory().newSAXParser();
@@ -68,12 +81,24 @@ public class ServicioGeoNames {
 			Manejador manejador = new Manejador();
 			URI url = null;
 			try {
-				String busquedaEncoded = URLEncoder.encode(busqueda, java.nio.charset.StandardCharsets.UTF_8.toString());
-				url = new URI(XML_URL + busquedaEncoded + "&" + USER_URL);
+				String busquedaEncoded = URLEncoder.encode(busqueda,
+						java.nio.charset.StandardCharsets.UTF_8.toString());
+				String uriString = XML_URL + busquedaEncoded + "&" + USER_URL;
+
+				if (paginas != null) {
+					int startRow = (paginas - 1) * 10;
+					uriString += "&startRow=" + startRow + "&maxRows=10";
+				}
+
+				url = new URI(uriString);
+
+				// System.out.println(url);
 			} catch (URISyntaxException | UnsupportedEncodingException ex) {
 				throw new GeoNamesException("Error codificando el parametro de busqueda.", ex);
 			}
 			analizador.parse(url.toString(), manejador);
+
+			AtomBuilder.TOTAL_RESULT_COUNT = manejador.getTotalResultCount();
 			return manejador.getCiudades();
 		} catch (IOException e) {
 			throw new GeoNamesException("El documento no ha podido ser leído", e);
@@ -98,10 +123,36 @@ public class ServicioGeoNames {
 
 		return listadoCiudades;
 	}
-	
+
 	public Feed getResultadosBusquedaATOM(String busqueda, int numeroPagina, UriInfo uriInfo) {
-		ListadoCiudades listadoCiudades = this.getResultadosBusquedaXML(busqueda);
+		ListadoCiudades listadoCiudades = new ListadoCiudades();
+		Collection<CiudadGeoNames> ciudadesEncontradas = this.buscar(busqueda, numeroPagina);
+		listadoCiudades.addAll(ciudadesEncontradas);
 		return AtomBuilder.build(listadoCiudades, numeroPagina, uriInfo);
+	}
+
+	public File getResultadosBusquedaKML(String busqueda, ServletContext context) {
+		final String documentoEntrada = XML_URL + busqueda + "&" + USER_URL;
+		final String documentoSalida = "xml-bd/" + busqueda + ".kml";
+
+		TransformerFactory factoria = TransformerFactory.newInstance();
+
+		Transformer transformador;
+		try {
+			transformador = factoria
+					.newTransformer(new StreamSource(context.getResourceAsStream("/WEB-INF/kml-transformer.xsl")));
+		} catch (TransformerConfigurationException e) {
+			throw new GeoNamesException("No se puede generar el documento KML.", e);
+		}
+		Source origen = new StreamSource(documentoEntrada);
+		Result destino = new StreamResult(documentoSalida);
+		try {
+			transformador.transform(origen, destino);
+		} catch (TransformerException e) {
+			throw new GeoNamesException("No se puede generar el documento KML.", e);
+		}
+
+		return new File("xml-bd/" + busqueda + ".kml");
 	}
 
 	public String crearDocumentoFavorito() {
@@ -243,6 +294,5 @@ public class ServicioGeoNames {
 		} catch (JAXBException e) {
 			throw new GeoNamesException("No se pudo crear el fichero de favoritos.", e);
 		}
-
 	}
 }
