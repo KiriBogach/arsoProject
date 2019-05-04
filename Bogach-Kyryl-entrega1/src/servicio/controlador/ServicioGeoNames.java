@@ -37,6 +37,7 @@ import ejercicio3.sax.Manejador;
 import ejercicio4.dom.DOMParser;
 import ejercicio4.stax.StAXBuilder;
 import fr.vidal.oss.jaxb.atom.core.Feed;
+import hal.builder.HalBuilder;
 import servicio.exceptions.GeoNamesException;
 import servicio.model.Busqueda;
 import servicio.model.CiudadGeoNames;
@@ -97,7 +98,7 @@ public class ServicioGeoNames {
 				throw new GeoNamesException("Error codificando el parametro de busqueda.", ex);
 			}
 			analizador.parse(url.toString(), manejador);
-
+			HalBuilder.TOTAL_RESULT_COUNT = manejador.getTotalResultCount();
 			AtomBuilder.TOTAL_RESULT_COUNT = manejador.getTotalResultCount();
 			return manejador.getCiudades();
 		} catch (IOException e) {
@@ -129,6 +130,13 @@ public class ServicioGeoNames {
 		Collection<CiudadGeoNames> ciudadesEncontradas = this.buscar(busqueda, numeroPagina);
 		listadoCiudades.addAll(ciudadesEncontradas);
 		return AtomBuilder.build(listadoCiudades, numeroPagina, uriInfo);
+	}
+	
+	public String getResultadosBusquedaHAL(String busqueda, int numeroPagina, UriInfo uriInfo) {
+		ListadoCiudades listadoCiudades = new ListadoCiudades();
+		Collection<CiudadGeoNames> ciudadesEncontradas = this.buscar(busqueda, numeroPagina);
+		listadoCiudades.addAll(ciudadesEncontradas);
+		return HalBuilder.build(listadoCiudades, numeroPagina, uriInfo);
 	}
 
 	public File getResultadosBusquedaKML(String busqueda, ServletContext context) {
