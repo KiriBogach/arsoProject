@@ -28,7 +28,7 @@ public class Controller {
 	@Context ServletContext context;
 	
 	@GET
-	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+	@Produces({ MediaType.APPLICATION_XML})
 	public Response getResultadosBusqueda(@QueryParam(value = "busqueda") String busqueda, @QueryParam(value = "kml") String kml) {
 		try {
 			Object resultado;
@@ -63,6 +63,33 @@ public class Controller {
 			Feed actividad = controlador.getResultadosBusquedaATOM(busqueda, numeroPagina, uriInfo);
 			return Response.status(Status.OK)
 					.entity(actividad)
+					.build();
+		} catch (GeoNamesException ex) {
+			return Response.status(Status.BAD_REQUEST)
+					.entity(ex.getMessage())
+					.build();
+		}
+	}
+	
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	public Response getResultadosBusquedaJSON(@QueryParam(value = "busqueda") String busqueda, @QueryParam(value = "pagina") String pagina, @QueryParam(value = "hal") String hal) {
+		Object resultado;
+		try {
+			int numeroPagina;
+			try {
+				numeroPagina = Integer.parseInt(pagina);
+			} catch (NumberFormatException ex) {
+				numeroPagina = 1;
+			}
+			
+			if (hal != null && hal.isEmpty()) {
+				resultado = controlador.getResultadosBusquedaHAL(busqueda, numeroPagina, uriInfo);
+			} else {
+				resultado = controlador.getResultadosBusquedaXML(busqueda);
+			}
+			return Response.status(Status.OK)
+					.entity(resultado)
 					.build();
 		} catch (GeoNamesException ex) {
 			return Response.status(Status.BAD_REQUEST)
