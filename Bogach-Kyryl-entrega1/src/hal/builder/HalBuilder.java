@@ -17,9 +17,25 @@ public class HalBuilder {
 	private static final String HREF_KEY = "href";
 	private static final String EMBEDDED_KEY = "_embedded";
 
-	public static int TOTAL_RESULT_COUNT; // Modificamos con cada búsqueda
+	public int totalResultCount;
 
-	public static String build(ListadoCiudades ciudades, int numeroPagina, UriInfo uriInfo) {
+	public HalBuilder() {
+		totalResultCount = 0;
+	}
+
+	public int getTotalResultCount() {
+		return totalResultCount;
+	}
+
+	public void setTotalResultCount(int totalResultCount) {
+		this.totalResultCount = totalResultCount;
+	}
+
+	public String build(ListadoCiudades ciudades, int numeroPagina, UriInfo uriInfo) {
+
+		int startIndex = Math.min(Math.max((numeroPagina - 1) * PAGE_SIZE + 1, 0), totalResultCount);
+		int elementsCount = Math.max(Math.min(PAGE_SIZE, totalResultCount - startIndex), 0);
+		int lastPage = (int) Math.ceil((double)totalResultCount / (double)PAGE_SIZE);
 
 		String busqueda = uriInfo.getQueryParameters().getFirst("busqueda");
 		String baseURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda).replaceQuery("hal")
@@ -29,8 +45,8 @@ public class HalBuilder {
 				.replaceQueryParam("pagina", Math.max(numeroPagina - 1, 1)).replaceQuery("hal").build().toString();
 		String nextURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda)
 				.replaceQueryParam("pagina", numeroPagina + 1).replaceQuery("hal").build().toString();
-		int startIndex = Math.min(Math.max((numeroPagina - 1) * PAGE_SIZE + 1, 0), TOTAL_RESULT_COUNT);
-		int elementsCount = Math.max(Math.min(PAGE_SIZE, TOTAL_RESULT_COUNT - startIndex), 0);
+		String lastURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda)
+				.replaceQueryParam("pagina", lastPage).replaceQuery("hal").build().toString();
 
 		JSONObject json = new JSONObject();
 		JSONObject paginationNav = new JSONObject();
@@ -40,12 +56,17 @@ public class HalBuilder {
 		try {
 			paginationNav.put("self", new JSONObject().put(HREF_KEY, askedURL));
 			paginationNav.put("first", new JSONObject().put(HREF_KEY, baseURL));
-			paginationNav.put("prev", new JSONObject().put(HREF_KEY, prevURL));
-			paginationNav.put("next", new JSONObject().put(HREF_KEY, nextURL));
+			if (numeroPagina > 1) {
+				paginationNav.put("prev", new JSONObject().put(HREF_KEY, prevURL));
+			}
+			if (lastPage > numeroPagina) {
+				paginationNav.put("next", new JSONObject().put(HREF_KEY, nextURL));	
+			}
+			paginationNav.put("last", new JSONObject().put(HREF_KEY, lastURL));
 			json.put(LINK_KEY, paginationNav);
 			json.put("element", startIndex);
 			json.put("count", elementsCount);
-			json.put("total", TOTAL_RESULT_COUNT);
+			json.put("total", totalResultCount);
 
 			for (CiudadGeoNames ciudadGeoNames : ciudades.getCiudades()) {
 				JSONObject ciudad = new JSONObject();

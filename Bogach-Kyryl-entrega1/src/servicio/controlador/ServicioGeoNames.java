@@ -54,6 +54,8 @@ public class ServicioGeoNames {
 	private DOMParser DOMParser = null;
 	private StAXBuilder StAXBuilder = null;
 	private XPathParser XPathParser = null;
+	private AtomBuilder atomBuilder = null;
+	private HalBuilder halBuilder = null;
 
 	public ServicioGeoNames() {
 		comprobarFichero();
@@ -98,8 +100,8 @@ public class ServicioGeoNames {
 				throw new GeoNamesException("Error codificando el parametro de busqueda.", ex);
 			}
 			analizador.parse(url.toString(), manejador);
-			HalBuilder.TOTAL_RESULT_COUNT = manejador.getTotalResultCount();
-			AtomBuilder.TOTAL_RESULT_COUNT = manejador.getTotalResultCount();
+			getHalBuilder().setTotalResultCount(manejador.getTotalResultCount());
+			getAtomBuilder().setTotalResultCount(manejador.getTotalResultCount());
 			return manejador.getCiudades();
 		} catch (IOException e) {
 			throw new GeoNamesException("El documento no ha podido ser leído", e);
@@ -129,14 +131,14 @@ public class ServicioGeoNames {
 		ListadoCiudades listadoCiudades = new ListadoCiudades();
 		Collection<CiudadGeoNames> ciudadesEncontradas = this.buscar(busqueda, numeroPagina);
 		listadoCiudades.addAll(ciudadesEncontradas);
-		return AtomBuilder.build(listadoCiudades, numeroPagina, uriInfo);
+		return getAtomBuilder().build(listadoCiudades, numeroPagina, uriInfo);
 	}
 	
 	public String getResultadosBusquedaHAL(String busqueda, int numeroPagina, UriInfo uriInfo) {
 		ListadoCiudades listadoCiudades = new ListadoCiudades();
 		Collection<CiudadGeoNames> ciudadesEncontradas = this.buscar(busqueda, numeroPagina);
 		listadoCiudades.addAll(ciudadesEncontradas);
-		return HalBuilder.build(listadoCiudades, numeroPagina, uriInfo);
+		return getHalBuilder().build(listadoCiudades, numeroPagina, uriInfo);
 	}
 
 	public File getResultadosBusquedaKML(String busqueda, ServletContext context) {
@@ -265,6 +267,20 @@ public class ServicioGeoNames {
 		return XPathParser;
 	}
 
+	private AtomBuilder getAtomBuilder() {
+		if (this.atomBuilder == null) {
+			this.atomBuilder = new AtomBuilder();
+		}
+		return atomBuilder;
+	}
+	
+	private HalBuilder getHalBuilder() {
+		if (this.halBuilder == null) {
+			this.halBuilder = new HalBuilder();
+		}
+		return halBuilder;
+	}
+		
 	private File recuperarDocumento(String idGeoNames) {
 		File file = new File(BD_PATH + "/" + idGeoNames + ".xml");
 

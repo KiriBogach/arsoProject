@@ -22,23 +22,38 @@ public class AtomBuilder {
 			.withPrefix("openSearch").build();
 	public static final Namespace ARSO = Namespace.builder("http://www.example.org/ciudad").withPrefix("arso").build();
 
-	public static int TOTAL_RESULT_COUNT; // Modificamos con cada búsqueda
+	public int totalResultCount;
 
-	public static Feed build(ListadoCiudades listadoCiudades, int numeroPagina, UriInfo uriInfo) {
+	public AtomBuilder() {
+		totalResultCount = 0;
+	}
+
+	public int getTotalResultCount() {
+		return totalResultCount;
+	}
+
+	public void setTotalResultCount(int totalResultCount) {
+		this.totalResultCount = totalResultCount;
+	}
+
+	public Feed build(ListadoCiudades listadoCiudades, int numeroPagina, UriInfo uriInfo) {
 		// Creamos el constructor del elemento principal de ATOM
 		Feed.Builder feedBuilder = Feed.builder();
+		int startIndex = Math.min(Math.max((numeroPagina - 1) * 10 + 1, 0), totalResultCount);
+		int lastPage = (int) Math.ceil((double) totalResultCount / (double) PAGE_SIZE);
 
 		// Obtenemos los datos del uriInfo y páginas
 		String busqueda = uriInfo.getQueryParameters().getFirst("busqueda");
 		String askedURL = uriInfo.getRequestUri().toString();
 		String nextURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda)
 				.replaceQueryParam("pagina", numeroPagina + 1).build().toString();
-		int startIndex = Math.min(Math.max((numeroPagina - 1) * 10 + 1, 0), TOTAL_RESULT_COUNT);
+		String prevURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda)
+				.replaceQueryParam("pagina", Math.max(numeroPagina - 1, 1)).replaceQuery("hal").build().toString();
 
 		// Rellenamos la cabecera
 		feedBuilder.withTitle("Ciudades");
 		feedBuilder.addExtensionElement(ExtensionElements
-				.simpleElement("totalResults", String.valueOf(TOTAL_RESULT_COUNT)).withNamespace(OPEN_SEARCH).build());
+				.simpleElement("totalResults", String.valueOf(totalResultCount)).withNamespace(OPEN_SEARCH).build());
 		feedBuilder.addExtensionElement(ExtensionElements.simpleElement("startIndex", String.valueOf(startIndex))
 				.withNamespace(OPEN_SEARCH).build());
 		feedBuilder.addExtensionElement(ExtensionElements.simpleElement("itemsPerPage", String.valueOf(PAGE_SIZE))
@@ -46,7 +61,12 @@ public class AtomBuilder {
 		feedBuilder.withId(uriInfo.getAbsolutePath().toString());
 		feedBuilder.withAuthor(Author.builder("Servicio Geonames").build());
 		feedBuilder.addLink(Link.builder(askedURL).withRel(LinkRel.self).build());
-		feedBuilder.addLink(Link.builder(nextURL).withRel(LinkRel.next).build());
+		if (numeroPagina > 1) {
+			feedBuilder.addLink(Link.builder(nextURL).withRel(LinkRel.next).build());
+		}
+		if (lastPage > numeroPagina) {
+			feedBuilder.addLink(Link.builder(prevURL).withRel(LinkRel.previous).build());
+		}
 		feedBuilder.withUpdateDate(new Date());
 
 		// Rellenamos cada entrada (entry)
