@@ -2,6 +2,7 @@ package atom.builder;
 
 import java.util.Date;
 
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
 
 import fr.vidal.oss.jaxb.atom.core.Author;
@@ -48,23 +49,23 @@ public class AtomBuilder {
 		String nextURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda)
 				.replaceQueryParam("pagina", numeroPagina + 1).build().toString();
 		String prevURL = uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda)
-				.replaceQueryParam("pagina", Math.max(numeroPagina - 1, 1)).replaceQuery("hal").build().toString();
+				.replaceQueryParam("pagina", Math.max(numeroPagina - 1, 1)).build().toString();
 
 		// Rellenamos la cabecera
-		feedBuilder.withTitle("Ciudades");
+		feedBuilder.withTitle("Ciudades - " + busqueda);
 		feedBuilder.addExtensionElement(ExtensionElements
 				.simpleElement("totalResults", String.valueOf(totalResultCount)).withNamespace(OPEN_SEARCH).build());
 		feedBuilder.addExtensionElement(ExtensionElements.simpleElement("startIndex", String.valueOf(startIndex))
 				.withNamespace(OPEN_SEARCH).build());
 		feedBuilder.addExtensionElement(ExtensionElements.simpleElement("itemsPerPage", String.valueOf(PAGE_SIZE))
 				.withNamespace(OPEN_SEARCH).build());
-		feedBuilder.withId(uriInfo.getAbsolutePath().toString());
+		feedBuilder.withId(uriInfo.getAbsolutePathBuilder().replaceQueryParam("busqueda", busqueda).build().toString());
 		feedBuilder.withAuthor(Author.builder("Servicio Geonames").build());
 		feedBuilder.addLink(Link.builder(askedURL).withRel(LinkRel.self).build());
-		if (numeroPagina > 1) {
+		if (lastPage > numeroPagina) {
 			feedBuilder.addLink(Link.builder(nextURL).withRel(LinkRel.next).build());
 		}
-		if (lastPage > numeroPagina) {
+		if (numeroPagina > 1) {
 			feedBuilder.addLink(Link.builder(prevURL).withRel(LinkRel.previous).build());
 		}
 		feedBuilder.withUpdateDate(new Date());
@@ -73,11 +74,14 @@ public class AtomBuilder {
 		for (CiudadGeoNames ciudad : listadoCiudades.getCiudades()) {
 			Entry.Builder entryBuilder = Entry.builder();
 			entryBuilder.withTitle(ciudad.getNombre());
-			entryBuilder.addLink(Link.builder(ciudad.getURI()).withRel(LinkRel.related).build());
+			entryBuilder.withId(uriInfo.getAbsolutePathBuilder().path(String.valueOf(ciudad.getIdGeonames())).build().toString());
+			entryBuilder.addLink(Link.builder(ciudad.getURI()).withRel(LinkRel.related).withType("application/rdf+xml").build());
 			entryBuilder.addLink(Link.builder(
 					uriInfo.getAbsolutePathBuilder().path(String.valueOf(ciudad.getIdGeonames())).build().toString())
-					.withRel(LinkRel.source).build());
-			entryBuilder.withId(Long.toString(ciudad.getIdGeonames()));
+					.withRel(LinkRel.self).withType(MediaType.APPLICATION_XML).build());
+			entryBuilder.addLink(Link.builder(
+					uriInfo.getAbsolutePathBuilder().path(String.valueOf(ciudad.getIdGeonames())).build().toString())
+					.withRel(LinkRel.self).withType(MediaType.APPLICATION_JSON).build());
 			entryBuilder.withUpdateDate(new Date());
 
 			entryBuilder.addExtensionElement(
