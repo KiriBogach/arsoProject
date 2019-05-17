@@ -103,15 +103,22 @@ public class StAXBuilder {
 				writer.writeStartElement("identificador");
 				writer.writeCharacters(libro.getIdentificador());
 				writer.writeEndElement();
-				writer.writeStartElement("ISBN");
-				writer.writeCharacters(libro.getISBN());
-				writer.writeEndElement();
-				writer.writeStartElement("urlImagen");
-				writer.writeCharacters(libro.getUrlImagen().toString());
-				writer.writeEndElement();
-				writer.writeStartElement("urlGoogleBooks");
-				writer.writeCharacters(libro.getUrlGoogleBooks().toString());
-				writer.writeEndElement();
+				if (libro.hasISBN()) {
+					writer.writeStartElement("ISBN");
+					writer.writeCharacters(libro.getISBN());
+					writer.writeEndElement();
+				}
+				if (libro.hasUrlImagen()) {
+					writer.writeStartElement("urlImagen");
+					writer.writeCharacters(libro.getUrlImagen().toString());
+					writer.writeEndElement();
+				}
+				if (libro.hasUrlGoogleBooks()) {
+					writer.writeStartElement("urlGoogleBooks");
+					writer.writeCharacters(libro.getUrlGoogleBooks().toString());
+					writer.writeEndElement();
+				}
+				
 				writer.writeEndElement();
 			}
 

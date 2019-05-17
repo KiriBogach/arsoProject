@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <title>GeoNamesMobile</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script src="config.js"></script>
+    <!-- The jQuery Mobile CSS theme file (optional, if you are overriding the default theme) -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <!-- The jQuery core JavaScript file -->
+    <script src="vendor/jquery-1.11.3.min.js"></script>
+    <!-- The jQuery Mobile core JavaScript file -->
+    <script src="vendor/jquery.mobile-1.4.5.min.js"></script>
 </head>
+
 <body>
-<h1> MOVIDAS TECNICAS </h1>
+<div data-role="page">
+    <div data-role="header">
+        <h1>GeoNames</h1>
+    </div>
+    <div data-role="content">
+
+
+        <h2>Buscador Ciudades:</h2>
+        <input id="input-busqueda" type="search" name="password" id="search" value="" placeholder="Busque una ciudad...">
+        <button id="boton-busqueda" data-role="button" data-icon="search">Search</button>
+        <hr><br>
+
+        <div id="resultado-busqueda" hidden>
+            <h2>Lista Ciudades Encontradas</h2>
+            <ul id="lista-busqueda" data-role="listview" data-inset="true" data-divider-theme="a">
+            </ul>
+        </div>
+
+    </div>
+    <div data-role="footer">
+        <h1>Arquitectura del Software</h1>
+    </div>
+</div>
 </body>
+
+<script src="main.js"></script>
+
 </html>

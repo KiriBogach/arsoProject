@@ -107,6 +107,7 @@ public class DOMParser {
 		// OPCIONAL
 		String nearbyFeatures = this.getAttributeFrom(documento, "nearbyFeatures", "http://www.geonames.org/ontology#",
 				"resource", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+		
 		if (nearbyFeatures != null) {
 			try {
 				documento = analizador.parse(nearbyFeatures);
@@ -114,14 +115,13 @@ public class DOMParser {
 				throw new GeoNamesException("No se puede analizar el documento", e);
 			}
 
-			NodeList features = documento.getElementsByTagNameNS("Feature", "http://www.geonames.org/ontology#");
-
+			NodeList features = documento.getElementsByTagNameNS("http://www.geonames.org/ontology#", "Feature");
 			for (int i = 0; i < features.getLength(); i++) {
 				Element feature = (Element) features.item(i);
-				Element name = (Element) feature.getElementsByTagNameNS("name", "http://www.geonames.org/ontology#")
+				Element name = (Element) feature.getElementsByTagNameNS("http://www.geonames.org/ontology#", "name")
 						.item(0);
-
-				String uriClave = feature.getAttributeNS("about", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+				
+				String uriClave = feature.getAttributeNS("http://www.w3.org/1999/02/22-rdf-syntax-ns#", "about");
 				Matcher matcher = GEONAME_URI.matcher(uriClave);
 
 				String clave = "";

@@ -51,6 +51,19 @@ public class Libro {
 	public void setUrlImagen(URI urlImagen) {
 		this.urlImagen = urlImagen;
 	}
+	
+	public boolean hasISBN() {
+		return this.ISBN != null;
+	}
+	
+	public boolean hasUrlImagen() {
+		return this.urlImagen != null;
+	}
+	
+	public boolean hasUrlGoogleBooks() {
+		return this.urlGoogleBooks != null;
+	}
+	
 
 	@Override
 	public String toString() {

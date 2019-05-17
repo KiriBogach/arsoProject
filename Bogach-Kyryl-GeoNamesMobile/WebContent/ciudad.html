@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>GeoNamesMobile</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script src="config.js"></script>
+    <!-- The jQuery Mobile CSS theme file (optional, if you are overriding the default theme) -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <!-- The jQuery core JavaScript file -->
+    <script src="vendor/jquery-1.11.3.min.js"></script>
+    <!-- The jQuery Mobile core JavaScript file -->
+    <script src="vendor/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>GeoNames</h1>
+    </div>
+
+
+    <div data-role="tabs" id="tabs">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#summary" class="ui-btn-active">Summary</a></li>
+                <li><a href="#external-links">External Links</a></li>
+                <li><a href="#nearby-places">Nearby Places</a></li>
+            </ul>
+        </div>
+
+        <div id="summary" class="ui-body-d ui-content">
+            <ul>
+                <li id="population"><b>Population: </b></li>
+                <li id="location"><b>Location: </b></li>
+                <li id="weather"><b>Weather: </b></li>
+            </ul>
+        </div>
+        <div id="external-links" class="ui-body-d ui-content">
+            <ul id="lista-links" data-role="listview" data-inset="true" data-divider-theme="a">
+            </ul>
+        </div>
+        <div id="nearby-places" class="ui-body-d ui-content">
+            <ul id="lista-sitios" data-role="listview" data-inset="true" data-divider-theme="a">
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div data-role="footer">
+        <h1>Arquitectura del Software</h1>
+    </div>
+</div>
+</body>
+
+<script src="ciudad.js"></script>
+
+</html>

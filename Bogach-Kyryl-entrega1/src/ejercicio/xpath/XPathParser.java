@@ -39,6 +39,7 @@ public class XPathParser {
 			 * URL de la imagen. URL a la web de Google Books.
 			 * 
 			 */
+			
 			for (int i = 0; i < resultado.getLength(); i++) {
 				Node nodo = resultado.item(i);
 
