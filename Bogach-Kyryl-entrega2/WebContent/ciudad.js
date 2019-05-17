@@ -25,8 +25,8 @@ $(function() {
             let $weather = $('#weather');
             $weather.html($weather.html() + data.infoMeteorologica.temperatura + ' ºC, ' + data.infoMeteorologica.nubes);
 
-            let $lista = $('#lista-links');
-            $lista.append(
+            let $listaLinks = $('#lista-links');
+            $listaLinks.append(
                 $('<li>').append(
                     $('<a>').attr('href', data.bdpedia)
                         .attr('class', 'ui-btn ui-btn-icon-right ui-icon-carat-r')
@@ -36,7 +36,7 @@ $(function() {
                         ))
             );
 
-            $lista.append(
+            $listaLinks.append(
                 $('<li>').append(
                     $('<a>').attr('href', data.wikipedia)
                         .attr('class', 'ui-btn ui-btn-icon-right ui-icon-carat-r')
@@ -46,13 +46,11 @@ $(function() {
                         ))
             );
 
-            $lista = $('#lista-sitios');
-
+            $listaSitios = $('#lista-sitios');
             let sitiosInteres = data.sitiosInteres.sitio;
-
             for (let indexSitio in sitiosInteres) {
                 let sitio = sitiosInteres[indexSitio];
-                $lista.append(
+                $listaSitios.append(
                     $('<li>').append(
                         $('<a>')
                             .attr('class', 'ui-btn ui-icon-carat-r')
@@ -60,6 +58,26 @@ $(function() {
                                 $('<span>').attr('class', 'tab').append(sitio.nombre)
                             ))
                 );
+
+            }
+
+            let $listaLibros= $('#lista-libros');
+            let libros = data.libros.libro;
+            for (let indexLibro in libros) {
+                let libro = libros[indexLibro];
+                $listaLibros.append(
+                    $('<a>')
+                        .attr('href', libro.urlGoogleBooks)
+                        .attr('class', 'ui-btn ui-icon-carat-r')
+                        .attr('rel', 'external')
+                        .append(
+                            $('<span>').attr('class', 'tab').append(libro.titulo)
+                        )
+                );
+
+                $listaLibros.append(
+                    $('<img>').attr('src', libro.urlImagen).append(libro.urlImagen)
+                )
 
             }
         },

@@ -36,7 +36,7 @@ $(function() {
 
                     $lista.append(
                         $('<li>').append(
-                            $('<a>').attr('href','/ciudad.html?idGeonames=' + idGeoNames)
+                            $('<a>').attr('href', URL_DEPLOYMENT + 'ciudad.html?idGeonames=' + idGeoNames)
                                     .attr('class', 'ui-btn ui-btn-icon-right ui-icon-carat-r')
                                     .attr('rel', 'external')
                                     .append(

@@ -1,1 +1,0 @@
-let REST_URL = "http://localhost:8080/Bogach-Kyryl-entrega2/rest/";
